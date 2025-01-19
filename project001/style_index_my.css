@@ -1,6 +1,9 @@
 /* 언어설정 */
 @charset 'utf-8';
 
+/* 구글폰트 연결 */
+@import url('https://fonts.googleapis.com/css2?family=Grandiflora+One&family=Gugi&display=swap');
+
 /* 전체설정 */
 * {margin: 0;
     padding: 0;}
@@ -36,16 +39,16 @@ img {border: none;
         /* background-color: paleturquoise;*/ }  
 
 .education {width: 100%;
-            height: 360px;
+            height: 320px;
             background-color: wheat;}
 
 .sizetype {width: 100%;
-            height: 640px;
-            background-color: violet;}
+            height: 600px;
+            background-color: #fffcf3;}
 
 .adoption {width: 100%;
             height: 920px;
-            background-color: turquoise;}
+            background-color: wheat;}
 
 .procedure {width: 100%;
             height: 1250px;
@@ -224,8 +227,10 @@ img {border: none;
 
 
 /* 내용 작성 */
-
+/* 랜딩페이지 */
 #wrap {}
+
+
 
 .header {display: flex;
         flex-wrap: wrap;
@@ -247,29 +252,119 @@ img {border: none;
         padding: 10px 20px;}
 
 .menu {}
+
 .menu ul {display: flex;
         flex-wrap: nowrap;
         justify-content: flex-end;}
+
 .menu ul li { background-color: rgba(255, 255, 255, 0.8);
               width: 1024px;
-                height: 100px; }
+                height: 100px;}
+
 .menu ul li a {display: block;
-                padding: 30px;
+                padding-top: 30px;
                 padding-left: 40px;
+                padding-left: 10px;
+                padding-right: 10px;
                 font-size: 18px;
                 color: #292929;}
 
-.education {background-color: #fff7e0;}
+/* 입양 전 교육 */
+.education {background-color: #fff7e0;
+                position: relative;}
+
 .edu_inner {}
-.edu_inner h2 {color: #ff9900;}
+
+.edu_inner h2 {color: #ff9900;
+                text-align: center;
+                padding-top: 60px;
+                padding-bottom: 30px;}
+
 .edu_inner .textBox {display: block;
-                        width: 1200px;
+                        width: 1100px;
                         padding: 7px;
                         box-sizing: border-box;
                         text-align: center;
                         border: 2px solid #292929;
-                        }
-.edu_inner .textBox p {}
+                        border-radius: 10px;
+                        background-color: #fff;
+                        position: absolute;
+                        left: 360px;}
+
+.edu_inner .textBox p {display: block;
+                        text-align: center;
+                        padding: 5px;}
+
+/* 동물 종류타입 */
+.sizetype {display: flex;
+        position: relative;
+        width: 100%;
+        overflow: hidden;}
+
+.sizetype .size_inner {}
+
+.size_inner .listBox {}
+
+.size_inner .listBox .search {}
+
+.size_inner .listBox .list {}
+
+.size_inner .listBox .list ul {}
+
+.size_inner .listBox .list ul li {}
+
+.size_inner .listBox .list ul li a {}
+
+
+
+.size_inner .imgBox {width: 900px;}
+
+.size_inner .imgBox ul {display: flex;
+                        flex-wrap: wrap;
+                        justify-content: flex-end;}
+
+.size_inner .imgBox ul li {width: 45%;
+                        align-content: center;
+                        position: relative;}
+
+.size_inner .imgBox ul li img {width: 400px;
+                                height: 220px;
+                                align-items: center;
+                                transform: translate(800px , -80px);}
+                                
+.size_inner .imgBox ul li:nth-child(odd) img {margin-right: 15px;
+                                                margin-bottom: 20px;
+                                                border-radius: 10px;}
+                                                    
+.size_inner .imgBox ul li:nth-child(even) img {margin-left: 15px;
+                                                margin-bottom: 20px;
+                                                border-radius: 10px;}
+                                                    
+
+
+
+
+.size_inner .imgBox ul li span {font-size: 40px;
+                                width: 100%;
+                                position: absolute;
+                                color: #fff;
+                                z-index: 1;}
+
+
+.size_inner .imgBox ul li .more {display: block;
+                                width: 110px;
+                                height: 30px;
+                                position: absolute;
+                                box-sizing: border-box;
+                                border: 2px solid #ffffff;
+                                background-color: #ff9900;
+                                z-index: 2;}
+
+.size_inner .imgBox ul li .more a {font-size: 18px;
+                                text-align: center;
+                                align-items: center;}
+
+
 
 
 
