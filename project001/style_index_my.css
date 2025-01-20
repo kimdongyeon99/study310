@@ -52,7 +52,8 @@ img {border: none;
 
 .procedure {width: 100%;
             height: 1250px;
-            background-color: tomato;}
+            /* background-color: tomato; */
+        }
 
 .adoptionreview {width: 100%;
                 height: 1370px;
@@ -267,7 +268,9 @@ img {border: none;
                 padding-left: 10px;
                 padding-right: 10px;
                 font-size: 18px;
-                color: #292929;}
+                color: #292929;
+                align-items: center;
+                text-align: center;}
 
 /* 입양 전 교육 */
 .education {background-color: #fff7e0;
@@ -297,7 +300,8 @@ img {border: none;
 
 /* 동물 종류타입 */
 .sizetype {display: flex;
-        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
         width: 100%;
         overflow: hidden;}
 
@@ -305,21 +309,52 @@ img {border: none;
 
 .size_inner .listBox {}
 
-.size_inner .listBox .search {}
+.size_inner .listBox .search {margin-left: 340px;
+                                margin-top: 60px;}
 
-.size_inner .listBox .list {}
+.size_inner .listBox .search form {position: relative;}
+
+.size_inner .listBox .search form i {width: 20px;
+                                        height: 30px;
+                                        position: absolute;
+                                        padding-top: 22px;
+                                        padding-left: 10px;}
+                                        
+
+.size_inner .listBox .search form input {width: 360px;
+                                        height: 60px;
+                                        background-color: #EDEDED;
+                                        border: none;
+                                        border-radius: 15px;
+                                        font-size: 26px;
+                                        padding-left: 35px;}
+
+.size_inner .listBox .list {margin-left: 360px;
+                        }
 
 .size_inner .listBox .list ul {}
 
-.size_inner .listBox .list ul li {}
+.size_inner .listBox .list ul li {width: 220px;
+                                margin-top: 30px;
+                                padding-bottom: 15px;
+                                border-bottom: #FFB800 1px solid;
+                                }
 
-.size_inner .listBox .list ul li a {}
+.size_inner .listBox .list ul li a {font-size: 20px;
+                                        font-weight: normal;}
+
+.size_inner .listBox .list ul li:hover a {font-size: 20px;
+                                        font-weight: bold;
+                                        color: #FFB800;}
 
 
 
-.size_inner .imgBox {width: 900px;}
+
+.size_inner .imgBox {width: 900px;
+                        margin: 0;}
 
 .size_inner .imgBox ul {display: flex;
+                        position: relative;
                         flex-wrap: wrap;
                         justify-content: flex-end;}
 
@@ -330,7 +365,7 @@ img {border: none;
 .size_inner .imgBox ul li img {width: 400px;
                                 height: 220px;
                                 align-items: center;
-                                transform: translate(800px , -80px);}
+                                transform: translate(640px , -500px);}
                                 
 .size_inner .imgBox ul li:nth-child(odd) img {margin-right: 15px;
                                                 margin-bottom: 20px;
@@ -342,27 +377,197 @@ img {border: none;
                                                     
 
 
+.size_inner .imgBox ul li h2 {font-size: 40px;
+                        width: 100%;
+                        position: absolute;
+                        color: #fff;
+                        z-index: 1;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(435px, -580px);
+                        text-align: center;}
+                                    
 
 
-.size_inner .imgBox ul li span {font-size: 40px;
-                                width: 100%;
-                                position: absolute;
-                                color: #fff;
-                                z-index: 1;}
-
-
-.size_inner .imgBox ul li .more {display: block;
+.size_inner .imgBox ul li .more {display: inline-block;
+                                padding-left: 10px;
+                                padding-top: 2px;
                                 width: 110px;
                                 height: 30px;
                                 position: absolute;
                                 box-sizing: border-box;
-                                border: 2px solid #ffffff;
-                                background-color: #ff9900;
-                                z-index: 2;}
+                                border-radius: 10px;
+                                background-color: rgba(255, 255, 255, 0.7);
+                                z-index: 2;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(585px, -515px);}
 
 .size_inner .imgBox ul li .more a {font-size: 18px;
                                 text-align: center;
                                 align-items: center;}
+
+.size_inner .btn ul {}
+
+.size_inner .btn ul li {}
+
+.size_inner .btn ul li a {}
+
+
+.size_inner .btn ul li:nth-child(1):hover {background-color: #FFB800;}
+    
+
+.size_inner .btn ul li:nth-child(2):hover {background-color: #FFB800;}
+    
+
+.size_inner .btn ul li i {margin-left: 11px;
+                        margin-top: 9px;}
+
+
+.size_inner .btn ul li:nth-child(1) {width: 35px;
+                        height: 35px;
+                        position: absolute;
+                        background-color: #FFEDD1;
+                        border-radius: 100px;
+                        transform: translate(1580px , -790px);}
+
+.size_inner .btn ul li:nth-child(2) {width: 35px;
+                        height: 35px;
+                        position: absolute;
+                        background-color: #FFEDD1;
+                        border-radius: 100px;
+                        transform: translate(1580px , -740px);}
+
+
+
+/*  입양 동물 안내*/ 
+
+.adoption {background-color: #FFF7E0;}
+
+.adop_inner {background-color: #FFEDD1;
+                width: 1440px;
+                height: 720px;
+                border-radius: 20px;
+                margin-left: 240px;
+                margin-top: 100px;
+                overflow: hidden;
+                }
+
+.adop_inner .txtBox {}
+
+.adop_inner .txtBox h2 {font-size: 45px;
+                        font-weight: bold;
+                        color: #ff9900;
+                        padding-left: 160px;
+                        padding-top: 260px;
+                        padding-bottom: 10px;
+                        }
+
+.adop_inner .txtBox p {font-size: 22px;
+                        font-weight: normal;
+                        color: #ff9900;
+                        padding-left: 160px;
+                        padding-top: 10px;}
+
+.adop_inner .imgBox {display: block;
+        position: relative;}
+
+.adop_inner .imgBox .left {width: 70px;
+                        height: 70px;
+                        position: absolute;
+                        top: 230px;
+                        left: 560px;
+                        transform: translate(-30px , -10px);
+                        background-color: rgba(225, 225, 225, 0.8);
+                        border-radius: 100px;}
+
+.adop_inner .imgBox .left a {}
+
+.adop_inner .imgBox .left a i {margin-top: 25px;
+                                margin-left: 28px;}
+            
+
+
+/* .adop_inner .imgBox .left {width: 70px;
+        height: 70px;
+        position: absolute;
+        background-color: rgba(225, 225, 225, 0.8);
+        border-radius: 100px;
+        transform: translate(1580px , -740px);} */
+
+.adop_inner .imgBox .img_con {}
+
+.adop_inner .imgBox .img_con ul {display: flex;
+                                margin-left: 540px;
+                                margin-top: -350px;}
+
+.adop_inner .imgBox .img_con ul li {}
+
+.adop_inner .imgBox .img_con ul li a {display: block;
+                                        border: solid 1px #000;
+                                        border: none;
+                                        background-color: #fff;
+                                        width: 380px;
+                                        height: 550px;
+                                        margin-left: 15px;
+                                        border-radius: 10px;}
+
+.adop_inner .imgBox .img_con ul li a img {display: block;
+                                        width: 350px;
+                                        height: 410px;
+                                        margin-left: 15px;
+                                        padding-top: 20px;}
+
+.adop_inner .imgBox .img_con ul li a h2 {font-size: 24px;
+                                        padding-top: 15px;
+                                        padding-left: 20px;}
+
+.adop_inner .imgBox .img_con ul li a p {font-size: 12px;
+                                        padding-top: 40px;
+                                        padding-left: 300px;}
+
+
+.adop_inner .imgBox .right {width: 70px;
+                        height: 70px;
+                        position: absolute;
+                        top: 230px;
+                        left: 1320px;
+                        transform: translate(-30px , -10px);
+                        background-color: rgba(225, 225, 225, 0.8);
+                        border-radius: 100px;}
+
+.adop_inner .imgBox .right a {}
+
+.adop_inner .imgBox .right a i {margin-top: 25px;
+                                margin-left: 28px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
