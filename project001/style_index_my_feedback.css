@@ -40,15 +40,17 @@ img {border: none;
 
 .education {width: 100%;
             height: 320px;
-            background-color: wheat;}
+            /* background-color: wheat; */
+        }
 
 .sizetype {width: 100%;
             height: 750px;
-            background-color: #fffcf3;}
+            background-color: #FFF7E0;}
 
 .adoption {width: 100%;
             height: 920px;
-            background-color: #FFF7E0;}
+            background-color: #3a9c59;
+        }
 
 .procedure {width: 100%;
             height: 1024px;
@@ -83,11 +85,11 @@ img {border: none;
         background-color: slateblue;}
 
 .location {width: 100%;
-        height: 620px;
+  
         background-color: skyblue;}
 
 .footer {width: 100%;
-        height: 290px;
+        
         background-color: midnightblue;}
 
 
@@ -151,14 +153,15 @@ img {border: none;
                 font-family: "Gowun Batang", serif;
                 font-size: 35px;}
 
-.edu_inner .textBox {display: block;
+.edu_inner .textBox {display:block;
                         /* width: 1100px; */
                         padding: 7px 40px;
                         box-sizing: border-box;
                         text-align: center;
                         border: 2px solid #292929;
                         border-radius: 10px;
-                        background-color: #fff;}
+                        background-color: #fff;
+                        }
 
 .edu_inner .textBox p {display: block;
                         text-align: center;
@@ -175,7 +178,8 @@ img {border: none;
         overflow: hidden;
         box-sizing: border-box;}
 
-.sizetype .size_inner {width: 100%;
+.sizetype .size_inner {
+                        width: 100%;
                         box-sizing: border-box;}
 
 .size_inner .listBox {}
@@ -298,30 +302,39 @@ img {border: none;
                         position: absolute;
                         background-color: #FFEDD1;
                         border-radius: 100px;
-                        transform: translate(1300px , -740px);}
+                        transform: translate(1300px , -780px);}
 
 .size_inner .btn ul li:nth-child(2) {width: 35px;
                         height: 35px;
                         position: absolute;
                         background-color: #FFEDD1;
                         border-radius: 100px;
-                        transform: translate(1300px , -680px);}
-
-
+                        transform: translate(1300px , -720px);}
+    
+    
 
 
 
 /*  입양 동물 안내*/ 
 
-.adoption {background-color: #FFF7E0;}
+.adoption {
+        /* background-color: #FFF7E0; */
+        display: flex;
+        position: relative;
+        
+}
 
 .adop_inner {background-color: #FFEDD1;
-                width: 1440px;
+                display: block;
+                width: 100%;
                 height: 720px;
-                border-radius: 20px;
-                margin-left: 240px;
-                margin-top: 100px;
-                overflow: hidden;}
+                border-radius: 30px;
+                box-sizing: border-box;
+                overflow: hidden;
+                position: absolute;
+                /* top: 100px;
+                left: 360px; */
+                transform: translate(360px , 100px);}
 
 .adop_inner .txtBox {}
 
@@ -329,15 +342,15 @@ img {border: none;
                         font-weight: bold;
                         font-family: "Gowun Batang", serif;
                         color: #ff9900;
-                        padding-left: 160px;
-                        padding-top: 260px;
+                        padding-left: 100px;
+                        padding-top: 200px;
                         padding-bottom: 10px;}
 
 .adop_inner .txtBox p {font-size: 22px;
                         font-weight: normal;
                         font-family: "Nanum Gothic", serif;
                         color: #ff9900;
-                        padding-left: 160px;
+                        padding-left: 100px;
                         padding-top: 10px;}
 
 .adop_inner .imgBox {display: block;
@@ -347,7 +360,7 @@ img {border: none;
                                 height: 70px;
                                 position: absolute;
                                 top: 215px;
-                                left: 530px;
+                                left: 440px;
                                 background-color: rgba(255, 255, 255, 0.8);
                                 border-radius: 100px;}
 
@@ -360,7 +373,7 @@ img {border: none;
                                 height: 70px;
                                 position: absolute;
                                 top: 215px;
-                                left: 1290px;
+                                left: 1100px;
                                 background-color: rgba(255, 255, 255, 0.8);
                                 border-radius: 100px;}
 
@@ -370,32 +383,32 @@ img {border: none;
                                 margin-left: 28px;}
 
 .adop_inner .imgBox .img_con ul {display: flex;
-                                margin-left: 540px;
+                                margin-left: 450px;
                                 margin-top: -350px;}
 
 .adop_inner .imgBox .img_con ul li a {display: block;
                                         border: solid 1px #000;
                                         border: none;
                                         background-color: #fff;
-                                        width: 380px;
+                                        width: 95%;
                                         height: 550px;
                                         margin-left: 15px;
                                         border-radius: 10px;}
 
 .adop_inner .imgBox .img_con ul li a img {display: block;
-                                                width: 350px;
+                                                width: 90%;
                                                 height: 410px;
-                                                margin-left: 15px;
-                                                padding-top: 20px;}
+                                                margin-left: 16px;
+                                                padding-top: 15px;}
 
 .adop_inner .imgBox .img_con ul li a h2 {font-size: 24px;
                                         font-family: "Nanum Gothic", serif;
                                         padding-top: 15px;
                                         padding-left: 20px;}
 
-.adop_inner .imgBox .img_con ul li a p {font-size: 12px;
+.adop_inner .imgBox .img_con ul li .year {font-size: 12px;
                                         font-family: "Nanum Gothic", serif;
-                                        padding-top: 40px;
+                                        padding-top: 60px;
                                         padding-left: 300px;}
 
 /* 입양신청 절차 안내 */
@@ -638,83 +651,11 @@ img {border: none;
                                 margin-left: 250px;
                                 border: dashed #ff9900 4px;}
 
-.find_inner .findBox .form ul {display: flex;
-                                position: relative;
-                                justify-content: center;}
+.find_inner .findBox .form ul {}
 
 .find_inner .findBox .form ul li {}
 
-
-.find_inner .findBox .form ul li .name {font-size: 18px;
-                                        font-weight: bold;}
-
-.find_inner .findBox .form ul li:nth-child(1) .name {position: absolute;
-                                                        top: 50px;
-                                                        left: 50px;}
-
-.find_inner .findBox .form ul li:nth-child(2) .name {position: absolute;
-                                                        top: 120px;
-                                                        left: 50px;}
-
-.find_inner .findBox .form ul li:nth-child(4) .name {position: absolute;
-                                                        top: 190px;
-                                                        left: 50px;}
-
-.find_inner .findBox .form ul li:nth-child(5) .name {position: absolute;
-                                                        top: 190px;
-                                                        left: 400px;}
-
-
-.find_inner .findBox .form ul li:nth-child(1) input {position: absolute;
-                                                        top: 50px;
-                                                        left: 180px;
-                                                        width: 25%;
-                                                        height: 25px;
-                                                        border-radius: 7px;
-                                                        border: solid 1px #292929;}
-
-.find_inner .findBox .form ul li:nth-child(2) input {position: absolute;
-                                                        top: 120px;
-                                                        left: 180px;
-                                                        width: 25%;
-                                                        height: 25px;
-                                                        border-radius: 7px;
-                                                        border: solid 1px #292929;}
-
-.find_inner .findBox .form ul li:nth-child(3) input {position: absolute;
-                                                                top: 120px;
-                                                                left: 400px;
-                                                                width: 25%;
-                                                                height: 25px;
-                                                                border-radius: 7px;
-                                                                border: solid 1px #292929;}
-
-
-.find_inner .findBox .form ul li:nth-child(4) input {position: absolute;
-                                                        top: 190px;
-                                                        left: 180px;
-                                                        width: 25%;
-                                                        height: 25px;
-                                                        border-radius: 7px;
-                                                        border: solid 1px #292929;}
-
-.find_inner .findBox .form ul li:nth-child(5) select {position: absolute;
-                                                        top: 190px;
-                                                        left: 470px;
-                                                        width: 10%;
-                                                        height: 25px;
-                                                        border-radius: 7px;
-                                                        border: solid 1px #292929;}
-
-.find_inner .findBox .form ul li:nth-child(6) .btn_Box {position: absolute;
-                                                        border: solid 1px #ff9900;
-                                                        width: 20%;
-                                                        height: 25px;
-                                                        text-align: center;
-                                                        top: 300px;
-                                                        left: 280px;}
-
-
+.find_inner .findBox .form ul li .name {}
 
 
 
@@ -743,38 +684,14 @@ img {border: none;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 미디어쿼리 구간 설정 ########################################### */
 
 
 /* 데스크탑 구간 */
 /* 1280px 이상일 때 */
 @media(min-width:1280px) {
-        .edu_inner, .size_inner {max-width: 1200px; 
-                        margin: 0 auto;}
+        .edu_inner, .size_inner, .adop_inner {max-width: 1200px;
+        margin: 0 auto;}
 }
 
 
@@ -832,7 +749,7 @@ img {border: none;
         height: 820px;}
 
 .footer {width: 100%;
-        height: 180px;}
+     }
 
 }
 
@@ -894,3 +811,11 @@ img {border: none;
         height: 170px;}
 
 }
+
+
+
+
+
+
+
+
