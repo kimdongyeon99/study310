@@ -40,19 +40,22 @@ img {border: none;
 
 .education {width: 100%;
             height: 320px;
-            background-color: wheat;}
+            /* background-color: wheat; */
+        }
 
 .sizetype {width: 100%;
             height: 750px;
-            background-color: #fffcf3;}
+            background-color: #FFF7E0;}
 
 .adoption {width: 100%;
             height: 920px;
-            background-color: #FFF7E0;}
+            background-color: #FFF7E0;
+        }
 
 .procedure {width: 100%;
             height: 1024px;
-            background-color: #FFF7E0;}
+            /* background-color: #FFF7E0; */
+        }
 
 .adoptionreview {width: 100%;
                 height: 1024px;
@@ -79,11 +82,12 @@ img {border: none;
     background-color: slategray;}
 
 .notice {width: 100%;
-        height: 910px;
+        height: 710px;
         background-color: slateblue;}
 
 .location {width: 100%;
         height: 620px;
+  
         background-color: skyblue;}
 
 .footer {width: 100%;
@@ -151,14 +155,15 @@ img {border: none;
                 font-family: "Gowun Batang", serif;
                 font-size: 35px;}
 
-.edu_inner .textBox {display: block;
+.edu_inner .textBox {display:block;
                         /* width: 1100px; */
                         padding: 7px 40px;
                         box-sizing: border-box;
                         text-align: center;
                         border: 2px solid #292929;
                         border-radius: 10px;
-                        background-color: #fff;}
+                        background-color: #fff;
+                        }
 
 .edu_inner .textBox p {display: block;
                         text-align: center;
@@ -167,7 +172,8 @@ img {border: none;
                         font-size: 18px;}
 
 /* 동물 종류타입 */
-.sizetype {display: flex;
+.sizetype {background-color: #FFFCF3;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
@@ -175,7 +181,8 @@ img {border: none;
         overflow: hidden;
         box-sizing: border-box;}
 
-.sizetype .size_inner {width: 100%;
+.sizetype .size_inner {
+                        width: 100%;
                         box-sizing: border-box;}
 
 .size_inner .listBox {}
@@ -298,30 +305,40 @@ img {border: none;
                         position: absolute;
                         background-color: #FFEDD1;
                         border-radius: 100px;
-                        transform: translate(1300px , -740px);}
+                        transform: translate(1300px , -780px);}
 
 .size_inner .btn ul li:nth-child(2) {width: 35px;
                         height: 35px;
                         position: absolute;
                         background-color: #FFEDD1;
                         border-radius: 100px;
-                        transform: translate(1300px , -680px);}
-
-
+                        transform: translate(1300px , -720px);}
+    
+    
 
 
 
 /*  입양 동물 안내*/ 
 
-.adoption {background-color: #FFF7E0;}
+.adoption {
+        /* background-color: #FFF7E0; */
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        
+}
 
 .adop_inner {background-color: #FFEDD1;
-                width: 1440px;
+                display: block;
+                width: 100%;
                 height: 720px;
-                border-radius: 20px;
-                margin-left: 240px;
-                margin-top: 100px;
-                overflow: hidden;}
+                border-radius: 30px;
+                box-sizing: border-box;
+                overflow: hidden;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50% , -50%);}
 
 .adop_inner .txtBox {}
 
@@ -329,103 +346,122 @@ img {border: none;
                         font-weight: bold;
                         font-family: "Gowun Batang", serif;
                         color: #ff9900;
-                        padding-left: 160px;
-                        padding-top: 260px;
+                        padding-left: 70px;
+                        padding-top: 200px;
                         padding-bottom: 10px;}
 
 .adop_inner .txtBox p {font-size: 22px;
                         font-weight: normal;
                         font-family: "Nanum Gothic", serif;
                         color: #ff9900;
-                        padding-left: 160px;
+                        padding-left: 70px;
                         padding-top: 10px;}
 
 .adop_inner .imgBox {display: block;
                         position: relative;}
 
-.adop_inner .imgBox .left {width: 70px;
+.adop_inner .imgBox .left {width: 6%;
                                 height: 70px;
                                 position: absolute;
                                 top: 215px;
-                                left: 530px;
+                                left: 420px;
                                 background-color: rgba(255, 255, 255, 0.8);
-                                border-radius: 100px;}
+                                border-radius: 100px;
+                                z-index: 2;}
 
 .adop_inner .imgBox .left:hover {background-color: #fff;}
 
 .adop_inner .imgBox .left i {margin-top: 26px;
-                                margin-left: 28px;}
+                                margin-left: 30px;}
 
-.adop_inner .imgBox .right {width: 70px;
+.adop_inner .imgBox .right {width: 6%;
                                 height: 70px;
                                 position: absolute;
                                 top: 215px;
-                                left: 1290px;
+                                left: 1090px;
                                 background-color: rgba(255, 255, 255, 0.8);
                                 border-radius: 100px;}
 
 .adop_inner .imgBox .right:hover {background-color: #fff;}
 
 .adop_inner .imgBox .right i {margin-top: 26px;
-                                margin-left: 28px;}
+                                margin-left: 30px;}
 
 .adop_inner .imgBox .img_con ul {display: flex;
-                                margin-left: 540px;
-                                margin-top: -350px;}
+                                margin-left: 35%;
+                                margin-top: -25%;
+                                flex-wrap: nowrap;
+                                flex-direction: row;}
+
+.adop_inner .imgBox .img_con ul li {width: 100%;
+                                        margin-left: 15px;
+                                        position: relative;}
+
 
 .adop_inner .imgBox .img_con ul li a {display: block;
                                         border: solid 1px #000;
                                         border: none;
                                         background-color: #fff;
-                                        width: 380px;
+                                        width: 100%;
                                         height: 550px;
                                         margin-left: 15px;
                                         border-radius: 10px;}
 
 .adop_inner .imgBox .img_con ul li a img {display: block;
-                                                width: 350px;
-                                                height: 410px;
-                                                margin-left: 15px;
-                                                padding-top: 20px;}
+                                                width: 90%;
+                                                height: 400px;
+                                                padding: 20px 15px;}
 
-.adop_inner .imgBox .img_con ul li a h2 {font-size: 24px;
+.adop_inner .imgBox .img_con ul li a h2 {display: block;
+                                        width: 300px;
+                                        font-size: 24px;
                                         font-family: "Nanum Gothic", serif;
                                         padding-top: 15px;
                                         padding-left: 20px;}
 
-.adop_inner .imgBox .img_con ul li a p {font-size: 12px;
-                                        font-family: "Nanum Gothic", serif;
-                                        padding-top: 40px;
-                                        padding-left: 300px;}
+.adop_inner .imgBox .img_con ul li a .year {position: absolute;
+                                                top: 95%;
+                                                left: 80%;
+                                                font-size: 12px;
+                                                font-family: "Nanum Gothic", serif;
+                                                z-index: 1;}
 
 /* 입양신청 절차 안내 */
-.procedure {}
+.procedure {background-color: #FFF7E0;
+                display: flex;
+                flex-wrap: wrap;
+                position: relative;}
 
-.procedure h2 {color: #ff9900;
+.procedure .pro_inner {display: block;
+                        width: 100%;
+                        height: 1000px;}                
+
+
+.procedure .pro_inner h2 {color: #ff9900;
                 font-size: 36px;
                 font-family: "Gowun Batang", serif;
                 text-align: center;
-                margin-top: 100px;
+                padding-top: 60px;
+                padding-bottom: 30px;
                 font-size: 30px;}
 
-.procedure .midline {text-align: center;
+.procedure .pro_inner .midline {text-align: center;
                 font-size: 20px;}
 
-.procedure .midline em {color: #ff9900;
+.procedure .pro_inner .midline em {color: #ff9900;
                 font-weight: bold;
                 font-style: normal;}
 
-.pro_inner {background-color: #fff;
-        width: 1515px;
+.pro_inner .text_box {background-color: #fff;
+        width: 1500px; 
         height: 760px;
         border-radius: 20px;
-        margin-left: 202.5px;
-        margin-top: 50px;}
+        box-sizing: border-box;
+        position: absolute;
+        transform: translate(-10% , 5%);
+        align-items: center;}
 
-.pro_inner .text_box {}
-
-.pro_inner .text_box ul {display: flex;
-                        position: relative;}
+.pro_inner .text_box ul {align-items: center;}
 
 .pro_inner .text_box ul li {}
 
@@ -511,7 +547,7 @@ img {border: none;
 .pro_inner .text_box .button {display: block;
                         border: #ff9900 2px solid;
                         position: absolute;
-                        width: 13%;
+                        width: 15%;
                         height: 60px;
                         margin-top: 640px;
                         margin-left: 640px;
@@ -541,13 +577,15 @@ img {border: none;
                         top: 250px;
                         z-index: 1;}
 
-.adoptionreview .imgBox {}
+.adoptionreview .imgBox_inner {display: block;
+                                position: absolute;
+                                transform: translate();}
 
-.adoptionreview .imgBox ul {display: flex;}
+.adoptionreview .imgBox_inner ul {display: flex;}
 
-.adoptionreview .imgBox ul li {}
+.adoptionreview .imgBox_inner ul li {}
 
-.adoptionreview .imgBox ul li a {display: block;
+.adoptionreview .imgBox_inner ul li a {display: block;
         position: absolute;
         border: solid 1px #000;
         border: none;
@@ -558,57 +596,58 @@ img {border: none;
         border-radius: 10px;
         z-index: 2;}
 
-.adoptionreview .imgBox ul li:nth-child(1) {position: absolute;
+.adoptionreview .imgBox_inner ul li:nth-child(1) {position: absolute;
                                                 top: 100px;
                                                 left: 650px;}
 
-.adoptionreview .imgBox ul li:nth-child(2) {position: absolute;
+.adoptionreview .imgBox_inner ul li:nth-child(2) {position: absolute;
                                                 top: 100px;
                                                 left: 1000px;}
 
-.adoptionreview .imgBox ul li:nth-child(3) {position: absolute;
+.adoptionreview .imgBox_inner ul li:nth-child(3) {position: absolute;
                                                 top: 580px;
                                                 left: 650px;}
 
-.adoptionreview .imgBox ul li:nth-child(4) {position: absolute;
+.adoptionreview .imgBox_inner ul li:nth-child(4) {position: absolute;
                                                 top: 580px;
                                                 left: 1000px;}
 
 
 
-.adoptionreview .imgBox ul li a img {display: block;
+.adoptionreview .imgBox_inner ul li a img {display: block;
                                         width: 200px;
                                         height: 240px;
                                         margin-left: 15px;
                                         padding-top: 15px;}
 
-.adoptionreview .imgBox ul li a .text {font-size: 14px;
+.adoptionreview .imgBox_inner ul li a .text {font-size: 14px;
                                         font-weight: normal;
                                         font-family: "Nanum Gothic", serif;
                                         margin-top: 5px;
                                         margin-left: 15px;}
 
-.adoptionreview .imgBox ul li a .tag {font-size: 13px;
+.adoptionreview .imgBox_inner ul li a .tag {font-size: 13px;
                                         font-weight: normal;
                                         font-family: "Nanum Gothic", serif;
                                         color: #665E99;
                                         margin-top: 3px;
                                         margin-left: 15px;}
 
-.adoptionreview .imgBox ul li a .time {font-size: 12px;
+.adoptionreview .imgBox_inner ul li a .time {font-size: 12px;
                                         font-weight: normal;
                                         font-family: "Nanum Gothic", serif;
                                         margin-top: 6px;
                                         margin-left: 150px;}
 
-.adoptionreview .imgBox ul li a .icon {display: flex;}
+.adoptionreview .imgBox_inner ul li a .icon {display: flex;}
 
-.adoptionreview .imgBox ul li a .icon img {display: flex;
+.adoptionreview .imgBox_inner ul li a .icon img {display: flex;
                                         width: 15px;
                                         height: 15px;
                                         margin-top: -8px;}
 
-.adoptionreview .titleBox {display: block;
+.adoptionreview .imgBox_inner .titleBox {display: block;
+                                width: 1500px;
                                 font-size: 50px;
                                 font-weight: bold;
                                 font-family: "Gowun Batang", serif;
@@ -773,14 +812,14 @@ img {border: none;
 /* 데스크탑 구간 */
 /* 1280px 이상일 때 */
 @media(min-width:1280px) {
-        .edu_inner, .size_inner {max-width: 1200px; 
-                        margin: 0 auto;}
+        .edu_inner, .size_inner, .adop_inner, .pro_inner, .imgBox_inner {max-width: 1200px;
+        margin: 0 auto;}
 }
 
 
 
-/* 태블릿 구간 */
-/* 834px ~ 403px 일 때 */
+/*태블릿 구간*/
+/* 834px ~ 403px 일 때 
 @media(max-width:834px) and (min-width:403px) {
 
 #wrap {width: 90%;}
@@ -832,12 +871,12 @@ img {border: none;
         height: 820px;}
 
 .footer {width: 100%;
-        height: 180px;}
+     }
 
-}
+}*/
 
 /* 모바일 구간 */
-/* 402px 이하일 때 */
+/* 402px 이하일 때 
 @media(max-width:402px) {
     #wrap {width: 100%;}
 
@@ -893,4 +932,4 @@ img {border: none;
 .footer {width: 100%;
         height: 170px;}
 
-}
+} */
