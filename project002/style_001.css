@@ -1,0 +1,345 @@
+/* 언어설정 */
+@charset 'utf-8';
+
+/* 구글폰트 CDN 연결 */
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Orbit&display=swap');
+
+
+/* Reset CSS */
+* {margin: 0;
+    padding: 0;}
+a {text-decoration: none;
+    color: #2D1C15;
+    outline: none;}
+ul , ol {list-style: none;}
+img {border: none;
+        vertical-align: bottom;}
+
+body {font-family: "Orbit", serif;}
+
+/* Layout */
+.header {width: 100%;
+        height: 150px;
+        position: fixed;
+        z-index: 999;}
+.contents {perspective: 1500px;}
+.contents>div {display: none;
+    
+}
+
+.contents>div.on {display: block;}
+
+/* 헤더 설정 */
+
+.header {display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header .logo {}
+
+.header .logo a {font-size: 60px;
+                color: #6A2F0B;
+                font-family: "Gaegu", serif;
+                display: block;
+                padding: 10px;}
+
+.header .logo a:hover {opacity: 0.7;}
+
+
+.gnb {}
+.gnb>ul {display: flex;}
+.gnb>ul>li {}
+.gnb>ul>li>a {display: block;
+        font-size: 18px;
+        padding: 20px;}
+
+.gnb>ul>li>a:hover {opacity: 0.7;}
+
+
+.util {position: relative;}
+.util ul {display: flex;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-top: -90px;
+        margin-left: 750px;
+}
+.util li {}
+.util a {display: block;
+        color: #FF9DD5;
+        padding-top: 10px;
+        padding-left: 30px;
+        position: relative;}
+
+.util .num {position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: tomato;
+            font-size: 12px;
+            right: -8px;
+            top: -1px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            text-align: center;}
+
+.util a:hover {opacity: 0.7;}
+
+.util span {display: inline-block;
+            text-indent: -9999px;}
+.util i {font-size: 30px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 메인페이지 설정 */
+
+        /* hero설정 */
+        .hero {width: 100%;
+                height: 100vh;
+                position: relative;}
+        .mainimg {width: 100%;
+                height: 100%;
+                overflow: hidden;}
+
+        .mainimg img {width: 100%;}
+
+        /* info 설정 */
+        .info {padding: 50px 0;
+                background-color: #fff5f5;}
+
+        .info h2 {font-size: 60px;
+                text-align: center;
+                letter-spacing: 10px;
+                position: relative;
+                padding: 20px 0 0 0;
+                font-family: "gaegu", serif;
+                color: #6A2F0B;}
+
+        .info p {text-align: center;
+                font-size: 20px;
+                padding: 30px 0 60px 0;
+                color: #6A2F0B;}
+
+        .info .list {}
+
+        .info .list ul {display: flex;
+                        justify-content: center;}
+
+        .info .list li {margin: 0 10px;
+                                position: relative;}
+        
+        .info .list img {width: 100%;
+                        height: auto;
+                        position: relative;
+                        z-index: 2;}
+        
+        .info .list .line img {position: absolute;
+                                top: 0;
+                                left: 0;
+                                opacity: 0;}
+
+        .info .list .text {width: 100%;
+                        text-align: center;
+                        transition: all 0.7s;
+                        transform: translateY(-200px);
+                        position: relative;
+                        opacity: 0;}
+
+
+        .info .list li:hover .text {transform: translateY(0);
+                                        opacity: 1;}
+
+        .info .list li:hover .line img {opacity: 1;}
+
+
+
+
+
+        .info .list .name {font-size: 25px;
+                                padding: 10px 0 0 0;}
+
+        .info .list .txt {font-size: 18px;
+                        padding: 15px 0;}
+
+
+        /* 베스트 상품 설정 */
+
+        .pro {background-image: url(img/best_bg.png);
+               height: 1024px;}
+
+        .pro h2 {font-size: 60px;
+                text-align: center;
+                letter-spacing: 10px;
+                position: relative;
+                padding: 20px 0 0 0;
+                font-family: "gaegu", serif;
+                color: #6A2F0B;}
+
+        .pro_list {width: 100%;
+                        margin: 0 auto;
+                        position: relative;
+                        display: flex;
+                        justify-content: center;}
+        .pro_list .left {position: absolute;
+                        font-size: 50px;
+                        color: #FFBFE4;
+                        display: flex;
+                        left: 0;
+                        top: 50%;
+                        margin-top: -20px;}
+                
+        .pro_list .right {position: absolute;
+                        font-size: 50px;
+                        color: #FFBFE4;
+                        display: flex;
+                        right: 0;
+                        top: 50%;
+                        margin-top: -20px;}
+        .pro_list .container {
+                                background-color: tomato;
+                                width: calc(636px * 2);
+                                height: 1000px;
+                                overflow: hidden;
+                                position: relative;}
+
+        .pro_list .container ul {display: flex;
+                                justify-content: center;
+                                position: absolute;
+                                top: 50%;
+                                left: 0;
+                                margin-top: -318px;}
+
+        .pro_list .container li {margin: 0 50px;
+                                position: relative;
+                        }
+        .pro_list .container li img {width: 100%;
+                                        height: auto;
+                                        position: relative;
+                                        transition: all 0.8s;}
+        .pro_list .container li .img {width: 100%;
+                                        transition: all 0.8s;
+                                        transform: rotateY(180deg);
+                                        position: absolute;
+                                        opacity: 0;
+                                        display: flex;
+                                        left: 0;
+                                        top: 0;}
+
+
+                                        /* .pro_list .container {
+                                                display: flex;
+                                                width: 200%;
+                                                height: 1000px;
+                                                overflow: hidden;
+                                                position: relative;
+                                            } 
+                                            
+                                            .pro_list .container ul {
+                                                display: flex;
+                                                width: 100%;
+                                                animation: slide 40s linear infinite;
+                                            }
+                                            
+                                            .pro_list .container ul:nth-child(2) {
+                                                position: absolute;
+                                                left: 100%; 
+                                                animation: slide 40s linear infinite;
+                                            }
+                                            
+                                            @keyframes slide {
+                                                0% { transform: translateX(0); }
+                                                100% { transform: translateX(-100%); }
+                                            }
+                                            
+                                            .pro_list .container:hover ul {
+                                                animation-play-state: paused;
+                                            }*/
+                                            
+
+        
+
+
+        .pro_list .container ul:nth-child(1) {left: 0;
+                                                        animation: ani1 40s linear infinite;}
+        .pro_list .container ul:nth-child(2) {left: 100%;
+                                                        animation: ani2 40s linear infinite;}
+
+        .pro_list .container:hover ul:nth-child(1) {animation-play-state: paused;}
+
+        .pro_list .container:hover ul:nth-child(2) {animation-play-state: paused;}
+
+
+
+
+/* 
+        @keyframes ani1 {
+                0% {transform: translateX(0);}
+                100% {transform: translateX(-100%);}
+        }
+
+        @keyframes ani2 {
+                0% {transform: translateX(0);}
+                100% {transform: translateX(-100%);} 
+        } */
+
+
+        .pro_list .container li:hover .img {opacity: 1;
+                                                transform: rotateY(0);}
+        .pro_list .container li:hover img {opacity: 1;
+                                                transform: rotateY(180deg);}
+
+
+
+
+
+/* 프로덕트 페이지 설정 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 로그인페이지 설정 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
