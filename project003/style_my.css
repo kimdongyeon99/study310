@@ -1,0 +1,485 @@
+/* 언어설정 */
+@charset 'utf-8';
+
+/* Reset CSS */
+
+* {margin: 0;
+    padding: 0;}
+
+ul,ol {list-style: none;}
+
+a {text-decoration: none;
+    color: #fff;}
+
+img {border: none;
+    vertical-align: bottom;}
+
+body {font-family: "Intensa Fuente", sans-serif;}
+
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GangwonEduModu-Light';
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/GangwonEduModu/GangwonEduModu-Light.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/GangwonEduModu/GangwonEduModu-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+            
+/* wrap 설정 */
+#wrap {position: relative;
+    perspective: 800px;  /* 700 ~ 900이 가장 이상적임 */
+    overflow: hidden;}  
+
+/* nav 설정 */
+nav {position: fixed;
+width: 192px;
+left: 50px;
+top: 50%;
+margin-top: -190px;
+z-index: 999;}
+
+nav ul {}
+
+nav li {width: 192px;
+    height: 50px;
+    line-height: 2.5;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #fff;}
+
+nav li:hover {font-size: 35px;
+            color: #fff;
+            text-shadow: 0px 0px 20px #FFE500;}
+            
+nav li.on {font-size: 35px;
+        color: #fff;
+        text-shadow: 0px 0px 30px #FFE500;}                
+
+/* section 설정 */
+
+#wrap>div {width: 100%;
+        height: 100vh;
+        font-size: 150px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+
+
+/* 박스 1 설정 */
+.box1 {position: relative;}
+.box1 video {width: 100%;}
+.box1 img {width: 871px;
+            height: 784px;
+            position: absolute;
+            top: 50%;
+            margin-top: -350px;
+            right: 0;
+            margin-right: 150px;}
+
+
+/* 박스2 설정 */
+.box2 {background-color: plum;}
+
+
+/* 박스3 설정 */
+.box3 {}
+
+.box3 .inner {position: relative;}
+
+
+/* 박스3 메인설정 */
+.box3 .main {display: none;}
+
+.box3 .main.on {display: block;}
+
+.box3 .inner .main .bg1 {width: 100%}
+
+.box3 .main img {}
+
+.box3 .main .maininner {}
+
+.box3 .main .maininner img {}
+
+.box3 .main .maininner img:nth-child(1) {width: 253px;
+                                        height: 497px;
+                                        position: absolute;
+                                        bottom: 50px;
+                                        left: 0;
+                                        margin-left: 300px;
+                                        cursor: pointer;}
+
+.box3 .main .maininner img:nth-child(2) {width: 184px;
+                                        height: 295px;
+                                        position: absolute;
+                                        bottom: 50px;
+                                        left: 50%;
+                                        margin-left: -360px;
+                                        cursor: pointer;}
+
+.box3 .main .maininner img:nth-child(3) {width: 272px;
+                                        height: 240px;
+                                        position: absolute;
+                                        bottom: 50px;
+                                        left: 50%;
+                                        margin-left: -136px;
+                                        cursor: pointer;}
+
+.box3 .main .maininner img:nth-child(4) {width: 215px;
+                                        height: 329px;
+                                        position: absolute;
+                                        bottom: 50px;
+                                        right: 50%;
+                                        margin-right: -360px;
+                                        cursor: pointer;}
+
+.box3 .main .maininner img:nth-child(5) {width: 189px;
+                                        height: 357px;
+                                        position: absolute;
+                                        bottom: 50px;
+                                        right: 0;
+                                        margin-right: 400px;
+                                        cursor: pointer;}
+
+
+
+
+
+
+
+
+/* 서브1 설정 ###############################################################################################################*/
+.box3 .inner .sub1 {display: none;
+                    position: relative;
+                    width: 1920px;
+                    height: 1080px;}
+
+.box3 .inner .sub1.on {display: block;}
+
+
+.box3 .inner .sub1 .bg2 {width: 100%;
+                        height: 100vh;
+                        object-fit: cover;}
+
+.box3 .inner .sub1 .name {position: absolute;
+                            top: 100px;
+                            left: 50%;
+                            margin-left: -380px;}
+
+.sub1.on .subinner img:nth-child(1) {display: none;}
+
+.sub1.on .big1 {display: block;}
+                                                        
+.sub1 .big1 {position: absolute;
+            bottom: -10px;
+            left: 0;;}
+
+
+.box3 .inner .sub1 .txt {font-size: 36px;}
+
+.box3 .inner .sub1 .txt p {display: block;
+                            position: absolute;
+                            top: 50%;
+                            margin-top: -200px;
+                            right: 450px;
+                            text-align: center;
+                            line-height: 1.8;
+                            font-family: 'GangwonEdu_OTFBoldA';}
+
+.box3 .inner .sub1 .txt span {display: block;
+                                position: absolute;
+                                top: 50%;
+                                margin-top: -20px;
+                                right: 50%;
+                                margin-right: -380px;
+                                font-family: 'GangwonEduModu-Light', sans-serif;
+                                text-shadow: 0px 0px 20px #FFE500;}
+
+
+/* 서브2 설정 */
+.box3 .inner .sub2 {display: none;
+                    position: relative;
+                    width: 1920px;
+                    height: 1080px;}
+
+.box3 .inner .sub2.on {display: block;}
+
+.box3 .inner .sub2 .bg3 {width: 100%;
+                    height: 100vh;
+                    object-fit: cover;}
+
+.box3 .inner .sub2 .name {position: absolute;
+                            top: 150px;
+                            left: 50%;
+                            margin-left: -50px;}
+
+.sub2.on .subinner img:nth-child(2) {display: none;}
+
+.sub2.on .big2 {display: block;}
+                                                        
+.sub2 .big2 {position: absolute;
+            bottom: 50px;
+            left: 0;
+            margin-left: 400px;}
+
+.box3 .inner .sub2 .txt {font-size: 36px;}
+
+.box3 .inner .sub2 .txt p {display: block;
+                            position: absolute;
+                            top: 50%;
+                            margin-top: -200px;
+                            right: 150px;
+                            text-align: center;
+                            line-height: 1.8;
+                            font-family: 'GangwonEdu_OTFBoldA';}
+                        
+.box3 .inner .sub2 .txt span {display: block;
+                                position: absolute;
+                                top: 50%;
+                                margin-top: -20px;
+                                right: 160px;
+                                font-family: 'GangwonEduModu-Light', sans-serif;
+                                text-shadow: 0px 0px 20px #00B2FF;}
+
+
+
+
+
+/* 서브3 설정 */
+.box3 .inner .sub3 {display: none;
+                    position: relative;
+                    width: 1920px;
+                    height: 1080px;}
+
+.box3 .inner .sub3.on {display: block;}
+
+.box3 .inner .sub3 .bg4 {width: 100%;
+                        height: 100vh;
+                        object-fit: cover;}
+
+.box3 .inner .sub3 .name {position: absolute;
+                            top: 100px;
+                            left: 50%;
+                            margin-left: -250px;}
+
+.sub3.on .subinner img:nth-child(3) {display: none;}
+
+.sub3.on .big3 {display: block;}
+                            
+.sub3 .big3 {position: absolute;
+            bottom: -10px;
+            right: 50%;
+            margin-right: -490px;}
+      
+.box3 .inner .sub3 .txt {font-size: 36px;}
+
+.box3 .inner .sub3 .txt p {display: block;
+                            position: absolute;
+                            top: 0;
+                            margin-top: 330px;
+                            right: 50%;
+                            margin-right: -400px;
+                            text-align: center;
+                            line-height: 1.8;
+                            font-family: 'GangwonEdu_OTFBoldA';}
+                                                                        
+.box3 .inner .sub3 .txt span {display: block;
+                                position: absolute;
+                                top: 50%;
+                                right: 160px;
+                                font-family: 'GangwonEduModu-Light', sans-serif;
+                                text-shadow: 0px 0px 20px #FF0000;}
+
+
+
+/* 서브4 설정 */
+.box3 .inner .sub4 {display: none;
+                    position: relative;
+                    width: 1920px;
+                    height: 1080px;}
+
+.box4 .inner .sub4.on {display: block;}
+
+
+.box3 .inner .sub4 .bg5 {width: 100%;
+                        height: 100vh;
+                        object-fit: cover;}
+
+.box3 .inner .sub4 .name {position: absolute;
+                            top: 100px;
+                            left: 50%;
+                            margin-left: -350px;}
+
+.sub4.on .subinner img:nth-child(4) {display: none;}
+
+.sub4.on .big4 {display: block;}
+                            
+.sub4 .big4 {position: absolute;
+            bottom: 20px;
+            right: 120px;}
+
+.box3 .inner .sub4 .txt {font-size: 36px;}
+
+.box3 .inner .sub4 .txt p {display: block;
+                            position: absolute;
+                            top: 50%;
+                            margin-top: -200px;
+                            right: 50%;
+                            margin-right: -200px;
+                            text-align: center;
+                            line-height: 1.8;
+                            font-family: 'GangwonEdu_OTFBoldA';}
+                                                                            
+.box3 .inner .sub4 .txt span {display: block;
+                                position: absolute;
+                                top: 50%;
+                                right: 50%;
+                                margin-right: -150px;
+                                font-family: 'GangwonEduModu-Light', sans-serif;
+                                text-shadow: 0px 0px 20px #62FF3A;}
+
+
+
+/* 서브5 설정 */
+.box3 .inner .sub5 {display: none;
+                    position: relative;
+                    width: 1920px;
+                    height: 1080px;}
+
+.box3 .inner .sub.on {display: block;}
+
+.box3 .inner .sub5 .bg6 {width: 100%;
+                        height: 100vh;
+                        object-fit: cover;}
+
+.box3 .inner .sub5 .name {position: absolute;
+                            top: 100px;
+                            left: 50%;
+                            margin-left: -350px;}
+
+.sub5.on .subinner img:nth-child(5) {display: none;}
+
+.sub5.on .big5 {display: block;}
+
+.sub5 .big5 {position: absolute;
+            bottom: 20px;
+            right: 0;
+            margin-right: -50px;}
+
+
+.box3 .inner .sub5 .txt {font-size: 36px;}
+
+.box3 .inner .sub5 .txt p {display: block;
+                            position: absolute;
+                            top: 0;
+                            margin-top: 350px;
+                            right: 50%;
+                            margin-right: -270px;
+                            text-align: center;
+                            line-height: 1.8;
+                            font-family: 'GangwonEdu_OTFBoldA';}
+                                                                        
+.box3 .inner .sub5 .txt span {display: block;
+                                position: absolute;
+                                top: 50%;
+                                right: 50%;
+                                margin-right: -220px;
+                                font-family: 'GangwonEduModu-Light', sans-serif;
+                                text-shadow: 0px 0px 20px #BD00FF;}
+
+
+
+
+/* 서브 공동설정 */
+
+.subinner>img:nth-child(1) {position: absolute;
+                            bottom: 50px;
+                            left: 0;
+                            margin-left: 200px;
+                            cursor: pointer;}
+                            
+.subinner>img:nth-child(2) {position: absolute;
+                            bottom: 50px;
+                            left: 50%;
+                            margin-left: -350px;
+                            cursor: pointer;}
+
+.subinner>img:nth-child(3) {position: absolute;
+                            bottom: 50px;
+                            left: 50%;
+                            margin-left: -30px;
+                            cursor: pointer;}
+
+.subinner>img:nth-child(4) {position: absolute;
+                            bottom: 50px;
+                            right: 0;
+                            margin-right: 360px;
+                            cursor: pointer;}
+
+.subinner>img:nth-child(5) {position: absolute;
+                            bottom: 50px;
+                            right: 50px;
+                            cursor: pointer;}
+
+
+
+
+
+
+
+
+
+
+.box4 {background-color: burlywood;}
+
+.box5 {background-color: cornflowerblue;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

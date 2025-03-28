@@ -209,6 +209,74 @@ Family  가족
 
 
 
+챗지피티가 써준 소스
+
+/* 이미지 회전 효과 */
+.container .imgcon img {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* 마우스를 올렸을 때 이미지 회전 */
+.container .imgcon:hover img {
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+
+/* 이미지 박스 설정 */
+.container .imgcon .img_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* img_box 내부 이미지 설정 */
+.container .imgcon .img_box img {
+    transform: rotateY(180deg);
+    transition: transform 0.5s ease;
+}
+
+/* 마우스를 올렸을 때 img_box가 보이도록 설정 */
+.container .imgcon:hover .img_box {
+    opacity: 1;
+}
+
+/* img_box 내부 이미지 정방향 회전 */
+.container .imgcon:hover .img_box img {
+    transform: rotateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

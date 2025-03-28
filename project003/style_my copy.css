@@ -1,0 +1,308 @@
+/* 언어설정 */
+@charset 'utf-8';
+
+/* Reset CSS */
+
+* {margin: 0;
+    padding: 0;}
+
+ul,ol {list-style: none;}
+
+a {text-decoration: none;
+    color: #fff;}
+
+img {border: none;
+    vertical-align: bottom;}
+
+body {font-family: "Intensa Fuente", sans-serif;}
+
+/* wrap 설정 */
+#wrap {position: relative;
+    perspective: 800px;  /* 700 ~ 900이 가장 이상적임 */
+    overflow: hidden;
+}  
+
+/* nav 설정 */
+nav {position: fixed;
+width: 192px;
+left: 50px;
+top: 50%;
+margin-top: -190px;
+z-index: 999;}
+
+nav ul {}
+
+nav li {width: 192px;
+    height: 50px;
+    line-height: 2.5;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #fff;}
+
+nav li:hover {font-size: 35px;
+            color: #fff;
+            text-shadow: 0px 0px 20px #FFE500;}
+            
+nav li.on {font-size: 35px;
+        color: #fff;
+        text-shadow: 0px 0px 30px #FFE500;}                
+
+/* section 설정 */
+
+#wrap>div {width: 100%;
+        height: 100vh;
+        font-size: 150px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+
+
+/* 박스 1 설정 */
+.home {position: relative;}
+.home video {width: 100%;}
+.home img {width: 871px;
+            height: 784px;
+            position: absolute;
+            top: 50%;
+            margin-top: -350px;
+            right: 0;
+            margin-right: 150px;}
+
+
+/* 박스2 설정 */
+.box2 {background-color: plum;}
+
+
+/* profile 설정 */
+.pro {position: relative;}
+
+.pro .proinner {}
+
+
+/* profile 메인설정 */
+.proinner.bg1 {width: 100%;}
+
+.pro .proinner .img {}
+
+.box3 .main img {}
+
+.box3 .main .maininner {}
+
+.box3 .main .maininner img {}
+
+.box3 .main .maininner img:nth-child(1) {width: 253px;
+                                        height: 497px;
+                                        position: absolute;
+                                        bottom: 50px;
+                                        left: 0;
+                                        margin-left: 300px;}
+
+.box3 .main .maininner img:nth-child(2) {width: 184px;
+                                        height: 295px;
+                                        position: absolute;
+                                        bottom: 50px;
+                                        left: 50%;
+                                        margin-left: -360px;}
+
+.box3 .main .maininner img:nth-child(3) {width: 272px;
+                                        height: 240px;
+                                        position: absolute;
+                                        bottom: 50px;
+                                        left: 50%;
+                                        margin-left: -136px;}
+
+.box3 .main .maininner img:nth-child(4) {width: 215px;
+                                        height: 329px;
+                                        position: absolute;
+                                        bottom: 50px;
+                                        right: 50%;
+                                        margin-right: -360px;}
+
+.box3 .main .maininner img:nth-child(5) {width: 189px;
+                                        height: 357px;
+                                        position: absolute;
+                                        bottom: 50px;
+                                        right: 0;
+                                        margin-right: 400px;}
+
+
+/* 서브1 설정 */
+.box3 .inner .sub1 {display: none;}
+.box3 .inner .sub1 .bg2 {width: 100%;}
+.box3 .inner .sub1 img {}
+.box3 .inner .sub1 .subinner{}
+.box3 .inner .sub1 .subinner img {}
+.box3 .inner .sub1 .subinner img:nth-child(1) {width: 585px;
+                                                height: 1025px;
+                                                position: absolute;
+                                                bottom: 50px;
+                                                left: 0;
+                                                margin-left: 150px;}
+
+.box3 .inner .sub1 .subinner img:nth-child(2) {width: 204px;
+                                                height: 315px;
+                                                position: absolute;
+                                                bottom: 50px;
+                                                left: 50%;
+                                                margin-left: -360px;}
+.box3 .inner .sub1 .subinner img:nth-child(3) {}
+.box3 .inner .sub1 .subinner img:nth-child(4) {}
+.box3 .inner .sub1 .subinner img:nth-child(5) {}
+
+
+/* 서브2 설정 */
+.box3 .inner .sub2 {display: none;}
+.box3 .inner .sub2 img {}
+.box3 .inner .sub2 .subinner{}
+.box3 .inner .sub2 .subinner img {}
+.box3 .inner .sub2 .subinner img:nth-child(1) {}
+.box3 .inner .sub2 .subinner img:nth-child(2) {}
+.box3 .inner .sub2 .subinner img:nth-child(3) {}
+.box3 .inner .sub2 .subinner img:nth-child(4) {}
+.box3 .inner .sub2 .subinner img:nth-child(5) {}
+
+
+/* 서브3 설정 */
+.box3 .inner .sub3 {display: none;}
+.box3 .inner .sub3 img {}
+.box3 .inner .sub3 .subinner{}
+.box3 .inner .sub3 .subinner img {}
+.box3 .inner .sub3 .subinner img:nth-child(1) {}
+.box3 .inner .sub3 .subinner img:nth-child(2) {}
+.box3 .inner .sub3 .subinner img:nth-child(3) {}
+.box3 .inner .sub3 .subinner img:nth-child(4) {}
+.box3 .inner .sub3 .subinner img:nth-child(5) {}
+
+
+/* 서브4 설정 */
+.box3 .inner .sub4 {display: none;}
+.box3 .inner .sub4 img {}
+.box3 .inner .sub4 .subinner{}
+.box3 .inner .sub4 .subinner img {}
+.box3 .inner .sub4 .subinner img:nth-child(1) {}
+.box3 .inner .sub4 .subinner img:nth-child(2) {}
+.box3 .inner .sub4 .subinner img:nth-child(3) {}
+.box3 .inner .sub4 .subinner img:nth-child(4) {}
+.box3 .inner .sub4 .subinner img:nth-child(5) {}
+
+
+/* 서브5 설정 */
+.box3 .inner .sub5 {display: none;}
+.box3 .inner .sub5 img {}
+.box3 .inner .sub5 .subinner{}
+.box3 .inner .sub5 .subinner img {}
+.box3 .inner .sub5 .subinner img:nth-child(1) {}
+.box3 .inner .sub5 .subinner img:nth-child(2) {}
+.box3 .inner .sub5 .subinner img:nth-child(3) {}
+.box3 .inner .sub5 .subinner img:nth-child(4) {}
+.box3 .inner .sub5 .subinner img:nth-child(5) {}
+
+
+
+
+
+
+
+/* .box3 {}
+
+.box3 .mainbg {position: relative;
+    display: none;}
+
+.box3 .mainbg .img001 {}
+
+.box3 .mainbg .img001 img {}
+
+.box3 .inner {display: flex;}
+
+.inner .joy {position: absolute;
+            bottom: 50px;
+            left: 0;
+            margin-left: 300px;}
+
+.inner .joy img {}
+
+.inner .sad {position: absolute;
+            bottom: 50px;
+            left: 50%;
+            margin-left: -360px;}
+
+.inner .sad img {}
+
+.inner .ang {position: absolute;
+            bottom: 50px;
+            left: 50%;
+            margin-left: -136px;}
+
+.inner .ang img {}
+
+.inner .dis {position: absolute;
+            bottom: 50px;
+            right: 50%;
+            margin-right: -360px;}
+
+.inner .dis img {}
+
+.inner .fea {position: absolute;
+            bottom: 50px;
+            right: 0;
+            margin-right: 400px;}
+
+.inner .fea img {}
+
+.box3 .mh {display: none;}
+
+.box3 .mh .joypg {display: block;}
+ */
+
+
+
+
+
+.box4 {background-color: burlywood;}
+
+.box5 {background-color: cornflowerblue;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
