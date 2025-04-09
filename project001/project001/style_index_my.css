@@ -1,0 +1,1610 @@
+/* 언어설정 */
+@charset 'utf-8';
+
+/* 구글폰트 연결 */
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Nanum+Gothic&display=swap');
+
+/* 전체설정 */
+* {margin: 0;
+    padding: 0;}
+ul,ol {list-style: none;}
+a {text-decoration: none;
+    color: #292929;}
+img {border: none;
+    vertical-align: bottom;}
+
+
+
+
+
+
+/* 레이아웃 설정
+#wrap {display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;}
+
+.header {display: flex;
+        width: 100%;
+        height: 1024px;
+        background-color: yellowgreen;}
+
+.logo {width: 30%;
+        height: 100px;
+        background-color: palevioletred; }  
+
+.menu {width: 70%;
+        height: 100px;
+        background-color: paleturquoise; }  
+
+.education {width: 100%;
+            height: 320px;
+            background-color: wheat;
+        }
+
+.sizetype {width: 100%;
+            height: 750px;
+            background-color: #FFF7E0;}
+
+.adoption {width: 100%;
+            height: 920px;
+            background-color: #FFF7E0;
+        }
+
+.procedure {width: 100%;
+            height: 1024px;
+            background-color: #FFF7E0;
+        }
+
+.adoptionreview {width: 100%;
+                height: 1024px;
+                background-color: #FFF7E0;
+        }
+
+.find {width: 50%;
+            height: 880px;
+            background-color: #FFF7E0;}
+
+.tabBar {width: 50%;
+            height: 880px;
+            background-color: steelblue;}
+
+.video {width: 100%;
+        height: 1000px;
+        background-color: thistle;}
+
+.structural {width: 100%;
+            height: 630px;
+            background-color: springgreen;}
+
+.faq {width: 100%;
+    height: 700px;
+    background-color: slategray;}
+
+.notice {width: 100%;
+        height: 710px;
+        background-color: slateblue;}
+
+.location {width: 100%;
+        height: 620px;
+  
+        background-color: skyblue;}
+
+.footer {width: 100%;
+        height: 290px;
+        background-color: midnightblue;} */
+
+
+/* 내용 작성 */
+/* 랜딩페이지 */
+#wrap {}
+
+/* .header {display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        box-sizing: border-box;}
+.header .head_img {}
+.header .head_img img {} */
+
+.header {display: flex;
+        background-image: url(img/landing.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        flex-wrap: wrap;
+        width: 1920px;
+        box-sizing: border-box;
+        position: relative;}
+
+.head_inner {}
+
+.head_inner .logo {width: 30%;
+                position: absolute;
+                top: 0;
+                right: 50%;
+                margin-right: 300px;}
+
+.head_inner .menu {width: 70%;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                margin-left: -370px;}
+
+
+.head_inner .logo h1 {padding-top: 5%;
+        font-family: "Nanum Gothic", serif;}
+
+.head_inner .logo h1 a {color: #fff;
+        font-weight: bold;
+        padding: 10px 20px;}
+
+.head_inner .menu {}
+
+.head_inner .menu ul {
+                        display: flex;
+                        flex-wrap: nowrap;
+                }
+
+.head_inner .menu ul li { background-color: rgba(255, 255, 255, 0.8);
+                width: 70%;
+                height: 100px;}
+
+.head_inner .menu ul li a {display: block;
+                padding-top: 30px;
+                padding-left: 40px;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 18px;
+                font-family: "Nanum Gothic", serif;
+                align-items: center;
+                text-align: center;}
+
+/* 입양 전 교육 */
+.education {background-color: #fff7e0;
+                position: relative;}
+
+.edu_inner {text-align: center;}
+
+.edu_inner h2 {color: #ff9900;
+                text-align: center;
+                padding-top: 60px;
+                padding-bottom: 30px;
+                font-family: "Gowun Batang", serif;
+                font-size: 35px;}
+
+.edu_inner .textBox {display:block;
+                        /* width: 1100px; */
+                        padding: 7px 40px;
+                        box-sizing: border-box;
+                        text-align: center;
+                        border: 2px solid #292929;
+                        border-radius: 10px;
+                        background-color: #fff;
+                        }
+
+.edu_inner .textBox p {display: block;
+                        text-align: center;
+                        padding: 5px;
+                        font-family: "Nanum Gothic", serif;
+                        font-size: 18px;}
+
+/* 동물 종류타입 */
+.sizetype {background-color: #FFFCF3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;}
+
+.sizetype .size_inner {
+                        width: 100%;
+                        box-sizing: border-box;}
+
+.size_inner .listBox {}
+
+.size_inner .listBox .search {margin-top: 800px;}
+
+.size_inner .listBox .search form {position: relative;}
+
+.size_inner .listBox .search form i {width: 20px;
+                                        height: 30px;
+                                        position: absolute;
+                                        padding-top: 22px;
+                                        padding-left: 10px;}
+                                        
+
+.size_inner .listBox .search form input {width: 30%;
+                                        height: 60px;
+                                        background-color: #EDEDED;
+                                        border: none;
+                                        border-radius: 15px;
+                                        font-size: 26px;
+                                        padding-left: 35px;}
+
+.size_inner .listBox .list {margin-left: 15px;}
+
+.size_inner .listBox .list ul {}
+
+.size_inner .listBox .list ul li {width: 27%;
+                                margin-top: 30px;
+                                padding-bottom: 15px;
+                                border-bottom: #FFB800 1px solid;
+                                }
+
+.size_inner .listBox .list ul li a {font-size: 20px;
+                                        font-weight: normal;
+                                        font-family: "Nanum Gothic", serif;
+                                        padding: 5px;}
+
+.size_inner .listBox .list ul li:hover a {font-size: 20px;
+                                        font-weight: bold;
+                                        font-family: "Nanum Gothic", serif;
+                                        color: #FFB800;}
+
+
+
+
+.size_inner .imgBox {width: 70%;
+                        margin: 0;}
+
+.size_inner .imgBox ul {display: flex;
+                        position: relative;
+                        flex-wrap: wrap;
+                        justify-content: flex-end;}
+
+.size_inner .imgBox ul li {width: 50%;
+                        align-content: center;
+                        position: relative;}
+
+.size_inner .imgBox ul li img {width: 98%;
+                                height: 220px;
+                                align-items: center;
+                                transform: translate(400px , -490px);}
+                                
+.size_inner .imgBox ul li:nth-child(odd) img {margin-right: 15px;
+                                                margin-bottom: 30px;
+                                                border-radius: 20px;}
+                                                    
+.size_inner .imgBox ul li:nth-child(even) img {margin-left: 20px;
+                                                margin-bottom: 30px;
+                                                border-radius: 20px;}
+                                                    
+
+
+.size_inner .imgBox ul li h2 {font-size: 40px;
+                        font-family: "Nanum Gothic", serif;
+                        width: 100%;
+                        position: absolute;
+                        color: #fff;
+                        z-index: 1;
+                        transform: translate(400px, -680px);
+                        text-align: center;}
+                                    
+
+
+.size_inner .imgBox ul li .more {display: inline-block;
+                                padding-left: 10px;
+                                padding-top: 2px;
+                                width: 110px;
+                                height: 30px;
+                                position: absolute;
+                                box-sizing: border-box;
+                                border-radius: 10px;
+                                background-color: rgba(255, 255, 255, 0.7);
+                                z-index: 2;
+                                transform: translate(555px, -620px);}
+
+.size_inner .imgBox ul li .more a {font-size: 18px;
+                                text-align: center;
+                                align-items: center;}
+
+.size_inner .btn ul {}
+
+.size_inner .btn ul li {}
+
+.size_inner .btn ul li a {}
+
+
+.size_inner .btn ul li:nth-child(1):hover {background-color: #FFB800;}
+    
+
+.size_inner .btn ul li:nth-child(2):hover {background-color: #FFB800;}
+    
+
+.size_inner .btn ul li i {margin-left: 11px;
+                        margin-top: 9px;}
+
+
+.size_inner .btn ul li:nth-child(1) {width: 35px;
+                        height: 35px;
+                        position: absolute;
+                        background-color: #FFEDD1;
+                        border-radius: 100px;
+                        transform: translate(1300px , -780px);}
+
+.size_inner .btn ul li:nth-child(2) {width: 35px;
+                        height: 35px;
+                        position: absolute;
+                        background-color: #FFEDD1;
+                        border-radius: 100px;
+                        transform: translate(1300px , -720px);}
+    
+    
+
+
+
+/*  입양 동물 안내*/ 
+
+.adoption {
+        /* background-color: #FFF7E0; */
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        
+}
+
+.adop_inner {background-color: #FFEDD1;
+                display: block;
+                width: 100%;
+                height: 720px;
+                border-radius: 30px;
+                box-sizing: border-box;
+                overflow: hidden;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50% , -50%);
+                }
+
+.adop_inner .txtBox {}
+
+.adop_inner .txtBox h2 {font-size: 45px;
+                        font-weight: bold;
+                        font-family: "Gowun Batang", serif;
+                        color: #ff9900;
+                        padding-left: 70px;
+                        padding-top: 200px;
+                        padding-bottom: 10px;}
+
+.adop_inner .txtBox p {font-size: 22px;
+                        font-weight: normal;
+                        font-family: "Nanum Gothic", serif;
+                        color: #ff9900;
+                        padding-left: 70px;
+                        padding-top: 10px;}
+
+.adop_inner .imgBox {display: block;
+                        position: relative;}
+
+.adop_inner .imgBox .left {width: 6%;
+                                height: 70px;
+                                position: absolute;
+                                top: 215px;
+                                left: 420px;
+                                background-color: rgba(255, 255, 255, 0.8);
+                                border-radius: 100px;
+                                z-index: 2;}
+
+.adop_inner .imgBox .left:hover {background-color: #fff;}
+
+.adop_inner .imgBox .left i {margin-top: 26px;
+                                margin-left: 30px;}
+
+.adop_inner .imgBox .right {width: 6%;
+                                height: 70px;
+                                position: absolute;
+                                top: 215px;
+                                left: 1090px;
+                                background-color: rgba(255, 255, 255, 0.8);
+                                border-radius: 100px;}
+
+.adop_inner .imgBox .right:hover {background-color: #fff;}
+
+.adop_inner .imgBox .right i {margin-top: 26px;
+                                margin-left: 30px;}
+
+.adop_inner .imgBox .img_con ul {display: flex;
+                                margin-left: 35%;
+                                margin-top: -25%;
+                                flex-wrap: nowrap;
+                                flex-direction: row;}
+
+.adop_inner .imgBox .img_con ul li {width: 100%;
+                                        margin-left: 15px;
+                                        position: relative;}
+
+
+.adop_inner .imgBox .img_con ul li a {display: block;
+                                        border: solid 1px #000;
+                                        border: none;
+                                        background-color: #fff;
+                                        width: 100%;
+                                        height: 550px;
+                                        margin-left: 15px;
+                                        border-radius: 10px;}
+
+.adop_inner .imgBox .img_con ul li a img {display: block;
+                                                width: 90%;
+                                                height: 400px;
+                                                padding: 20px 15px;}
+
+.adop_inner .imgBox .img_con ul li a h2 {display: block;
+                                        width: 300px;
+                                        font-size: 24px;
+                                        font-family: "Nanum Gothic", serif;
+                                        padding-top: 15px;
+                                        padding-left: 20px;}
+
+.adop_inner .imgBox .img_con ul li a .year {position: absolute;
+                                                top: 95%;
+                                                left: 80%;
+                                                font-size: 12px;
+                                                font-family: "Nanum Gothic", serif;
+                                                z-index: 1;}
+
+/* 입양신청 절차 안내 */
+.procedure {background-color: #FFF7E0;
+                display: flex;
+                flex-wrap: wrap;
+                position: relative;}
+
+.procedure .pro_inner {display: block;
+                        width: 100%;
+                        height: 1000px;}                
+
+
+.procedure .pro_inner h2 {color: #ff9900;
+                font-size: 36px;
+                font-family: "Gowun Batang", serif;
+                text-align: center;
+                padding-top: 60px;
+                padding-bottom: 30px;
+                font-size: 30px;}
+
+.procedure .pro_inner .midline {text-align: center;
+                font-size: 20px;}
+
+.procedure .pro_inner .midline em {color: #ff9900;
+                font-weight: bold;
+                font-style: normal;}
+
+.pro_inner .text_box {background-color: #fff;
+        width: 1515px; 
+        height: 760px;
+        border-radius: 20px;
+        box-sizing: border-box;
+        position: absolute;
+        transform: translate(-10% , 5%);
+        align-items: center;}
+
+.pro_inner .text_box ul {align-items: center;}
+
+.pro_inner .text_box ul li {}
+
+.pro_inner .text_box ul li:nth-child(1) {display: block;
+                                position: absolute;
+                                border: #FFEDD1 1px solid;
+                                border-radius: 15px;
+                                background-color: #FFEDD1;
+                                width: 440px;
+                                height: 260px;
+                                margin-top: 50px;
+                                margin-left: 60px;}
+
+.pro_inner .text_box ul li:nth-child(2) {display: block;
+                                position: absolute;
+                                border: #FFD28F 1px solid;
+                                border-radius: 15px;
+                                background-color: #FFD28F;
+                                width: 440px;
+                                height: 260px;
+                                margin-top: 50px;
+                                margin-left: 535px;}
+
+.pro_inner .text_box ul li:nth-child(3) {display: block;
+                                position: absolute;
+                                border: #FFEDD1 1px solid;
+                                border-radius: 15px;
+                                background-color: #FFEDD1;
+                                width: 440px;
+                                height: 260px;
+                                margin-top: 50px;
+                                margin-left: 1010px;}
+
+.pro_inner .text_box ul li:nth-child(4) {display: block;
+                                position: absolute;
+                                border: #FFD28F 1px solid;
+                                border-radius: 15px;
+                                background-color: #FFD28F;
+                                width: 440px;
+                                height: 260px;
+                                margin-top: 340px;
+                                margin-left: 60px;}
+
+.pro_inner .text_box ul li:nth-child(5) {display: block;
+                                position: absolute;
+                                border: #FFEDD1 1px solid;
+                                border-radius: 15px;
+                                background-color: #FFEDD1;
+                                width: 440px;
+                                height: 260px;
+                                margin-top: 340px;
+                                margin-left: 535px;}
+
+.pro_inner .text_box ul li:nth-child(6) {display: block;
+                                position: absolute;
+                                border: #FFD28F 1px solid;
+                                border-radius: 15px;
+                                background-color: #FFD28F;
+                                width: 440px;
+                                height: 260px;
+                                margin-top: 340px;
+                                margin-left: 1010px;}
+
+.pro_inner .text_box ul li h3 {font-size: 18px;
+                                font-family: "Nanum Gothic", serif;
+                                text-align: center;
+                                margin-top: 60px;}
+
+.pro_inner .text_box ul li p {font-size: 16px;
+                                font-family: "Nanum Gothic", serif;
+                                text-align: center;
+                                margin-top: 35px;}
+
+
+.pro_inner .text_box ul li h3 em {font-size: 100px;
+                                font-weight: bolder;
+                                font-family: "Gowun Batang", serif;
+                                position: absolute;
+                                top: -10px;
+                                left: 30px;
+                                color: rgba(255, 255, 255, 0.7);}
+
+.pro_inner .text_box .button {display: block;
+                        border: #ff9900 2px solid;
+                        position: absolute;
+                        width: 15%;
+                        height: 60px;
+                        margin-top: 640px;
+                        margin-left: 640px;
+                        text-align: center;
+                        background-color: #FFEDD1;}
+
+.pro_inner .text_box .button a {display: block;
+                                color: #ff9900;
+                                font-size: 20px;
+                                font-weight: bold;
+                                font-family: "Nanum Gothic", serif;
+                                padding: 18px;}
+
+.pro_inner .text_box .button:hover a {}
+
+
+/* 입양후기 */
+
+
+
+.adoptionreview {background-color: #FFF7E0;
+                position: relative;}
+
+.adoptionreview .bg {position: absolute;
+                        right: 50%;
+                        top: 200px;
+                        margin-right: -450px;
+                        border: #FFEDD1 1px solid;
+                        width: 100%;
+                        height: 620px;
+                        background-color: #FFEDD1;
+                        border-top-right-radius: 370px;
+                        border-bottom-right-radius: 370px;
+                        z-index: 1;}
+
+
+.adoptionreview .imgBox_inner {position: absolute;
+                                right: 50%;
+                                top: 200px;
+                                margin-right: -350px;
+                                width: 100%;
+                                height: 620px;
+                                /* display: block;
+                                box-sizing: border-box; */
+                                z-index: 2;}
+                                
+
+.adoptionreview .imgBox_inner ul {display: flex;
+                                flex-wrap: wrap;
+                                flex-direction: row;
+                                justify-content: space-around;
+                                align-items: center;}
+
+.adoptionreview .imgBox_inner ul li {width: 100%;}
+
+.adoptionreview .imgBox_inner ul li a {display: block;
+                                        position: absolute;
+                                        left: 50%;
+                                        top: 0;
+                                        margin-left: -500px;
+                                        border: solid 1px #000;
+                                        border: none;
+                                        background-color: #fff;
+                                        width: 20%;
+                                        height: 370px;
+                                        border-radius: 10px;}
+
+.adoptionreview .imgBox_inner ul li:nth-child(1) {position: absolute;
+                                                top: -100px;
+                                                left: 50%;
+                                                margin-left: -200px;}
+
+.adoptionreview .imgBox_inner ul li:nth-child(2) {position: absolute;
+                                                top: -100px;
+                                                left: 50%;
+                                                margin-left: 150px;}
+
+.adoptionreview .imgBox_inner ul li:nth-child(3) {position: absolute;
+                                                top: 350px;
+                                                left: 50%;
+                                                margin-left: -200px;}
+
+.adoptionreview .imgBox_inner ul li:nth-child(4) {position: absolute;
+                                                top: 350px;
+                                                left: 50%;
+                                                margin-left: 150px;}
+
+
+
+.adoptionreview .imgBox_inner ul li a img {display: block;
+                                        width: 92%;
+                                        height: 240px;
+                                        margin-left: 10px;
+                                        padding-top: 10px;}
+
+.adoptionreview .imgBox_inner ul li a .text {font-size: 14px;
+                                        font-weight: normal;
+                                        font-family: "Nanum Gothic", serif;
+                                        margin-top: 5px;
+                                        margin-left: 15px;}
+
+.adoptionreview .imgBox_inner ul li a .tag {font-size: 13px;
+                                        font-weight: normal;
+                                        font-family: "Nanum Gothic", serif;
+                                        color: #665E99;
+                                        margin-top: 3px;
+                                        margin-left: 15px;}
+
+.adoptionreview .imgBox_inner ul li a .time {font-size: 12px;
+                                        font-weight: normal;
+                                        font-family: "Nanum Gothic", serif;
+                                        margin-top: 6px;
+                                        margin-left: 150px;}
+
+.adoptionreview .imgBox_inner ul li a .icon {display: flex;}
+
+.adoptionreview .imgBox_inner ul li a .icon img {display: flex;
+                                        width: 8%;
+                                        height: auto;
+                                        margin-top: -5px;}
+
+.adoptionreview .titleBox {display: block;
+                                width: 35%;
+                                font-size: 50px;
+                                font-weight: bold;
+                                font-family: "Gowun Batang", serif;
+                                color: #ff9900;
+                                position: absolute;
+                                top: 250px;
+                                left: 50%;
+                                margin-left: 550px;
+                                z-index: 3;}
+
+
+
+
+
+
+
+/* 반려동물 찾기 */
+
+.boxF {display: flex;}
+
+
+.find {display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        background-color: #FFF7E0;}
+
+.find_inner {position: absolute;
+                left: 50%;
+                top: 0;
+                /* margin-left: 500px; */
+                width: 100%;
+                display: block;
+                box-sizing: border-box;
+                background-color: turquoise;}
+
+.find_inner .findBox {}
+
+.find_inner .findBox h2 {color: #ff9900;
+                        font-size: 32px;
+                        margin-top: 60px;
+                        margin-left: -250px;}
+
+.find_inner .findBox .form {background-color: #fff;
+                                /* width: 70%; */
+                                width: 600px;
+                                height: 400px;
+                                border-radius: 15px;
+                                box-sizing: border-box;
+                                position: absolute;
+                                top: 120px;
+                                left: -250px;
+                                /* margin-top: 20px;
+                                margin-left: 250px; */
+                                border: dashed #ff9900 4px;
+                                /* justify-content: center;
+                                align-items: center; */}
+
+.find_inner .findBox .form ul {display: flex;
+                                position: relative;
+                                justify-content: center;}
+
+.find_inner .findBox .form ul li {}
+
+
+.find_inner .findBox .form ul li .name {font-size: 18px;
+                                        font-weight: bold;}
+
+.find_inner .findBox .form ul li:nth-child(1) .name {position: absolute;
+                                                        top: 50px;
+                                                        left: 50px;}
+
+.find_inner .findBox .form ul li:nth-child(2) .name {position: absolute;
+                                                        top: 120px;
+                                                        left: 50px;}
+
+.find_inner .findBox .form ul li:nth-child(4) .name {position: absolute;
+                                                        top: 190px;
+                                                        left: 50px;}
+
+.find_inner .findBox .form ul li:nth-child(5) .name {position: absolute;
+                                                        top: 190px;
+                                                        left: 360px;}
+
+.find_inner .findBox .form ul li input {width: 20%;
+                                        height: 30px;}
+
+
+.find_inner .findBox .form ul li:nth-child(1) input {position: absolute;
+                                                        top: 50px;
+                                                        left: 180px;
+                                                        width: 150px;
+                                                        height: 25px;
+                                                        border-radius: 7px;
+                                                        border: solid 1px #292929;}
+
+.find_inner .findBox .form ul li:nth-child(2) input {position: absolute;
+                                                        top: 120px;
+                                                        left: 180px;
+                                                        width: 150px;
+                                                        height: 25px;
+                                                        border-radius: 7px;
+                                                        border: solid 1px #292929;}
+
+.find_inner .findBox .form ul li:nth-child(3) input {position: absolute;
+                                                                top: 120px;
+                                                                left: 350px;
+                                                                width: 180px;
+                                                                height: 25px;
+                                                                border-radius: 7px;
+                                                                border: solid 1px #292929;}
+
+
+.find_inner .findBox .form ul li:nth-child(4) input {position: absolute;
+                                                        top: 190px;
+                                                        left: 180px;
+                                                        width: 150px;
+                                                        height: 25px;
+                                                        border-radius: 7px;
+                                                        border: solid 1px #292929;}
+
+.find_inner .findBox .form ul li:nth-child(5) select {position: absolute;
+                                                        top: 190px;
+                                                        left: 425px;
+                                                        width: 110px;
+                                                        height: 30px;
+                                                        border-radius: 7px;
+                                                        border: solid 1px #292929;}
+
+.find_inner .findBox .form ul li:nth-child(6) .btn_Box {position: absolute;
+                                                        top: 300px;
+                                                        left: 250px;
+                                                        border: solid 1px #ff9900;
+                                                        border-radius: 5px;
+                                                        background-color: #ff9900;
+                                                        color: #fff;
+                                                        width: 20%;
+                                                        height: 25px;
+                                                        font-weight: bold;
+                                                        text-align: center;
+                                                        justify-content: center;
+                                                        align-items: center;}
+
+
+
+
+
+/* 펫티켓 */
+.tabBar {display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        background-color: #FFF7E0;}
+
+.tab_inner {position: absolute;
+                width: 100%;}
+
+.tab_inner .petBox {width: 600px;
+                        height: 400px;
+                        background-color: #FFFCF3;
+                        border-top-right-radius: 15px;
+                        border-bottom-right-radius: 15px;
+                        border-bottom-left-radius: 15px;
+                        box-sizing: border-box;
+                        position: absolute;
+                        top: 120px;
+                        left: 180px;
+                        }
+
+.tab_inner .petBox .title {}
+
+.tab_inner .petBox .title ul {}
+
+.tab_inner .petBox .title ul li {}
+
+.tab_inner .petBox .title ul li:nth-child(1) {background-color: #FFFCF3;
+                                                border-top-left-radius: 5px;
+                                                border-bottom-left-radius: 5px;
+                                                width: 30px;
+                                                height: 100px;
+                                                text-align: center;
+                                                position: absolute;
+                                                left: -30px;
+                                                box-sizing: border-box;}
+
+.tab_inner .petBox .title ul li:nth-child(2) {background-color: #FF9900;
+                                                border-top-left-radius: 5px;
+                                                border-bottom-left-radius: 5px;
+                                                width: 30px;
+                                                height: 130px;
+                                                text-align: center;
+                                                position: absolute;
+                                                top: 100px;
+                                                left: -30px;
+                                                box-sizing: border-box;}
+
+.tab_inner .petBox .title ul li:nth-child(1) p {display: block;
+                                                padding-top: 17px;}
+
+.tab_inner .petBox .title ul li:nth-child(2) p {display: block;
+                                                padding-top: 10px;}
+
+
+
+
+
+.tab_inner .petBox .content {}
+
+.tab_inner .petBox .content .petticket {
+        /* display: none; */
+}
+
+.tab_inner .petBox .content .petticket ul {display: flex;
+                                                flex-wrap: wrap;
+                                                flex-direction: column;
+                                                position: relative;
+                                                }
+
+.tab_inner .petBox .content .petticket ul li {}
+
+.tab_inner .petBox .content .petticket ul li h2 {display: block;
+                                                padding-top: 40px;
+                                                padding-left: 35px;
+                                                }
+
+.tab_inner .petBox .content .petticket ul li img {display: block;
+                                                margin-top: 50px;
+                                                margin-left: 25px;}
+
+.tab_inner .petBox .content .petticket ul li .text {display: block;
+                                                        font-size: 16px;
+                                                        margin-top: -35px;
+                                                        margin-left: 70px;
+                                                        }
+
+.tab_inner .petBox .content .petticket ul li .text span {color: #ff9900;
+                                                        font-weight: bold;}                               
+
+.tab_inner .petBox .content .petticket ul li .text em {font-size: 14px;
+                                                        font-style: normal;}
+
+
+
+/* 펫프렌들리 */
+
+.tab_inner .petBox .title ul li:nth-child(1) {background-color: #FF9900;
+                                                border-top-left-radius: 5px;
+                                                border-bottom-left-radius: 5px;
+                                                width: 30px;
+                                                height: 100px;
+                                                text-align: center;
+                                                position: absolute;
+                                                left: -30px;
+                                                box-sizing: border-box;}
+
+.tab_inner .petBox .title ul li:nth-child(2) {background-color: #fffcf3;
+                                                border-top-left-radius: 5px;
+                                                border-bottom-left-radius: 5px;
+                                                width: 30px;
+                                                height: 130px;
+                                                text-align: center;
+                                                position: absolute;
+                                                top: 100px;
+                                                left: -30px;
+                                                box-sizing: border-box;}
+
+.tab_inner .petBox .title ul li:nth-child(1) p {display: block;
+        padding-top: 17px;}
+
+.tab_inner .petBox .title ul li:nth-child(2) p {display: block;
+        padding-top: 10px;}
+
+
+.tab_inner .petBox .content .petfriendly {position: relative;
+                                                display: none;}
+.tab_inner .petBox .content .petfriendly .pet-place ul {display: flex;
+                                                        flex-wrap: wrap;
+                                                        flex-direction: column;
+                                                        border: 1px solid #292929;
+                                                        border-top-left-radius: 15px;
+                                                        border-bottom-left-radius: 15px;
+                                                        background-color: #fff;
+                                                        width: 65%;
+                                                        position: absolute;
+                                                        top: 20px;
+                                                        left: 15px;}
+
+.tab_inner .petBox .content .petfriendly .pet-place ul li {padding-top: 20px;
+                                                                padding-left: 15px;
+                                                                padding-bottom: 10px;
+                                                                border-bottom: #292929 solid 1px;}
+
+.tab_inner .petBox .content .petfriendly .pet-place ul li:nth-child(4) {border-bottom: none;}
+
+.tab_inner .petBox .content .petfriendly .pet-place ul li a {}
+
+
+
+.tab_inner .petBox .content .petfriendly .pet-place ul li a .area {display: block;
+                                                                        margin-bottom: -20px;
+                                                                        font-size: 14px;}          
+.tab_inner .petBox .content .petfriendly .pet-place ul li a .place{font-size: 14px;}
+
+
+
+
+.tab_inner .petBox .content .petfriendly .friendly-place {}
+
+.tab_inner .petBox .content .petfriendly .friendly-place .title {display: flex;
+                                                                flex-wrap: wrap;
+                                                                flex-direction: column;
+                                                                border: 1px solid #292929;
+                                                                border-top-right-radius: 15px;
+                                                                border-bottom-right-radius: 15px;
+                                                                width: 27%;
+                                                                position: absolute;
+                                                                top: 20px;
+                                                                left: 420px;
+                                                                background-color: #fff;}
+
+.tab_inner .petBox .content .petfriendly .friendly-place .title a {padding-top: 10px;
+                                                                padding-left: 15px;
+                                                                padding-bottom: 10px;}
+
+.tab_inner .petBox .content .petfriendly .friendly-place .title a .title001 {display: block;
+                                                                                margin-top: -5px;}
+
+.tab_inner .petBox .content .petfriendly .friendly-place ul {display: flex;
+                                                                flex-wrap: wrap;
+                                                                flex-direction: column;
+                                                                border: 1px solid #292929;
+                                                                border-top-right-radius: 15px;
+                                                                border-bottom-right-radius: 15px;
+                                                                width: 27%;
+                                                                position: absolute;
+                                                                top: 72px;
+                                                                left: 420px;
+                                                                background-color: #fff;}
+
+.tab_inner .petBox .content .petfriendly .friendly-place ul li {padding-top: 12px;
+                                                                padding-left: 15px;
+                                                                padding-bottom: 5px;
+                                                                border-bottom: #292929 solid 1px;}
+
+.tab_inner .petBox .content .petfriendly .friendly-place ul li:nth-child(8) {border-bottom: none;}
+
+.tab_inner .petBox .content .petfriendly .friendly-place ul li a {}
+
+
+
+/* 영상자료 */
+
+.video {background-color: #fff;
+        width: 100%;
+        height: 600px;}
+
+.vid_inner {width: 100%;
+                height: 600px;
+                overflow: hidden;}
+.vid_inner .title {position: relative;}
+.vid_inner .title h3 {display: block;
+                        font-size: 20px;
+                        font-family: "Gowun Batang", serif;
+                        color: #FF9900;
+                        position: absolute;
+                        top: 170px;
+                        right: 50%;
+                        margin-right: 400px;
+                }
+.vid_inner .title h2 {display: block;
+                        position: absolute;
+                        top: 200px;
+                        right: 50%;
+                        margin-right: 200px;
+                        font-size: 45px;
+                        font-family: "Gowun Batang", serif;
+                        color: #FF9900;
+                        z-index: 3;}
+.vid_inner .content {background-color: #ffffff;
+                        width: 2400px;
+                        height: 500px;
+                        margin-left: 100px;}
+
+.vid_inner .content ul {display: flex;
+                        flex-wrap: nowrap;
+                        flex-direction: row;
+                        width: 100%;
+                        }
+.vid_inner .content ul li {
+                        width: 100%;
+                        position: relative;
+                        margin-right: 100px;
+                }
+.vid_inner .content ul li a {
+                                display: block;
+                                width: 100%;
+                                height: 600px;
+                                }
+.vid_inner .content ul li a img {display: block;
+                                border: solid 1px #fff;
+                                border: none;
+                                border-radius: 20px;
+                                width: 100%;
+                                position: absolute;
+                                top: 100px;
+                                left: 50%;
+                                margin-left: 10px;
+
+                                
+                        }
+.vid_inner .btn {display: flex;
+                flex-wrap: wrap;
+                position: relative;
+                width: 100%;
+                height: 50px;}
+
+.vid_inner .btn ul {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                margin-left: 140px;
+                }
+.vid_inner .btn ul li {margin: 0 5px;}
+.vid_inner .btn ul li a {display: block;
+                        text-decoration: none;
+                        padding: 5px 10px;}
+.vid_inner .btn ul li i {color: #FF9900;}
+
+/* 조정 */
+/* .boxA {background-color: turquoise;
+        width: 100%;
+        height: 700px;}
+.boxA_inner {background-color: tomato;
+                width: 100%;
+                height: 600px;}
+.boxA_inner .box1 {}
+.boxA_inner .box1 .boxtxt1 {}
+.boxA_inner .box1 .boxtxt2 {}
+.boxA_inner .box2 {background-color: teal;
+                        width: 100%;
+                        height: 500px;
+                        position: relative;}
+.boxA_inner .box2 ul {display: flex;
+                        flex-wrap: wrap;
+                        box-sizing: border-box;}
+.boxA_inner .box2 ul li {}
+.boxA_inner .box2 ul li a {display: block;
+                                background-color: springgreen;
+                                width: 50%;
+                                height: 300px;
+                                position: absolute;
+                                top: 100px;
+                                left: 50%;
+                                margin-left: -50px;}
+
+.boxA_inner .box2 ul li:nth-child(1) {display: block;
+                                background-color: #FFB800;
+                                width: 50%;
+                                height: 300px;}
+
+.boxA_inner .box2 ul li:nth-child(2) {display: block;
+                                background-color: slateblue;
+                                width: 50%;
+                                height: 300px;}
+
+.boxA_inner .box2 ul li:nth-child(3) {display: block;
+                                background-color: saddlebrown;
+                                width: 50%;
+                                height: 300px;}
+
+
+
+
+
+.boxA_inner .box3 {}
+.boxA_inner .box3 ul {}
+.boxA_inner .box3 ul li {}
+.boxA_inner .box3 ul li a {} */
+
+
+
+
+
+
+
+
+/* 구조후기 */
+
+.structural {background-color: #FFF7E0;}
+
+.structural .struc_inner {}
+
+.structural .struc_inner ul {display: flex;
+                                justify-content: center;}
+
+.structural .struc_inner ul li {border: 3px solid #ff9900;
+                                border-radius: 20px;
+                                margin-left: 15px;
+                                margin-top: 100px;
+                                background-color: #fffcf3;
+                                width: 100%;
+                                /* width: 550px; */
+                                height: 280px;}
+
+.structural .struc_inner ul li .news {font-size: 20px;
+                                        padding: 25px 30px;
+                                        color: #ff9900;
+                                        font-weight: bold;}
+
+.structural .struc_inner ul li h2 {font-size: 18px;
+                                        padding-left: 20px;
+                                        padding-bottom: 15px;}
+
+.structural .struc_inner ul li h4 {font-size: 15px;
+                                        font-weight: normal;
+                                        padding-left: 15px;
+                                        padding-bottom: 30px;}
+
+.structural .struc_inner ul li .btnbox {width: 85px;
+                                        border: #FF9900 1px solid;
+                                        border-radius: 5px;
+                                        color: #fff;
+                                        background-color: #FF9900;
+                                        margin-left: 20px;
+                                        padding: 5px;}
+
+.structural .struc_inner ul li .date {font-size: 14px;
+                                        padding-top: 10px;
+                                        padding-left: 390px;
+                                        padding-right: 20px;
+                                        color: #888;}
+
+
+/* 자주하는 질문 */
+
+.faq {background-color: #FFF;}
+.faq_inner {}
+.faq_inner h2 {color: #FF9900;
+                font-size: 30px;
+                padding-top: 100px;
+                padding-left: 100px;}
+.faq_inner ul {position: relative;}
+.faq_inner ul li {border: #FF9900 2px dashed;
+                width: 1050px;
+                margin: 10px 100px;}
+.faq_inner ul li a {position: absolute;
+                        right: 60px;
+                        }
+.faq_inner ul li a .more1 img {display: block;
+                                width: 25px;
+                                height: 24px;
+                                padding-top: 35px;}
+
+.faq_inner ul li a .more2 img {display: block;
+                                width: 25px;
+                                height: 24px;
+                                padding-top: 10px;}
+
+.faq_inner ul li a .more3 img {display: block;
+                                width: 25px;
+                                height: 24px;
+                                padding-top: 10px;}
+
+
+.faq_inner ul li h3 {padding: 10px 5px;}
+.faq_inner ul li .txt1 {padding: 5px 5px;}
+
+
+.faq_inner ul li .txt2 {
+        display: none;
+}
+.faq_inner ul li .txt3 {
+        display: none;
+}
+
+/* 공지사항 */
+
+.notice {background-image: url(img/notice.jpg);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-attachment: fixed;
+                        background-repeat: no-repeat;
+                        position: relative;}
+
+.notice .notice_inner {}
+
+.notice .notice_inner .noti_txt h2 {color: rgba(255, 255, 255, 0.8);
+                                        font-size: 45px;
+                                        font-family: "Nanum Gothic", serif;
+                                        letter-spacing: 15px;
+                                        display: block;
+                                        position: absolute;
+                                        top: 50px;
+                                        right: 200px;}
+
+.notice .notice_inner ul {}
+
+.notice .notice_inner ul li {display: block;
+                                background-color: rgba(255, 255, 255, 0.6);
+                                border-radius: 8px;
+                                width: 380px;
+                                height: 200px;}
+
+.notice .notice_inner ul li:nth-child(1) {position: absolute;
+                                                top: 40px;
+                                                left: 200px;}
+
+.notice .notice_inner ul li:nth-child(2) {position: absolute;
+                                                top: 260px;
+                                                left: 220px;}
+
+.notice .notice_inner ul li:nth-child(3) {position: absolute;
+                                                top: 480px;
+                                                left: 200px;}
+
+.notice .notice_inner ul li a {}
+
+.notice .notice_inner ul li a h3 {text-align: center;
+                                padding-top: 20px;}
+
+.notice .notice_inner ul li a .txtbox {padding-top: 20px;
+                                        padding-left: 30px;}
+
+.notice .notice_inner ul li a .days {padding-top: 45px;
+                                        padding-left: 290px;
+                                        font-size: 14px;}
+
+/* 찾아오는 길 */
+.location {background-color: #FFF7E0;
+                position: relative;}
+.location h3 {font-size: 15px;  
+                color: #FF9900;
+                padding-top: 60px;
+                padding-left: 50px;}
+.location h2 {font-size: 25px;
+                padding-top: 10px;
+                padding-left: 50px;}
+.location .loc_inner {}
+.location .loc_inner .local {background-color: rgba(255, 255, 255, 0.5);
+                        width: 50%;
+                        height: 350px;
+                        position: absolute;
+                        top: 145px;
+                        left: 0;}
+.location .loc_inner .local ul {position: relative;}
+.location .loc_inner .local ul li {}
+.location .loc_inner .local ul li h4 {}
+.location .loc_inner .local ul li .txt {padding-top: 5px;}
+
+.location .loc_inner .local ul li .left {}
+
+.location .loc_inner .local ul li .txt2 {padding-top: 5px;} 
+
+.location .loc_inner .local ul li:nth-child(1) {position: absolute;
+                                                top: 50px;
+                                                left: 20px;}
+.location .loc_inner .local ul li:nth-child(2) {position: absolute;
+                                                top: 120px;
+                                                left: 20px;}
+.location .loc_inner .local ul li:nth-child(3) {position: absolute;
+                                                top: 190px;
+                                                left: 20px;}
+.location .loc_inner .local ul li:nth-child(4) {position: absolute;
+                                                top: 50px;
+                                                left: 350px;}
+.location .loc_inner .local ul li:nth-child(5) {position: absolute;
+                                                top: 150px;
+                                                left: 350px;}
+
+.location .loc_inner .map {     
+                                width: 48%;
+                                height: 350px;
+                                background-color: #ddd;
+                                position: absolute;
+                                top: 145px;
+                                left: 50%;
+                                margin-left: 15px;
+                                
+                                /* position: relative;
+                                margin-left: 620px;
+                                margin-top: 20px; */
+                        }
+.location .loc_inner .map iframe {width: 100%;
+                                height: 100%;
+                                opacity: 0.8;}
+
+
+
+
+/* 레이아웃 설정 */
+/* #wrap {display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;} */
+
+.header {display: flex;
+        width: 100%;
+        height: 1024px;
+        /* background-image: url(img/landing.png); */
+}
+
+.logo {width: 30%;
+        height: 100px;
+        /* background-color: palevioletred;*/ }  
+
+.menu {width: 70%;
+        height: 100px;
+        /* background-color: paleturquoise;*/ }  
+
+.education {width: 100%;
+            height: 320px;
+            /* background-color: wheat; */
+        }
+
+.sizetype {width: 100%;
+            height: 750px;
+            /* background-color: #FFF7E0; */
+        }
+
+.adoption {width: 100%;
+            height: 920px;
+            background-color: #FFF7E0;
+        }
+
+.procedure {width: 100%;
+            height: 1024px;
+            /* background-color: #FFF7E0; */
+        }
+
+.adoptionreview {width: 100%;
+                height: 1024px;
+                /* background-color: #FFF7E0; */
+        }
+
+.find {width: 50%;
+            height: 600px;
+            /* background-color: #FFF7E0; */
+        }
+
+.tabBar {width: 50%;
+            height: 600px;
+            /* background-color: steelblue; */
+        }
+
+.video {width: 100%;
+        height: 600px;
+        /* background-color: thistle; */
+}
+
+/* .boxA {width: 100%;
+        height: 700px;} */
+
+.structural {width: 100%;
+            height: 630px;
+            /* background-color: springgreen; */
+        }
+
+.faq {width: 100%;
+    height: 500px;
+    /* background-color: slategray; */
+}
+
+.notice {width: 100%;
+        height: 710px;
+        /* background-color: slateblue; */
+}
+
+.location {width: 100%;
+        height: 520px;
+  
+        /* background-color: skyblue; */
+}
+
+.footer {width: 100%;
+        height: 220px;
+        background-color: #292929;}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 미디어쿼리 구간 설정 ###################################################################################### */
+
+
+/* 데스크탑 구간 */
+/* 1280px 이상일 때 */
+@media(min-width:1280px) {
+        .head_inner, .edu_inner, .size_inner, .adop_inner, .pro_inner,  .imgBox_inner, .wrap, .find_inner, .tab_inner, 
+        .vid_inner, .struc_inner, .faq_inner, .notice_inner, .loc_inner {max-width: 1200px;
+        margin: 0 auto;}
+}
+
+
+
+/*태블릿 구간*/
+/* 834px ~ 403px 일 때 
+@media(max-width:834px) and (min-width:403px) {
+
+#wrap {width: 90%;}
+
+.header {display: flex;
+        width: 100%;
+        height: 720px;}
+
+.logo {width: 100%;
+        height: 100px;}
+
+.menu {width: 100%;
+        height: 100px;}
+
+.education {width: 100%;
+            height: 370px;}
+
+.sizetype {width: 100%;
+            height: 480px;}
+
+.adoption {width: 100%;
+            height: 770px;}
+
+.procedure {width: 100%;
+            height: 950px;}
+
+.adoptionreview {width: 100%;
+                height: 1220px;}
+
+.find {width: 100%;
+            height: 680px;}
+
+.tabBar {width: 100%;
+            height: 670px;}
+
+.video {width: 100%;
+        height: 720px;}
+
+.structural {width: 100%;
+            height: 550px;}
+
+.faq {width: 100%;
+    height: 660px;}
+
+.notice {width: 100%;
+        height: 720px;}
+
+.location {width: 100%;
+        height: 820px;}
+
+.footer {width: 100%;
+     }
+
+}*/
+
+/* 모바일 구간 */
+/* 402px 이하일 때 
+@media(max-width:402px) {
+    #wrap {width: 100%;}
+
+.header {display: flex;
+        width: 100%;
+        height: 870px;}
+
+.logo {width: 100%;
+        height: 110px;}
+
+.menu {width: 70%;
+        height: 100px;
+        background-color: paleturquoise;
+        display: none;}
+
+.education {width: 100%;
+            height: 210px;}
+
+.sizetype {width: 100%;
+            height: 570px;
+            display: none;}
+
+.adoption {width: 100%;
+            height: 570px;}
+
+.procedure {width: 100%;
+            height: 560px;}
+
+.adoptionreview {width: 100%;
+                height: 560px;}
+
+.find {width: 100%;
+            height: 400px;}
+
+.tabBar {width: 100%;
+            height: 480px;}
+
+.video {width: 100%;
+        height: 350px;}
+
+.structural {width: 100%;
+            height: 250px;}
+
+.faq {width: 100%;
+    height: 350px;}
+
+.notice {width: 100%;
+        height: 470px;}
+
+.location {width: 100%;
+        height: 430px;}
+
+.footer {width: 100%;
+        height: 170px;}
+
+} */
