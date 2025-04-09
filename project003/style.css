@@ -1,0 +1,87 @@
+/* 언어설정 */
+@charset 'utf-8';
+
+/* Reset CSS */
+
+* {margin: 0;
+    padding: 0;}
+
+ul,ol {list-style: none;}
+
+a {text-decoration: none;
+    color: #000;}
+
+img {border: none;
+    vertical-align: bottom;}
+
+
+/* wrap 설정 */
+#wrap {position: relative;
+        perspective: 800px;}  /* 700 ~ 900이 가장 이상적임 */
+
+/* nav 설정 */
+nav {position: fixed;
+    width: 150px;
+    left: 50px;
+    top: 50%;
+    margin-top: -125px;
+    z-index: 999;}
+
+nav ul {}
+
+nav li {width: 150px;
+        height: 50px;
+        border-bottom: 2px solid #000;
+        line-height: 2.5;
+        transition: all 0.8s;
+        cursor: pointer;
+        box-sizing: border-box;}
+
+nav li:hover {font-size: 18px;
+                color: #fff;
+                border-color: #fff;}
+                
+nav li.on {font-size: 18px;
+            color: #fff;
+            border-color: #fff;
+            font-weight: bold;}                
+
+/* section 설정 */
+
+#wrap>div {width: 100%;
+            height: 100vh;
+            font-size: 150px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;}
+
+.box1 {background-color: salmon;}
+
+.box2 {background-color: plum;}
+
+.box3 {background-color: aqua;}
+
+.box4 {background-color: burlywood;}
+
+.box5 {background-color: cornflowerblue;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
