@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sylvanian Famliy</title>
+    <!-- 외부스타일시트 연결 -->
+    <link rel="stylesheet" href="style_001.css">
+
+    <!-- 폰트어썸 CDN -->
+    <script src="https://kit.fontawesome.com/0efb1606b8.js" crossorigin="anonymous"></script>
+
+    <!-- 네이버 로그인 api  -->
+    <script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js" charset="utf-8"></script>
+
+
+
+    <!-- 제이쿼리CDN -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+
+    <!-- 외부 라이브러리를 먼저 연결하고 외부 스크립트를 작성한다 -->
+    <!-- 외부스크립트 연결 -->
+    <script src="js/javascript_001.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo"><a href="">Sylvanian Family</a></h1>
+        <nav class="gnb">
+            <ul>
+                <li><a href="">실바니안 이야기</a></li>
+                <li><a href="">상품 안내</a></li>
+                <li><a href="">브랜드 소개</a></li>
+                <li><a href="">마이 페이지</a></li>
+                <li><a href="">고객센터</a></li>
+            </ul>
+        </nav>
+        <div class="util">
+            <ul>
+                <li><a href=""><span>프로필</span><i class="fa-solid fa-user"></i></a></li>
+                <li><a href=""><span>장바구니</span><div class="num">0</div><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+
+
+    </header>
+    <section class="contents">
+        <div class="main on">
+            <div class="hero">
+                <div class="mainimg">
+                    <img src="img/landing1024.png" alt="">
+                </div>
+            </div>
+            <div class="info">
+                <h2>실바니안 패밀리</h2>
+                <p>자연과 가장 가까운 에버그린 토이로, <br>
+                    따뜻한 가족 이야기와 숲속 마을의 행복을 담고 있습니다</p>
+
+            <div class="list">
+                <ul>
+                    <li>
+                        <img src="img/story_1.png" alt="">
+                        <div class="line"><img src="img/storyline_1.png" alt=""></div>
+                        <div class="text">
+                            <p class="name">
+                                프레아 초콜릿
+                            </p>
+                            <p class="sub">(초콜릿 토끼 소녀)</p>
+                            <p class="txt">
+                                활발하고 상냥한 성격인 <br>
+                                토끼 가족의 딸
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/story_2.png" alt="">
+                        <div class="line"><img src="img/storyline_2.png" alt=""></div>
+                        <div class="text">
+                            <p class="name">
+                                랄프 월넛
+                            </p>
+                            <p class="sub">(도토리 다람쥐 소년)</p>
+                            <p class="txt">
+                                모험심이 강하고 장난기 많은 <br>
+                                다람쥐 가족의 아들
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/story_3.png" alt="">
+                        <div class="line"><img src="img/storyline_3.png" alt=""></div>
+                        <div class="text">
+                            <p class="name">
+                                티파 실크
+                            </p>
+                            <p class="sub">(실크 고양이 소녀)</p>
+                            
+                            <p class="txt">
+                                친구들과 어울리는 것을 좋아하는 <br>
+                                고양이 가족의 딸
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/story_4.png" alt="">
+                        <div class="line"><img src="img/storyline_4.png" alt=""></div>
+                        <div class="text">
+                            <p class="name">
+                                스벤
+                            </p>
+                            <p class="sub">(바다표범 아빠)</p>
+                            <p class="txt">
+                                바다를 좋아하는 탐험가이며 <br>
+                                사랑스러운 가족의 가장
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/story_5.png" alt="">
+                        <div class="line"><img src="img/storyline_5.png" alt=""></div>
+                        <div class="text">
+                            <p class="name">
+                                루시 펜톤
+                            </p>
+                            <p class="sub">(리트리버 엄마)</p>
+                            <p class="txt">
+                                산책이나 피크닉을 좋아하는 <br>
+                                따뜻한 리트리버 가족의 엄마
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="pro">
+                <h2>BEST PRODUCT</h2>
+                <div class="pro_list">
+                    <div class="left">
+                        <i class="fa-solid fa-caret-left"></i>
+                    </div>
+                    <div class="container">
+                        <ul>
+                            <li>
+                                <div class="imgcon">
+                                    <img src="img/best1.png" alt="">
+                                    <div class="img_box">
+                                        <a href=""><img src="img/best_info1.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="text001">
+                                    로즈핑크 이층집 기프트 세트
+                                </div>
+                                <div class="buy">
+                                    <p class="txt">구매하기</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="imgcon">
+                                    <img src="img/best2.png" alt="">
+                                    <div class="img_box">
+                                        <img src="img/best_info2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="text001">
+                                    숲속의 유치원
+                                </div>
+                                <div class="buy">
+                                    <p class="txt">구매하기</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="imgcon">
+                                    <img src="img/best3.png" alt="">
+                                    <div class="img_box">
+                                        <img src="img/best_info3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="text001">
+                                    초콜릿 토끼 가족
+                                </div>
+                                <div class="buy">
+                                    <p class="txt">구매하기</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="imgcon">
+                                    <img src="img/best4.png" alt="">
+                                    <div class="img_box">
+                                        <img src="img/best_info4.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="text001">
+                                    어드벤처 트리하우스
+                                </div>
+                                <div class="buy">
+                                    <p class="txt">구매하기</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="imgcon">
+                                    <img src="img/best5.png" alt="">
+                                    <div class="img_box">
+                                        <img src="img/best_info5.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="text001">
+                                    실바니안 빌리지 피자가게
+                                </div>
+                                <div class="buy">
+                                    <p class="txt">구매하기</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="imgcon">
+                                    <img src="img/best6.png" alt="">
+                                    <div class="img_box">
+                                        <img src="img/best_info6.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="text001">
+                                    가든 바베큐 세트
+                                </div>
+                                <div class="buy">
+                                    <p class="txt">구매하기</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="review">
+                <h2>소중한 이야기를 들려주세요</h2>
+                <div class="rev">
+                    <div class="con">
+                        <div class="slider-track">
+                            <ul>
+                                <li>
+                                    <div class="bubble">
+                                        <img src="img/bubble1.png" alt="">
+                                    </div>
+                                    <img src="img/review1.png" alt="">
+                                    <div class="text">
+                                        <h4>타운 첼로 콘서트</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bubble">
+                                        <img src="img/bubble2.png" alt="">
+                                    </div>
+                                    <img src="img/review2.png" alt="">
+                                    <div class="text">
+                                        <h4>바다 표범</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bubble">
+                                        <img src="img/bubble3.png" alt="">
+                                    </div>
+                                    <img src="img/review3.png" alt="">
+                                    <div class="text">
+                                        <h4>페르시안 아기 고양이</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bubble">
+                                        <img src="img/bubble4.png" alt="">
+                                    </div>
+                                    <img src="img/review4.png" alt="">
+                                    <div class="text">
+                                        <h4>캥거루 가족</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bubble">
+                                        <img src="img/bubble5.png" alt="">
+                                    </div>
+                                    <img src="img/review5.png" alt="">
+                                    <div class="text">
+                                        <h4>유치원 프렌즈 호두 다람쥐</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bubble">
+                                        <img src="img/bubble6.png" alt="">
+                                    </div>
+                                    <img src="img/review6.png" alt="">
+                                    <div class="text">
+                                        <h4>초콜릿 토끼</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bubble">
+                                        <img src="img/bubble7.png" alt="">
+                                    </div>
+                                    <img src="img/review7.png" alt="">
+                                    <div class="text">
+                                        <h4>밀크토끼 목욕놀이 세트</h4>
+                                    </div>
+                                </li>
+                            </ul>
+                    
+                            <ul>
+                                <li>
+                                    <div class="bubble">
+                                        <img src="img/bubble8.png" alt="">
+                                    </div>
+                                    <img src="img/review8.png" alt="">
+                                    <div class="text">
+                                        <h4>아기 코끼리</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bubble">
+                                        <img src="img/bubble9.png" alt="">
+                                    </div>
+                                    <img src="img/review9.png" alt="">
+                                    <div class="text">
+                                        <h4>마쉬멜로우 마우스</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bubble">
+                                        <img src="img/bubble10.png" alt="">
+                                    </div>
+                                    <img src="img/review10.png" alt="">
+                                    <div class="text">
+                                        <h4>아기 정글짐</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bubble">
+                                        <img src="img/bubble11.png" alt="">
+                                    </div>
+                                    <img src="img/review11.png" alt="">
+                                    <div class="text">
+                                        <h4>바다가 보이는 트리하우스</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bubble">
+                                        <img src="img/bubble12.png" alt="">
+                                    </div>
+                                    <img src="img/review12.png" alt="">
+                                    <div class="text">
+                                        <h4>해달</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bubble">
+                                        <img src="img/bubble13.png" alt="">
+                                    </div>
+                                    <img src="img/review13.png" alt="">
+                                    <div class="text">
+                                        <h4>토이푸들</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bubble">
+                                        <img src="img/bubble14.png" alt="">
+                                    </div>
+                                    <img src="img/review14.png" alt="">
+                                    <div class="text">
+                                        <h4>페르시안 고양이 쌍둥이</h4>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="brand">
+                <h2>실바니안 패밀리 이야기</h2>
+                <p class="innertxt1">실바니안 패밀리는 1985년 처음 세상에 나왔어요. </p>
+                <p class="innertxt2">그리고 지금까지 남녀노소 모두의 사랑을 받으며 이어 오고 있지요.</p>
+
+                <ul>
+                    <li>
+                        <p class="txt1">자연</p>
+                        <img src="img/brand1.png" alt="">
+                        <p class="txt2">Nature</p>
+                    </li>
+                    <li>
+                        <p class="txt1">Family</p>
+                        <img src="img/brand2.png" alt="">
+                        <p class="txt2">가족</p>
+                    </li>
+                    <li>
+                        <p class="txt1">사랑</p>
+                        <img src="img/brand3.png" alt="">
+                        <p class="txt2">Love</p>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+        
+<!-- 컬럼으로 조절 100% 100%로 조정 -->
+
+        <div class="product">
+            <div class="pro001">
+                <div class="imgBox">
+                    <div class="bigImg">
+                        <img src="img/bigimg1.png" alt="" class="on">
+                        <img src="img/bigimg2.png" alt="">
+                        <img src="img/bigimg3.png" alt="">
+                    </div>
+                    <div class="thumb">
+                        <ul>
+                            <li>
+                                <img src="img/thumb1.png" alt="">
+                            </li>
+                            <li>
+                                <img src="img/thumb2.png" alt="">
+                            </li>
+                            <li>
+                                <img src="img/thumb3.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cartBox">
+                    <div class="infoBox">
+                        <h2>로즈핑크 이층집 기프트 세트</h2>
+                    </div>
+                    <div class="count">
+
+                        <div class="won">
+                            <span>60,000</span>원
+                        </div>
+
+                        <div class="num001">
+                            <span><i class="fa-solid fa-minus"></i></span>
+                            <span>0</span>
+                            <span><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                        
+                    </div>
+                    <div class="fee">
+                        <p class="feetxt1">배송비:<span>0</span>원</p>
+                        <span><img src="img/mark.png" alt=""></span>
+                        <p class="feetxt2">
+                            0원 ~ 50,000원 미만 3000원<br>
+                            50,000원 이상 무료<br>
+                            
+                            <span>
+                                배송비 계산 기준<br>
+                                판매가 + 옵션가 + 추가 상품가 +텍스트 옵션가 - 상품 할인가 - 상품쿠폰할인가
+                            </span>
+                        </p>
+
+
+                    </div>
+                    <div class="cart001">
+                        <p>장바구니</p>
+                        <p>결제하기</p>
+
+                    </div>
+                    <div class="proinfo1">
+                        <div class="proinfo2">
+                            <h2>제품 설명</h2>
+                            <p>이 세트에는 원래 색상의 집과 가구,<br> 
+                                그리고 특별한 의상을 입은 밀크 토끼 소녀와 아기가 포함되어 있습니다.<br>
+                                집은 빨간 지붕과 넓은 발코니가 있는 아름다운 외관을 자랑합니다.<br>
+                                아기들을 위한 특별한 놀이방도 함께 제공됩니다.</p>
+
+                            <h2>구성품 안내</h2>
+                            <p>밀크 토끼 소녀, 밀크 토끼 아기, 메인 하우스, 그네 줄, 사다리,<br>
+                                그네, 창문틀, 난간 (소) x2, 난간 (대), 미끄럼틀이 있는 로프트 침대,<br> 
+                                TV 및 TV 스탠드, 탑승용 자동차, 테이블 및 의자 2 세트</p>
+    
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="recommend">
+                <h2>추천 상품</h2>
+                <div class="left002">
+                    <i class="fa-solid fa-caret-left"></i>
+                </div>
+                <div class="contain">
+                    <ul>
+                        <li>
+                            <img src="img/recommend1.png" alt="">
+                            <p>실바니안 그로서리 마켓</p>
+                        </li>
+                        <li>
+                            <img src="img/recommend2.png" alt="">
+                            <p>빨간지붕 엘리베이터 하우스</p>
+                        </li>
+                        <li>
+                            <img src="img/recommend3.png" alt="">
+                            <p>불이 들어오는 빨간 지붕 이층집</p>
+                        </li>
+                        <li>
+                            <img src="img/recommend4.png" alt="">
+                            <p>은하수가 보이는 실바니안 등대 하우스</p>
+                        </li>
+                        <li>
+                            <img src="img/recommend5.png" alt="">
+                            <p>엘리베이터가 있는 파스텔 하우스</p>
+                        </li>
+                        <li>
+                            <img src="img/recommend1.png" alt="">
+                            <p>실바니안 그로서리 마켓</p>
+                        </li>
+                        <li>
+                            <img src="img/recommend1.png" alt="">
+                            <p>실바니안 그로서리 마켓</p>
+                        </li>
+                        <li>
+                            <img src="img/recommend1.png" alt="">
+                            <p>실바니안 그로서리 마켓</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right002">
+                    <i class="fa-solid fa-caret-right"></i>
+                </div>
+                <!-- <div>스크롤바</div> -->
+            </div>
+
+
+        </div>
+            
+        </div>
+        <div class="login">
+            <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <h2>Sylvanian Family</h2>
+            <div class="loginBox">
+
+                <form action="">
+                    <div class="id">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" size="18" placeholder="아이디">
+                    </div>
+                    <div class="pass">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" size="18" placeholder="비밀번호">
+                    </div>
+                    <div class="loginBtn">
+                        <input type="submit" value="LOG-IN">
+                    </div>
+                    <div class="navertxt">
+                        네이버로 로그인
+                    </div>
+                    <div class="naver">
+                        <!-- 네이버 로그인 버튼 노출 영역 -->
+                        <div id="naver_id_login"></div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+    <div class="cart">
+        <h2>장바구니</h2>
+        <div class="cartList">
+            <ul>
+                <!-- <li>
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <p></p>
+                    <span>X</span>
+                </li> -->
+            </ul>
+        </div>
+        <div class="prod001">
+            <div class="pri">
+                <div class="pri001">
+                    총 <span>0</span>개의 상품 금액
+                </div>
+                <div class="pri002">
+                    <span>0</span>원
+                </div>
+            </div>
+            <div class="minu">
+                <img src="img/minus.png" alt="">
+            </div>
+            <div class="sale">
+                <div class="sale001">
+                    총 할인금액
+                </div>
+                <div class="sale002">
+                    <span>0</span>원
+                </div>
+            </div>
+            <div class="plus">
+                <img src="img/plus.png" alt="">
+            </div>
+            <div class="del">
+                <div class="del001">
+                    배송비
+                </div>
+                <div class="del002">
+                    <span>0</span>원
+                </div>
+            </div>
+            <div class="equal">
+                <img src="img/equal.png" alt="">
+            </div>
+            <div class="total">
+                <div class="total001">
+                    합계
+                </div>
+                <div class="total002">
+                    <span>0</span>원
+                </div>
+            </div>
+        </div>
+        <div class="sum001">
+            <p class="sum">
+                결제하기
+            </p>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+
+
+        <!-- 제일 하단 지우지 마세요 -->
+        <div class="copyright">
+            <p class="txt_box1">본 사이트는 학습용 포트폴리오 제작으로 영상 및 이미지는 상업용으로 사용하지 않습니다.</p>
+            <p class="txt_box2">Copyright &copy; Kimdongyeon. 2025. All Rights Reserved.</p>
+            <img src="img/footer.png" alt="">
+        </div>
+    </footer>
+
+    <script>
+     var naver_id_login = new naver_id_login("V4IYLbr30NOw5DYuw4bH", "https://kimdongyeon99.github.io/study310/callback");
+    var state = naver_id_login.getUniqState();
+    naver_id_login.setButton("green", 3,47.5);
+    naver_id_login.setDomain("https://kimdongyeon99.github.io/study310/");
+    naver_id_login.setState(state);
+    naver_id_login.setPopup();
+    naver_id_login.init_naver_id_login();
+
+    </script>
+
+
+</body>
+</html>
