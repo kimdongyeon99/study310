@@ -989,7 +989,7 @@ animation:  ani1 10s linear infinite;}
                         height: 100vh;
                         width: 100%;
                         position: relative;
-                        background-color: #9A9A9A;}
+                        background-color: rgba(0, 0, 0, 0.397);}
 
 .login {width: 500px;
         height: 500px;
