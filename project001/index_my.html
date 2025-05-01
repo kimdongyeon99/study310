@@ -12,6 +12,16 @@
     <!-- 폰트어썸CDN -->
     <script src="https://kit.fontawesome.com/0efb1606b8.js" crossorigin="anonymous"></script>
 
+        <!-- 캘린더 제이쿼리 cdn -->
+    <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<!-- jQuery UI -->
+<!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css"> -->
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<script src="js.js"></script>
+
 
 </head>
 <body>
@@ -24,9 +34,7 @@
 
                 </div>
                 <div class="logo">
-                    <h1>
-                        <a href="">한국동물구조관리공단</a>
-                    </h1>
+                    <a href=""><img src="img/logo.png" alt=""></a>
                 </div>
                 <div class="menu">
                     <ul>
@@ -52,81 +60,275 @@
         <section class="sizetype">
             <div class="size_inner">
                 <div class="listBox">
-                    <div class="search">
-                        <form action="">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="search" placeholder="Search">
-                            
-                        </form>
-                    </div>
-                    <div class="list">
+                   <div class="list">
+                        <div class="search">
+                            <form action="">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="search" placeholder="Search">
+                            </form>
+                        </div>
                         <ul>
-                            <li>
-                                <a href="">강아지</a>
+                            <li class="on">
+                                <p class="line">강아지</p>
                             </li>
                             <li>
-                                <a href="">고양이</a>
+                                <p class="line">고양이</p>
                             </li>
                             <li>
-                                <a href="">토끼</a>
+                                <p class="line">토끼</p>
                             </li>
                             <li>
-                                <a href="">거북이</a>
+                                <p class="line">거북이</p>
                             </li>
                             <li>
-                                <a href="">햄스터</a>
+                                <p class="line">햄스터</p>
                             </li>
                             <li>
-                                <a href="">기타</a>
+                                <p class="line">기타</p>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="imgBox">
-                    <div>
+                    <div class="on">
                         <ul>
                             <li>
-                                <img src="img/gallery_001.jpg" alt="">
+                                <div class="overlay"></div>
+                                <img src="img/dogxsmall.png" alt="">
                                 <h2>경형견</h2>
                                 <div class="more">
                                     <a href="">More Than</a>
                                 </div>
                             </li>
                             <li>
-                                <img src="img/gallery_002.jpg" alt="">
-                                <span></span>
+                                <div class="overlay"></div>
+                                <img src="img/dogsmall.png" alt="">
+                                <h2>소형견</h2>
+                                <div class="more">
+                                    <a href="">More Than</a>
+                                </div>
                             </li>
                             <li>
-                                <img src="img/gallery_003.jpg" alt="">
-                                <span></span>
+                                <div class="overlay"></div>
+                                <img src="img/dogmid.png" alt="">
+                                <h2>준중형견</h2>
+                                <div class="more">
+                                    <a href="">More Than</a>
+                                </div>
                             </li>
                             <li>
-                                <img src="img/gallery_004.jpg" alt="">
-                                <span></span>
+                                <div class="overlay"></div>
+                                <img src="img/doglar.png" alt="">
+                                <h2>중형견</h2>
+                                <div class="more">
+                                    <a href="">More Than</a>
+                                </div>
                             </li>
                             <li>
-                                <img src="img/gallery_005.jpg" alt="">
-                                <span></span>
+                                <div class="overlay"></div>
+                                <img src="img/dogxlar.png" alt="">
+                                <h2>준대형견</h2>
+                                <div class="more">
+                                    <a href="">More Than</a>
+                                </div>
                             </li>
                             <li>
-                                <img src="img/gallery_006.jpg" alt="">
-                                <span></span>
+                                <div class="overlay"></div>
+                                <img src="img/dogxxlar.png" alt="">
+                                <h2>대형견</h2>
+                                <div class="more">
+                                    <a href="">More Than</a>
+                                </div>
                             </li>
                         </ul>
-                        
                     </div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div>
+                        <ul>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="img/catshort.png" alt="">
+                                <h2>단모</h2>
+                                <div class="more">
+                                    <a href="">More Than</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="img/catlong.png" alt="">
+                                <h2>장모</h2>
+                                <div class="more">
+                                    <a href="">More Than</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="img/catdubble.png" alt="">
+                                <h2>이중모</h2>
+                                <div class="more">
+                                    <a href="">More Than</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="img/catspink.png" alt="">
+                                <h2>털 없음</h2>
+                                <div class="more">
+                                    <a href="">More Than</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="img/rabloap.png" alt="">
+                                <h2>롭 이어</h2>
+                                <div class="more">
+                                    <a href="">More Than</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="img/rebdwaf.png" alt="">
+                                <h2>드워프</h2>
+                                <div class="more">
+                                    <a href="">More Than</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="img/rabang.png" alt="">
+                                <h2>앙고라</h2>
+                                <div class="more">
+                                    <a href="">More Than</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="img/rablion.png" alt="">
+                                <h2>라이언 헤드</h2>
+                                <div class="more">
+                                    <a href="">More Than</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="img/tutsmall.png" alt="">
+                                <h2>소형</h2>
+                                <div class="more">
+                                    <a href="">More Than</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="img/tutmid.png" alt="">
+                                <h2>중형</h2>
+                                <div class="more">
+                                    <a href="">More Than</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="img/tutlar.png" alt="">
+                                <h2>대형</h2>
+                                <div class="more">
+                                    <a href="">More Than</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="img/tutxlar.png" alt="">
+                                <h2>초대형</h2>
+                                <div class="more">
+                                    <a href="">More Than</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="img/hamgolden.png" alt="">
+                                <h2>골든</h2>
+                                <div class="more">
+                                    <a href="">More Than</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="img/hamjungle.png" alt="">
+                                <h2>중가리아</h2>
+                                <div class="more">
+                                    <a href="">More Than</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="img/hamrovo.png" alt="">
+                                <h2>로보로프스키</h2>
+                                <div class="more">
+                                    <a href="">More Than</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="img/hamdwaf.png" alt="">
+                                <h2>드워프</h2>
+                                <div class="more">
+                                    <a href="">More Than</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="img/guine.png" alt="">
+                                <h2>기니피그</h2>
+                                <div class="more">
+                                    <a href="">More Than</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="img/racoon.png" alt="">
+                                <h2>너구리</h2>
+                                <div class="more">
+                                    <a href="">More Than</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="img/bird.png" alt="">
+                                <h2>새</h2>
+                                <div class="more">
+                                    <a href="">More Than</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="img/hedg.png" alt="">
+                                <h2>고슴도치</h2>
+                                <div class="more">
+                                    <a href="">More Than</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="btn">
-                    <ul>
-                        <li><a href=""><i class="fa-solid fa-arrow-up"></i></a></li>
-                        <li><a href=""><i class="fa-solid fa-arrow-down"></i></a></li>
-                    </ul>
-                </div>
+             </div>
+            <div class="btn001">
+                <ul>
+                    <li><i class="fa-solid fa-arrow-up"></i></li>
+                    <li><i class="fa-solid fa-arrow-down"></i></li>
+                </ul>
             </div>
         </section>
         <section class="adoption">
@@ -137,8 +339,8 @@
                     <p>따뜻한 가족의 품이 필요한 친구가 <br>
                     기다리고 있어요.</p>
                 </div>
-                <div class="imgBox">
-                    <a href=""><p class="left"><i class="fa-solid fa-chevron-left"></i></p></a>
+                <div class="imgBox002">
+                    <p class="left"><i class="fa-solid fa-chevron-left"></i></p>
                     <div class="img_con">
                         <ul>
                             <li>
@@ -178,14 +380,15 @@
                             </li>
                         </ul>
                     </div>
-                    <a href=""><p class="right"><i class="fa-solid fa-chevron-right"></i></p></a>
+                    <p class="right"><i class="fa-solid fa-chevron-right"></i></p>
                 </div>
             </div>
         </section>
         <section class="procedure">
-                <div class="pro_inner">
-                    <h2>입양 신청 절차 안내</h2>
-                    <p class="midline">소중한 인연을 기다리고 있는 유기동물들을 사랑과 따뜻한 마음으로 <em>새로운 가족</em>이 되어주세요.</p>
+            <div class="pro_inner">
+                <h2>입양 신청 절차 안내</h2>
+                <p class="midline">소중한 인연을 기다리고 있는 유기동물들을 사랑과 따뜻한 마음으로 <em>새로운 가족</em>이 되어주세요.</p>
+
                     <div class="text_box">
                         <ul>
                             <li>
@@ -222,10 +425,39 @@
                                     절차가 마무리 됩니다. </p>
                             </li>
                         </ul>
-                        <p class="button"><a href="">입양신청서 작성하기</a></p>
+                        <div class="reserv">
+                            <p class="re_big">동물 입양 상담 예약</p>
+                            
+                            <div class="re_date">
+                                <div class="cal">
+                                    <div class="datepicker"></div>
+                                        <div class="re_date2">
+                                            <p class="re_small"><i class="fa-solid fa-calendar"></i></p>예약 날짜 <span></span>
+                                        </div>
+                                </div>
+                                <div class="cal2"></div>
+                            </div>
+
+                            <form action="">
+                                <div class="rename">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input type="text" size="15" placeholder="예약자 성함">
+                                </div>
+                                <div class="renum">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <input type="text" size="15" placeholder="연락처">
+                                </div>
+                            </form>
+
+                            <div class="re_btn">
+                                <p class="btn_intxt">신청하기</p>
+                            </div>
+
+                        </div>
                     </div>
-                </div>
-        </section>
+            
+            </div>
+    </section>
         <section class="adoptionreview">
             <div class="bg"></div>
             <div class="imgBox_inner">
@@ -336,9 +568,9 @@
             <section class="tabBar">
                 <div class="tab_inner">
                     <div class="petBox">
-                        <div class="title">
+                        <div class="titlebox">
                             <ul>
-                                <li>
+                                <li class="on">
                                     <p>펫티켓</p>
                                 </li>
                                 <li>
@@ -347,7 +579,7 @@
                             </ul>
                         </div>
                         <div class="content">
-                            <div class="petticket">
+                            <div class="petticket on">
                                 <ul>
                                     <li>
                                         <h2>반려인이라면 준수해주세요.</h2>
@@ -371,60 +603,228 @@
     
                             </div>
                             <div class="petfriendly">
-                                <div class="pet-place">
+                                <div class="petf_inner">
+                                    <div class="pet-place on">
+                                        <ul>
+                                            <li>
+                                                <a href=""><p class="area">서울</p> <br>
+                                                호텔 카푸치노 <br>
+                                                <p class="place">위치: 서울특별시 강남구 봉은사로 155</p></a>
+                                            </li>
+                                            <li>
+                                                <a href=""><p class="area">고양</p> <br>
+                                                    소노캄 고양 <br>
+                                                    <p class="place">위치: 경기도 고양시 일산동구 태극로 20</p></a>
+                                            </li>
+                                            <li>
+                                                <a href=""><p class="area">태안</p> <br>
+                                                    그람피하우스 <br>
+                                                    <p class="place">위치: 충청남도 태안군 남면 안면대로 1110-30 (남면)</p></a>
+                                            </li>
+                                            <li>
+                                                <a href=""><p class="area">제주</p> <br>
+                                                    에코스위츠 <br>
+                                                    <p class="place">위치: 제주특별자치도 서귀포시 중문상로 207-13 (중문동)</p></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="friendly-place">
+                                        <div class="boxtitle">
+                                            <p class="title001">Pet Friendly Place</p>
+                                        </div>
+                                        <ul>    
+                                            <li class="on">
+                                                숙박시설
+                                            </li>
+                                            <li>
+                                                휴게소
+                                            </li>
+                                            <li>
+                                                식당
+                                            </li>
+                                            <li>
+                                                쇼핑몰
+                                            </li>
+                                            <li>
+                                                놀이터
+                                            </li>
+                                            <li>
+                                                수영장
+                                            </li>
+                                            <li>
+                                                캠핑장
+                                            </li>
+                                            <li>
+                                                기타
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="rest">
                                     <ul>
                                         <li>
-                                            <a href=""><p class="area">서울</p> <br>
-                                            호텔 카푸치노 <br>
-                                            <p class="place">위치: 서울특별시 강남구 봉은사로 155</p></a>
+                                            <a href=""><p class="area">덕평자연휴게소</p> <br>
+                                                달려라코코 <br>
+                                                <p class="place">위치: 경기도 이천시 마장면 덕이로154번길 287-76</p></a>
                                         </li>
                                         <li>
-                                            <a href=""><p class="area">고양</p> <br>
-                                                소노캄 고양 <br>
-                                                <p class="place">위치: 경기도 고양시 일산동구 태극로 20</p></a>
+                                            <a href=""><p class="area">군산휴게소</p> <br>
+                                                놀다가개 <br>
+                                                <p class="place">위치: 전북 군산시 나포면 서해안고속도로 148</p></a>
                                         </li>
                                         <li>
-                                            <a href=""><p class="area">태안</p> <br>
-                                                그람피하우스 <br>
-                                                <p class="place">위치: 충청남도 태안군 남면 안면대로 1110-30 (남면)</p></a>
+                                            <a href=""><p class="area">죽암휴게소</p> <br>
+                                                멍멍파크 <br>
+                                                <p class="place">위치: 충북 청주시 서원구 현도면 경부고속도로 290</p></a>
                                         </li>
                                         <li>
-                                            <a href=""><p class="area">제주</p> <br>
-                                                에코스위츠 <br>
-                                                <p class="place">위치: 제주특별자치도 서귀포시 중문상로 207-13 (중문동)</p></a>
+                                            <a href=""><p class="area">가평휴게소</p> <br>
+                                                가평애견파크 <br>
+                                                <p class="place">위치: 경기 가평군 설악면 미사리로540번길 51</p></a>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="friendly-place">
-                                    <div class="title">
-                                        <a href="">
-                                            <p class="title001">Pet Friendly Place</p>
-                                        </a>
-                                    </div>
-                                    <ul>    
+                                <div class="food">
+                                    <ul>
                                         <li>
-                                            <a href="">숙박시설</a>
+                                            <a href=""><p class="area">서울</p> <br>
+                                                식당 사사로운 <br>
+                                                <p class="place">위치: 서울 광진구 천호대로112길 48-4</p></a>
                                         </li>
                                         <li>
-                                            <a href="">휴게소</a>
+                                            <a href=""><p class="area">부산</p> <br>
+                                                숙이네 조개구이 <br>
+                                                <p class="place">위치: 부산 서구 암남동 620-37</p></a>
                                         </li>
                                         <li>
-                                            <a href="">식당</a>
+                                            <a href=""><p class="area">전남</p> <br>
+                                                백암농원 <br>
+                                                <p class="place">위치: 전남 광양시 옥곡면 신금리 1270</p></a>
                                         </li>
                                         <li>
-                                            <a href="">쇼핑몰</a>
+                                            <a href=""><p class="area">대전</p> <br>
+                                                버거 베이트 <br>
+                                                <p class="place">위치: 대전 서구 도안동 1948</p></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="shopping">
+                                    <ul>
+                                        <li>
+                                            <a href=""><p class="area">서울</p> <br>
+                                                여의도IFC몰 <br>
+                                                <p class="place">위치: 서울특별시 영등포구 국제금융로 10</p></a>
                                         </li>
                                         <li>
-                                            <a href="">놀이터</a>
+                                            <a href=""><p class="area">하남</p> <br>
+                                                스타필드 하남 <br>
+                                                <p class="place">위치: 경기도 하남시 미사대로 750</p></a>
                                         </li>
                                         <li>
-                                            <a href="">수영장</a>
+                                            <a href=""><p class="area">기흥</p> <br>
+                                                롯데프리미엄아울렛 기흥 <br>
+                                                <p class="place">위치: 경기도 용인시 기흥구 신고매로 124</p></a>
                                         </li>
                                         <li>
-                                            <a href="">캠핑장</a>
+                                            <a href=""><p class="area">남양주</p> <br>
+                                                현대프리미엄아울렛 스페이스원 <br>
+                                                <p class="place">위치: 경기도 남양주시 다산순환로 50(다산동)</p></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="playp">
+                                    <ul>
+                                        <li>
+                                            <a href=""><p class="area">의성</p> <br>
+                                                펫월드 <br>
+                                                <p class="place">위치: 경상북도 의성군 단북면 안계길 255-13</p></a>
                                         </li>
                                         <li>
-                                            <a href="">기타</a>
+                                            <a href=""><p class="area">춘천</p> <br>
+                                                강아지숲 <br>
+                                                <p class="place">위치: 강원도 춘천시 남산면 충효로 437</p></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><p class="area">인천</p> <br>
+                                                도그파크 <br>
+                                                <p class="place">위치: 인천광역시 연수구 센트럴로 350 (송도동)</p></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><p class="area">창원</p> <br>
+                                                펫빌리지 <br>
+                                                <p class="place">위치: 창원시 성산구 상복동 567</p></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pool">
+                                    <ul>
+                                        <li>
+                                            <a href=""><p class="area">양양</p> <br>
+                                                멍비치 <br>
+                                                <p class="place">위치: 강원특별자치도 양양군 현남면 광진리 78-20</p></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><p class="area">양주</p> <br>
+                                                헤세의 정원 <br>
+                                                <p class="place">위치: 경기도 양주시 장흥면 호국로550번길 111</p></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><p class="area">용인</p> <br>
+                                                도그파크랜드 <br>
+                                                <p class="place">위치: 경기도 용인시 기흥구 기흥단지로 406</p></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><p class="area">김포</p> <br>
+                                                김포 독힐링파크 <br>
+                                                <p class="place">위치: 경기도 김포시 홍도평로 43-35</p></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="camping">
+                                    <ul>
+                                        <li>
+                                            <a href=""><p class="area">연천</p> <br>
+                                                랩도그빌 애견캠핑장 <br>
+                                                <p class="place">위치: 경기도 연천군 청창로200번길 33-0</p></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><p class="area">괴산</p> <br>
+                                                루파니 애견캠핑장 <br>
+                                                <p class="place">위치: 충북 괴산군 감물면 감물로 362-54</p></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><p class="area">고령</p> <br>
+                                                트리독스 애견전용캠핑장 <br>
+                                                <p class="place">위치: 경상북도 고령군 쌍림면 용당길 42-56</p></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><p class="area">청도</p> <br>
+                                                원더랜드 <br>
+                                                <p class="place">위치: 경북 청도군 매전면 청매로 825 원더랜드)</p></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="etc_002">
+                                    <ul>
+                                        <li>
+                                            <a href=""><p class="area">양양</p> <br>
+                                                복골온천 <br>
+                                                <p class="place">위치: 강원특별자치도 양양군 강현면 복골길201번길 58</p></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><p class="area">장흥</p> <br>
+                                                국립과천산자연휴양림 <br>
+                                                <p class="place">위치: 전라남도 장흥군 관산읍 칠관로 842-1150</p></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><p class="area">화성</p> <br>
+                                                고정리 공룡알 화석산지 <br>
+                                                <p class="place">위치: 경기도 화성시 송산면 고정리</p></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><p class="area">순창</p> <br>
+                                                섬진강 예향마실길 <br>
+                                                <p class="place">위치: 전북특별자치도 완주군 경천면 경천리 680-3</p></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -443,59 +843,25 @@
                 <div class="content">
                     <ul>
                         <li>
-                            <a href="">
-                                <img src="img/video001.jpg" alt="">
-                            </a>
+                            <img src="img/video001.jpg" alt="">
                         </li>
                         <li>
-                            <a href="">
-                                <img src="img/video002.jpg" alt="">
-                            </a>
+                            <img src="img/video002.jpg" alt="">
                         </li>
                         <li>
-                            <a href="">
-                                <img src="img/video003.jpg" alt="">
-                            </a>
+                            <img src="img/video003.png" alt="">
                         </li>
                     </ul>
                 </div>
-                <div class="btn">
+                <div class="btn002">
                     <ul>
-                        <li><a href=""><i class="fa-solid fa-circle"></i></a></li>
-                        <li><a href=""><i class="fa-solid fa-circle"></i></a></li>
-                        <li><a href=""><i class="fa-solid fa-circle"></i></a></li>
+                        <li class="on"></li>
+                        <li></li>
+                        <li></li>
                     </ul>
                 </div>
             </div>
         </section>
-        <!-- <div class="boxA">
-            <div class="boxA_inner">
-                <div class="box1">
-                    <div class="boxtxt1"></div>
-                    <div class="boxtxt2"></div>
-                </div>
-                <div class="box2">
-                    <ul>
-                        <li>
-                            <a href=""></a>
-                        </li>
-                        <li>
-                            <a href=""></a>
-                        </li>
-                        <li>
-                            <a href=""></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="box3">
-                    <ul>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div> -->
         <section class="structural">
             <div class="struc_inner">
                 <ul>
@@ -534,25 +900,19 @@
                 <h2>FAQs.</h2>
                 <ul>
                     <li>
-                        <a href="">
-                            <span class="more1"><img src="img/i_minus.png" alt=""></span>
-                        </a>
+                        <span class="more1"><img src="img/i_plus.png" alt=""></span>
                         <h3>야생동물구조신고는 어떻게 해야하나요?</h3>
                         <p class="txt1">야생동물이 다쳤거나 위험에 처한 경우, 가까운 시·군·구청 또는 소방서에 신고하세요. <br>
                             부상 동물은 직접 치료하지 말고 전문 구조 기관(환경부 국립생태원 032-590-7000)의 도움을 받으세요. </p>
                     </li>
                     <li>
-                        <a href="">
-                            <span class="more2"><img src="img/i_plus.png" alt=""></span>
-                        </a>
+                        <span class="more1"><img src="img/i_plus.png" alt=""></span>
                         <h3>야생동물구조대처요령에는 어떤 것이 있나요?</h3>
                         <p class="txt2">장갑을 착용하여 기생충, 질병 감염과 공격을 예방하고 공기구멍이 있는 상자에 수건을 깔고 동물을 덮어 안정시키며 상자에 넣어주세요 <br>
                             발견 장소를 기록하고 신속히 야생동물 구조단체에 연락해야 하며 사체 발견 시 접촉하지 말고 관할 기관에 신고하세요</p>
                     </li>
                     <li>
-                        <a href="">
-                            <span class="more3"><img src="img/i_plus.png" alt=""></span>
-                        </a>
+                        <span class="more1"><img src="img/i_plus.png" alt=""></span>
                         <h3>야생동물구조현황은 어떻게 되나요?</h3>
                         <p class="txt3">한국에서는 매년 2만 마리 이상의 야생동물이 구조되며, 주요 원인은 로드킬, 서식지 파괴, 밀렵 등이 있습니다. <br>
                             특히 조류와 포유류의 구조 비율이 높으며, 재활 후 자연 방사되는 경우도 많습니다.</p>
@@ -577,7 +937,7 @@
                     </li>
                     <li>
                         <a href="">
-                            <h3>협회 홈페이지가 일시 중단됩니다.</h3>
+                            <h3>협회 홈페이지가 일시 중단됩니다.</h3>
                             <p class="txtbox">안녕하세요...협회 홈페이지 관리자 입니다. <br>
                                 이번주 목요일에 협회 홈페이지 서버 이전 <br>
                                  작업으로 인해 홈페이지가 폐쇠됨을 알립니다 </p>
@@ -586,15 +946,33 @@
                     </li>
                     <li>
                         <a href="">
-                            <h3>협회 홈페이지가 새단장했습니다</h3>
-                            <p class="txtbox">2014년 12월 1일 부터 협회 홈페이지가 새로운<br>
-                                 곳에서 새롭게 시작합니다 앞으로 새 홈페이지<br>
-                                에서 좋은 소식들로만 가득가득^^</p>
-                            <p class="days">2014-12-02</p>
+                            <h3>함께할 가족을 모집합니다</h3>
+                            <p class="txtbox">안녕하세요.. 따스한 봄바람이 살랑살랑 불어오는 <br>
+                                계절이 왔네요^^ 모두 감기 조심하시구요 이번 <br>
+                               협회에서 구조활동을 하실 구조대원을 모집하게...</p>
+                            <p class="days">2016-03-23</p>
                         </a>
                     </li>
-                </ul>
-            </div>
+                        <li>
+                            <a href="">
+                                <h3>단아한 한의원에서 따뜻한 음악제를...</h3>
+                                <p class="txtbox">단아한 한의원에서 가슴 따뜻한 음악제를 <br>
+                                    열어주셨어요 한의원답게 음악제 이름도 '길냥아 <br>
+                                   찬데서 자지마 입돌아간다' 이네요 ㅎ ㅠㅠ</p>
+                                <p class="days">2015-10-07</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h3>협회 홈페이지가 새단장했습니다</h3>
+                                <p class="txtbox">2014년 12월 1일 부터 협회 홈페이지가 새로운<br>
+                                     곳에서 새롭게 시작합니다 앞으로 새 홈페이지<br>
+                                    에서 좋은 소식들로만 가득가득^^</p>
+                                <p class="days">2014-12-02</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
         </section>
         <section class="location">
         <h3>LOCATION</h3>
@@ -604,24 +982,29 @@
                     <ul>
                         <li>
                             <div class="left"><h4>주소</h4></div>
-                            <p class="txt">경기도 양주시 남면 감악산로 63-37</p>
+                            <div class="borline"></div>
+                            <p class="txt"><i class="fa-solid fa-house"></i>경기도 양주시 남면 감악산로 63-37</p>
                         </li>
                         <li>
                             <div class="left"><h4>TEL</h4></div>
-                            <p class="txt">031-867-9119</p>
+                            <div class="borline"></div>
+                            <p class="txt"><i class="fa-solid fa-phone"></i>031-867-9119</p>
                         </li>
                         <li>
                             <div class="left"><h4>FAX</h4></div>
-                            <p class="txt">031-862-2259</p>
+                            <div class="borline"></div>
+                            <p class="txt"><i class="fa-solid fa-fax"></i>031-862-2259</p>
                         </li>
                         <li>
                             <h4>대중교통을 활용한 방문 안내</h4>
-                            <p class="txt2">1호선 덕정역 하차, 횡단보도 건너서 25-1번 버스 이용 <br>
+                            <div class="borline"></div>
+                            <p class="txt2"><i class="fa-solid fa-bus-simple"></i>1호선 덕정역 하차, 횡단보도 건너서 25-1번 버스 이용 <br>
                                 “구세당 한약방” 또는 “동물보호소”에서 하차</p>
                         </li>
                         <li>
                             <h4>협회방문 가능시간</h4>
-                            <p class="txt2">평일: AM 09:00 ~ PM 04:00 <br>
+                            <div class="borline"></div>
+                            <p class="txt2"><i class="fa-solid fa-clock"></i>평일: AM 09:00 ~ PM 04:00 <br>
                                 토요일: AM 09:00 ~ PM 04:00 <br>
                                 점심시간: PM12:00 ~ PM 01:00</p>
                         </li>
@@ -633,7 +1016,7 @@
             </div>
         </section>
         <footer class="footer">
-            <p>
+            <p class="footertxt">
                 이 사이트는 포트폴리오용 제작사이트로 사용된 동영상 및 이미지는 상업적 용도로 쓰이지 않습니다 <br>
                 Copyright @ kimdongyeon. 2025. Alll Rights Reserved.
             </p>
