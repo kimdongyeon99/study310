@@ -147,6 +147,7 @@ $(document).ready(function () {
     // info list를 클릭했을 때, 
     // li를 클릭했을 때 img를 불러오고
     // p의 text를 불러와라
+    // 장바구니 추가
 
     $('.list li').click(function(){
 
@@ -185,6 +186,7 @@ $(document).ready(function () {
     });
 
     // gnb 두번째 li를 클릭했을 때, product에 on을 붙여라
+    // 제품상세페이지 나오기
 
     $('.gnb li').eq(1).click(function(e){
 
@@ -204,6 +206,7 @@ $(document).ready(function () {
 
 
     // logo를 클릭했을 때 메인페이지에 on이 붙어라
+    // 로고 메인페이지 나오기
 
     $('.logo').click(function(e){
 
@@ -220,6 +223,7 @@ $(document).ready(function () {
     });
 
     // util 첫번째 li를 클릭했을 때, login에 on이 붙어라
+    // 로그인 페이지 열리기
 
     $('.util li').eq(0).click(function(e){
 
@@ -250,6 +254,7 @@ $(document).ready(function () {
 
 
     // util 두번째 li를 클릭했을 때, cart에 on이 붙어라
+    // 장바구니 창 열리기
 
     $('.util li').eq(1).click(function(e){
 
@@ -261,6 +266,7 @@ $(document).ready(function () {
 
 
     // pro의 li들을 클릭했을 때, product에 on이 붙어라
+    // 상세페이지
 
     $('.pro_list li').click(function(){
         $('.contents').removeClass('loginBig')

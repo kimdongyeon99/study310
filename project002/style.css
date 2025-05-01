@@ -25,9 +25,9 @@ body {overflow-x: hidden;}
 
 .contents {perspective: 1500px;}
 
-.contents>div {display: none;}
+.contents>div {display: block;}
 
-.contents>div.on {display: block;}
+/* .contents>div.on {display: block;} */
 
 
 /* 헤더설정 */
@@ -311,9 +311,13 @@ body {overflow-x: hidden;}
                         top: 0;}
 
 .pro_list .container li {margin: 0 10px;
-                        width: 200px;}
+                        width: 200px;
+                        cursor: pointer;}
 
-.pro_list .container img {}
+.pro_list .container li .imgcon {cursor: pointer;}
+
+.container .imgcon img {cursor: pointer;}
+.container .imgcon .img_box img {cursor: pointer;}
 
 
 /* 흘러가는 슬라이드 만들기 */
@@ -795,16 +799,20 @@ body {overflow-x: hidden;}
         height: 300px;
         overflow-y: scroll;
         background-color: #ccc;
-        margin: 50px auto;}
+        margin: 50px auto;
+        box-sizing: border-box;}
 
-.cartList ul {}
+.cartList ul {padding: 0;
+        margin: 0;
+        list-style: none;}
 
 .cartList li {display: flex;
                 justify-content: space-around;
                 align-items: center;
-                margin: 10px 0;}
+                margin: 10px 0;
+                border-bottom: 1px solid #ddd;}
 
-.cartList div {width: 100px;
+.cartList>div {width: 100px;
                 height: 100px;
                 background-color: #000;
                 overflow: hidden;}

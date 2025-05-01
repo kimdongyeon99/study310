@@ -46,6 +46,10 @@ body {font-family: "Orbit", serif;}
 
 .header .logo a:hover {opacity: 0.7;}
 
+/* 일정거리만큼 스크롤 됐을 때 헤더 스타일 변경 */
+
+.header.fixed {background-color: #fff5f5;}
+
 
 .gnb {}
 .gnb>ul {display: flex;
@@ -244,7 +248,10 @@ body {font-family: "Orbit", serif;}
 .pro .pro_list .buy .txt:hover {opacity: 0.6;}
 
 
-
+.container ul li .smallimgcon {display: none;
+                                width: 100px;
+                                height: 116px;}
+.container ul li .remov {display: none;}
 
 
 
@@ -289,6 +296,100 @@ body {font-family: "Orbit", serif;}
                                 transform: rotateY(180deg);}
 
 .container li .text001 {display: none;}
+.container li .pric001 {display: none;}
+.container li .rmeov {display: none;}
+
+
+
+.cart-item {position: relative;
+        width: 580px;
+        height: 120px;
+        border-bottom: 2px dotted #fde1e9;}
+
+.cart-text {width: 200px;
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                top: 50%;
+                margin-top: -40px;}
+
+.cart-img {}
+
+.cart-img img {
+        width: 80px;  /* 지정된 크기 */
+        height: 80px;  /* 지정된 크기 */
+        object-fit: cover;  /* 이미지 비율 유지 */
+        border-radius: 5px;  /* 둥근 모서리 */
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-top: 20px;
+        margin-left: -200px;}
+    
+.cart-price {font-family: "Inter", sans-serif;
+                width: 80px;
+                position: absolute;
+                top: 50%;
+                right: 50%;
+                margin-top: -10px;
+                margin-right: -50px;
+                display: flex;
+                justify-content: center;}
+
+
+
+
+.container li .num002 {display: none;}
+.cart-quantity {display: flex;
+                margin-left: -80px;
+                margin-top: 50px;
+                position: absolute;
+                bottom: 0;
+                right: 50%;
+                margin-bottom: 10px;
+                margin-right: -50px;}
+
+.cart-quantity .plus {display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #ffe0e6;
+                        width: 25px;
+                        height: 20px;
+                        font-size: 16px;
+                        color: #ff5b8a;
+                        border: none;
+                        margin-left: 10px;
+                        cursor: pointer;}
+
+.cart-quantity .plus:hover {background-color: #ff5b8a;
+                                color: #fff;}
+
+.cart-quantity .minus {display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #ffe0e6;
+                        width: 25px;
+                        height: 20px;
+                        font-size: 16px;
+                        color: #ff5b8a;
+                        border: none;
+                        margin-right: 10px;
+                        cursor: pointer;}
+
+.cart-quantity .minus:hover {background-color: #ff5b8a;
+                                color: #fff;}
+                        
+
+.cart-quantity .quantity {font-family: "Inter", sans-serif;}
+    
+
+.cart-remove {color: #FF94B5;
+        font-size: 14px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -15px;
+        margin-right: 25px;}
 
 
 /* 구매하기 버튼 */
@@ -320,6 +421,7 @@ body {font-family: "Orbit", serif;}
 /* 리뷰 설정 */
 
 .review {width: 100%;
+        height: 900px;
         text-align: center;
         background-color: #fff5f5;}
                                     
@@ -328,7 +430,6 @@ body {font-family: "Orbit", serif;}
         letter-spacing: 10px;
         position: relative;
         padding-top: 100px;
-        padding-bottom: 20px;
         font-family: "gaegu", serif;
         color: #6A2F0B;}
                                     
@@ -337,43 +438,59 @@ body {font-family: "Orbit", serif;}
         justify-content: center;
         position: relative;
         padding-bottom: 100px;
-        
-}
-                                    
-        
-/* .con {display: flex;
-        overflow: hidden;
-        width: 85%;
-        padding: 150px 0;} */
+        }
 
 .con {display: flex;
-        overflow: hidden;
+        overflow-x: hidden;
         width: 85%;
         padding: 150px 0;
         position: relative;}
 
 
-.slider-track {display: flex;
-        width: 100%; /* 2배 길이 */
-        /* transition: animation-play-state 0.3s ease; */
-        }
+.slider-track {position: relative;
+                width: 100%;
+                height: 400px;}
+              
+.slider-track ul {position: absolute;
+                top: 0;
+                display: flex;
+                width: calc(320px * 7);}
 
-                        
-.con ul {display: flex;
-        flex-direction: row;
-animation:  ani1 10s linear infinite;}
+.slider-track ul.on {animation-play-state: paused;}
+              
+.slider-track ul:nth-child(1) {left: 0%;
+                        animation: slide1 20s linear infinite;}
+              
+.slider-track ul:nth-child(2) {left: 100%;
+                        animation: slide2 20s linear infinite;}
+              
+@keyframes slide1 {
+                
+        0% {left: 0;}
 
-/* .con ul {
-        display: flex;
-        flex-direction: row;
-        width: 50%;}
+        50% {left: -2240px;}
 
-.con ul:nth-of-type(1) {display: none;}
-.con ul:nth-of-type(2) {display: none;} */
-                                
-.slider-track li {padding: 10px;
-        text-align: center;
-        position: relative;}
+        50.000001% {left: 2240px;}
+
+        100% {left: 0;}
+              
+}
+              
+@keyframes slide2 {
+                
+        0% {left: 2240px;}
+                
+        50% {left: 0;}
+                
+        100% {left: -2240px;}
+              
+}
+              
+        
+.con .slider-track li {padding: 10px;
+                text-align: center;
+                position: relative;
+                cursor: pointer;}
 
 .slider-track li .bubble {}
 
@@ -510,11 +627,8 @@ animation:  ani1 10s linear infinite;}
 
 .slider-track>ul:nth-of-type(2)>li:nth-child(7):hover .bubble {display: block;}
 
+.slider-track:hover ul {animation-play-state: paused;}
 
-
-
-                                    
-/* .slider-track ul:hover {animation-play-state: paused;} */
                            
 .con img {}
                           
@@ -532,69 +646,6 @@ animation:  ani1 10s linear infinite;}
                                 font-size: 16px;
                                 font-weight: normal;}
 
-/* @keyframes slideAnimation {
-        
-        0% { transform: translateX(0); }
-        50% { transform: translateX(-100%); }
-        50.01% { transform: translateX(100%); }
-        100% { transform: translateX(0); }
-        
-        } */
-                                   
-.slider-track ul:nth-child(1) {left: 0;
-                                animation: ani1 10s linear infinite;}
-
-.slider-track ul:nth-child(2) {left: 100%;
-                                animation: ani2 10s linear infinite;}
-
-
-.slider-track ul:nth-child(1):hover {animation-play-state: paused;}
-                                    
-.slider-track ul:nth-child(2):hover {animation-play-state: paused;}
-
-
-/* @keyframes ani1 {
-
-        0% {transform: translateX(0);}
-        50% {transform: translateX(-100%);}
-        50.00001% {transform: translateX(100%);}
-        100% {transform: translateX(0);}
-
-}
-
-@keyframes ani2 {
-
-        0% {transform: translateX(100%);}
-        50% {transform: translateX(0);}
-        100% {transform: translateX(-100%);}
-
-} */
-
-
-
-
-@keyframes ani1 {
-
-        0% {transform: translateX(0);}
-
-        50%{transform: translateX(-100%);}
-
-        50.000001% {transform: translateX(100%);}
-                                        
-        100% {transform: translateX(-100%);}
-                                        
-        }
-
-
-@keyframes ani2 {
-
-        0% {transform: translateX(100%);}
-
-        50% {transform: translateX(0);}
-                                                
-        100% {transform: translateX(-100%);}
-        
-        }
 
 
  
@@ -885,7 +936,7 @@ animation:  ani1 10s linear infinite;}
                 font-size: 25px;
                 color: #fff;}
 
-.cartBox .cart001 p:nth-child(1) {margin-right: 100px;}
+.cartBox .cart001 .cart002 {margin-right: 100px;}
 
 .cart001 p:hover {opacity: 0.7;}
 
@@ -988,8 +1039,20 @@ animation:  ani1 10s linear infinite;}
 .contents.loginBig {z-index: 999999;
                         height: 100vh;
                         width: 100%;
-                        position: relative;
-                        background-color: rgba(0, 0, 0, 0.397);}
+                        position: fixed;
+                        background-color: rgba(0, 0, 0, 0.397);
+                        top: 0;
+                        left: 0;}
+
+.loginOverlay {display: none; /* 처음엔 숨김 */
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.4); /* 회색 반투명 */
+                z-index: 9999;}
+                              
 
 .login {width: 500px;
         height: 500px;
@@ -1000,7 +1063,8 @@ animation:  ani1 10s linear infinite;}
         margin-top: -300px;
         margin-left: -250px;
         border: 5px dashed #FF94B5;
-        border-radius: 20px;}
+        border-radius: 20px;
+        z-index: 9999999;}
 
 .login .close {position: relative;}
 
@@ -1008,7 +1072,8 @@ animation:  ani1 10s linear infinite;}
                 top: 20px;
                 right: 20px;
                 color: #FF94B5;
-                font-size: 20px;}
+                font-size: 20px;
+                cursor: pointer;}
 
 .login h2 {text-align: center;
         padding-top: 40px;
@@ -1100,7 +1165,18 @@ animation:  ani1 10s linear infinite;}
         position: fixed;
         top: 120px;
         right: 0;
-        display: none;}
+        display: none;
+        z-index: 99999;}
+
+.cartOverlay {display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.4);
+                z-index: 9999;
+                pointer-events: none;}
 
 .cart h2 {text-align: center;
         display: block;
@@ -1110,14 +1186,17 @@ animation:  ani1 10s linear infinite;}
 
 .cart.on {display: block;}
 
+.cartOverlay.on {display: block;}
+
 /* 상품 리스트 설정 */
 
 .cartList {border: 4px #FFBCD1 solid;
-                        width: 600px;
-                        height: 400px;
-                        margin-left: 100px;
-                        background-color: #fff;
-                        border-radius: 10px;}
+                width: 600px;
+                height: 400px;
+                margin-left: 100px;
+                background-color: #fff;
+                border-radius: 10px;
+                overflow-y: scroll;}
 
 .cartList ul {}
 
@@ -1126,10 +1205,43 @@ animation:  ani1 10s linear infinite;}
                 align-items: center;
                 margin: 10px 0;}
 
-.cartList div {width: 100px;
-        height: 100px;
-        background-color: #000;
-        overflow: hidden;}
+.cartList .cart-img img {width: 80px;
+                        height: 80px;
+                        object-fit: cover;
+                        border-radius: 5px;}
+                    
+.cartList .cart-text {font-size: 16px;
+                        text-align: left;
+                        margin-left: 15px;}
+
+.cart-item {position: relative;}
+                    
+.cartList .cart-remove {cursor: pointer;
+                        color: #FF94B5;
+                        font-size: 20px;
+                        border: none;}
+.remov {display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -10px;
+        margin-right: 25px;}
+
+.remove {cursor: pointer;
+        color: #FF94B5; /* 기본 색 (회색) */
+        font-size: 20px; /* 아이콘 크기 */
+        transition: color 0.3s;}
+
+
+                    
+/* 텍스트와 버튼이 안보인다면, 텍스트가 길어서 줄바꿈이 되는지 확인 */
+.cartList .cart-text {white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;}
+
+
 
 .cartList img {width: 100%;
         height: auto;}
@@ -1137,7 +1249,7 @@ animation:  ani1 10s linear infinite;}
 .cartList p {width: 280px;
         text-align: center;}
 
-.cartList span {display: inline-block;
+/* .cartList span {display: inline-block;
         width: 20px;
         height: 20px;
         border: 1px solid #FF94B5;
@@ -1146,7 +1258,7 @@ animation:  ani1 10s linear infinite;}
         font-size: 14px;
         padding-bottom: 4px;
         cursor: pointer;
-        color: #FF94B5;}
+        color: #FF94B5;} */
 
 
 /* 상품 금액 */
@@ -1166,10 +1278,10 @@ animation:  ani1 10s linear infinite;}
 
 .prod001 .pri .pri001 span {font-family: "Inter", sans-serif;}
 
-.prod001 .pri .pri002 {text-align: center;
+.prod001 .pri .pri003 {text-align: center;
                 padding-top: 5px;}
 
-.prod001 .pri .pri002 span {font-family: "Inter", sans-serif;}
+.prod001 .pri .pri003 span {font-family: "Inter", sans-serif;}
 
 
 .prod001 .minu {position: absolute;
@@ -1283,21 +1395,23 @@ animation:  ani1 10s linear infinite;}
 
 /* 푸터 설정 */
 .copyright {width: 100%;
-                height: 400px;
+                height: 200px;
                 /* height: 403px; */
                 background-color: #F8D3FF;
                 position: relative;}
 
 .copyright .txt_box1 {font-size: 18px;
                         /* display: block; */
-                        padding-top: 250px;}
+                        padding-top: 100px;}
 
 .copyright .txt_box2 {font-size: 18px;
                         padding-top: 20px;}
 
 .copyright img {position: absolute;
-                top: 20px;
-                right: 10px;}
+                bottom: 20px;
+                right: 10px;
+                width: 194px;
+                height: auto;}
 
 
 
