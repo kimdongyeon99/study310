@@ -1053,6 +1053,7 @@ body {font-family: "Orbit", serif;}
                 background-color: rgba(0, 0, 0, 0.4); /* 회색 반투명 */
                 z-index: 9999;}
                               
+.loginOverlay.on {display: block;}
 
 .login {width: 500px;
         height: 500px;

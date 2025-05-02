@@ -109,29 +109,55 @@ $('.container li .buy').click(function() {
     updateCartSummary(); // 👉 장바구니 요약 정보 업데이트
 });
 
-// (삭제) 버튼 클릭
-$(document).on('click', '.cart-remove .remove', function() {
+$('.remove').click(function(){
+
     $(this).closest('li').remove();
-    updateCartSummary(); // 장바구니 요약 정보 업데이트
-});
+    updateCartSummary();
+    
+})
 
-// (수량 증가) 버튼 클릭
-$(document).on('click', '.cart-quantity .plus', function() {
-    let quantitySpan = $(this).siblings('.quantity');
-    let quantity = parseInt(quantitySpan.text());
-    quantitySpan.text(quantity + 1);
-    updateCartSummary(); //  장바구니 요약 정보 업데이트
-});
+// (삭제) 버튼 클릭
+// $(document).on('click', '.cart-remove .remove', function() {
+//     $(this).closest('li').remove();
+//     updateCartSummary(); // 장바구니 요약 정보 업데이트
+// });
 
-// (수량 감소) 버튼 클릭
-$(document).on('click', '.cart-quantity .minus', function() {
+$('.plus').click(function(){
+
+       let quantitySpan = $(this).siblings('.quantity');
+            let quantity = parseInt(quantitySpan.text());
+            quantitySpan.text(quantity + 1);
+            updateCartSummary();
+        
+})
+
+$('.minus').click(function(){
+
     let quantitySpan = $(this).siblings('.quantity');
     let quantity = parseInt(quantitySpan.text());
     if (quantity > 1) {
         quantitySpan.text(quantity - 1);
         updateCartSummary(); //  장바구니 요약 정보 업데이트
     }
-});
+})
+
+// (수량 증가) 버튼 클릭
+// $(document).on('click', '.cart-quantity .plus', function() {
+//     let quantitySpan = $(this).siblings('.quantity');
+//     let quantity = parseInt(quantitySpan.text());
+//     quantitySpan.text(quantity + 1);
+//     updateCartSummary(); //  장바구니 요약 정보 업데이트
+// });
+
+// (수량 감소) 버튼 클릭
+// $(document).on('click', '.cart-quantity .minus', function() {
+//     let quantitySpan = $(this).siblings('.quantity');
+//     let quantity = parseInt(quantitySpan.text());
+//     if (quantity > 1) {
+//         quantitySpan.text(quantity - 1);
+//         updateCartSummary(); //  장바구니 요약 정보 업데이트
+//     }
+// });
 
 // ✨ 장바구니 요약 업데이트 함수
 function updateCartSummary() {
@@ -282,50 +308,6 @@ function updateCartSummary() {
     }
 }
 
-    // 장바구니를 클릭 시 장바구니가 나타난다
-
-    // let aa = 0;
-
-    // $('.util').children('li').children('num').click(function(){
-
-        
-
-    //     aa ++;
-
-    //     if(aa == 2) aa = 0
-    //     if(aa == 1){
-
-    //         $('.cart').addClass('on')
-    //     } else{
-
-    //         $('.cart').removeClass('on')
-    //     }
-
-    //     $('.cartOverlay').fadeIn();
-    // });
-
-    // let aa = 0;
-
-    // $('.util').children('li').children('.num').click(function(e) {
-
-
-    //     e.preventDefault()
-    //     aa++;
-
-    //     console.log($('.cartOverlay'))
-    
-    //     if (aa == 2) aa = 0;
-    
-    //     if (aa == 1) {
-    //         $('.cart').addClass('on');
-    //         $('.cartOverlay').addClass('on');
-    //     } else {
-    //         $('.cart').removeClass('on');
-    //         $('.cartOverlay').removeClass('on');
-    //     }
-    // });
-    
-
 
     // 장바구니에서 결제하기를 누르면 로그인창이 열린다
     $('.cart>div').eq(2).click(function(){
@@ -429,44 +411,22 @@ function updateCartSummary() {
     });
 
 
-    // util 첫번째 li를 클릭했을 때, login에 on이 붙어라
+    // 열기
+$('.util li').eq(0).click(function (e) {
+    e.preventDefault();
 
-    // $('.util li').eq(0).click(function(e){
+    $('.contents').addClass('loginBig');
+    $('.loginOverlay').fadeIn();
+    $('.login').fadeIn();
+});
 
-    //     e.preventDefault()
+// 닫기
+$('.close i').click(function () {
+    $('.loginOverlay').fadeOut();
+    $('.login').fadeOut();
+    $('.contents').removeClass('loginBig');
+});
 
-    //     $('.contents').addClass('loginBig')
-
-    //     $('.contents>div').removeClass('on')
-
-    //     $('.contents>div').eq(2).addClass('on')
-
-
-
-    //     $(window).scrollTop(0);
-
-    // })
-
-    // $('.login .close i').click(function(){
-    //     $('.contents').removeClass('loginBig');
-    //     $('.contents>div').removeClass('on');
-    // });
-    
-    $('.util li').eq(0).click(function (e) {
-        e.preventDefault();
-
-        $('.contents').addClass('loginBig')
-        $('.loginOverlay').fadeIn();
-        $('.login').fadeIn();
-    });
-    
-    $('.close i').click(function () {
-
-        $('.loginOverlay').fadeOut();
-        $('.login').fadeOut();
-        $('.contents').removeClass('loginBig');
-
-    });
     
     
 
