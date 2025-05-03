@@ -1805,11 +1805,16 @@ margin-left: -5px;} */
                         top: 0;
                         left: 0;
                         width: 380px;
-                        height: 200%;
-                        z-index: 3;}
+                        height: 1300px;
+                        z-index: 3;
+                        animation: up 20s linear infinite;}
 
-.notice .notice_inner ul {top: 0;
-                        animation: up 10s linear infinite;}
+.notice .notice_inner ul:nth-child(1) {top: 0;
+                                        animation: up 20s linear infinite;}
+
+
+.notice .notice_inner ul:nth-child(2) {top: 100%;
+                                        animation: up2 20s linear infinite;}
 
 .notice .notice_inner ul li {display: block;
                                 background-color: rgba(255, 255, 255, 0.6);
@@ -1823,7 +1828,7 @@ margin-left: -5px;} */
                                 align-items: center;
                                 margin-left: 150px;}
 
-/* .notice .notice_inner ul li:nth-child(1) {position: absolute;
+.notice .notice_inner ul li:nth-child(1) {position: absolute;
                                                 top: 40px;
                                                 left: 200px;}
 
@@ -1841,15 +1846,28 @@ margin-left: -5px;} */
 
 .notice .notice_inner ul li:nth-child(5) {position: absolute;
                                                 top: 920px;
-                                                left: 200px;} */
+                                                left: 200px;}
 
+.notice .notice_inner ul li:nth-child(6) {position: absolute;
+                                                top: 1140px;
+                                                left: 220px;}
 
     @keyframes up {
         0% {top: 0;}
-        50% {top: -100%;}
-        50.0001% {top: 100%;}
+        50% {top: -1320px;}
+        50.0001% {top: 1320px;}
         100% {top: 0;}
     }
+
+    @keyframes up2 {
+
+        0% {top: 1320px;}
+
+        50% {top: 0;}
+                                                
+        100% {top: -1320px;}
+        
+        }
 
 .notice .notice_inner ul li a {}
 
