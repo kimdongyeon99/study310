@@ -1648,39 +1648,11 @@ margin-left: -5px;} */
                         cursor: pointer;}
                                     
 .vid_inner .btn002 ul li.on {background-color: #FF9900;}
-                                    
-
-
-/* .vid_inner .btn002 {display: flex;
-                        flex-wrap: wrap;
-                        position: absolute;
-                        bottom: 0;
-                        right: 0;
-                        width: 50px;
-                        height: 50px;
-                        top: 0;}
-        
-.vid_inner .btn002 ul {display: flex;
-                        justify-content: center;
-                        text-align: center;
-                        left: 50%;
-                        margin-left: 75px;}
-        
-.vid_inner .btn002 ul li {margin: 10px 15px;
-                                text-decoration: none;
-                                width: 15px;
-                                height: 15px;
-                                border-radius: 50%;
-                                background-color: #FFf;
-                                border: 3px solid #FF9900;
-                                cursor: pointer;}
-        
-.vid_inner .btn002 ul li.on {background-color: #FF9900;} */
 
 
 
 
-/* 구조후기 */
+/* 구조소식 */
 
 .structural {background-color: #FFF7E0;}
 
@@ -1695,7 +1667,6 @@ margin-left: -5px;} */
                                 margin-top: 100px;
                                 background-color: #fffcf3;
                                 width: 100%;
-                                /* width: 550px; */
                                 height: 280px;}
 
 .structural .struc_inner ul li .news {font-size: 20px;
@@ -1713,12 +1684,16 @@ margin-left: -5px;} */
                                         padding-bottom: 30px;}
 
 .structural .struc_inner ul li .btnbox {width: 85px;
-                                        border: #FF9900 1px solid;
+                                        border: #FF9900 3px solid;
                                         border-radius: 5px;
                                         color: #fff;
                                         background-color: #FF9900;
                                         margin-left: 20px;
-                                        padding: 5px;}
+                                        padding: 5px;
+                                        font-weight: bold;}
+
+.structural .struc_inner ul li .btnbox:hover {background-color: #fffcf3;
+                                                color: #ff9900;}
 
 .structural .struc_inner ul li .date {font-size: 14px;
                                         padding-top: 10px;
@@ -1872,6 +1847,8 @@ margin-left: -5px;} */
         100% {top: -1320px;}
         
         }
+
+.notice .notice_inner:hover ul {animation-play-state: paused;}
 
 .notice .notice_inner ul li a {}
 
