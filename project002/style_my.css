@@ -1,0 +1,1428 @@
+/* 언어설정 */
+@charset 'utf-8';
+
+/* 구글폰트 CDN 연결 */
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Orbit&family=Inter&display=swap');
+
+
+/* Reset CSS */
+* {margin: 0;
+    padding: 0;}
+a {text-decoration: none;
+    color: #2D1C15;
+    outline: none;}
+ul , ol {list-style: none;}
+img {border: none;
+        vertical-align: bottom;}
+
+body {font-family: "Orbit", serif;}
+
+/* Layout */
+.header {width: 100%;
+        height: 120px;
+        position: fixed;
+        z-index: 999;}
+.contents {perspective: 1500px;}
+.contents>div {display: none;}
+
+.contents>div.on {display: block;}
+
+/* 헤더 설정 */
+
+.header {display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header .logo {}
+
+.header .logo a {font-size: 50px;
+                color: #6A2F0B;
+                font-family: "Gaegu", serif;
+                display: block;
+                padding: 10px;}
+
+.header .logo a:hover {opacity: 0.7;}
+
+/* 일정거리만큼 스크롤 됐을 때 헤더 스타일 변경 */
+
+.header.fixed {background-color: #fff5f5;}
+
+
+.gnb {}
+.gnb>ul {display: flex;
+        justify-content: center;
+        align-items: center;}
+.gnb>ul>li {}
+.gnb>ul>li>a {display: block;
+        font-size: 18px;
+        padding: 10px;}
+
+.gnb>ul>li>a:hover {opacity: 0.7;}
+
+
+.util {position: relative;}
+.util ul {display: flex;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-top: -90px;
+        margin-left: 750px;}
+.util li {}
+.util a {display: block;
+        color: #FF9DD5;
+        padding-top: 10px;
+        padding-left: 30px;
+        position: relative;}
+
+.util .num {position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: tomato;
+            font-size: 12px;
+            right: -8px;
+            top: -1px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            text-align: center;}
+
+.util a:hover {opacity: 0.7;}
+
+.util span {display: inline-block;
+            text-indent: -9999px;}
+.util i {font-size: 30px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 메인페이지 설정 */
+
+        /* hero설정 */
+        .hero {width: 100%;
+                height: 100vh;
+                position: relative;}
+        .mainimg {width: 100%;
+                height: 100%;
+                overflow: hidden;}
+
+        .mainimg img {width: 100%;}
+
+        /* info 설정 */
+        .info {padding: 50px 0;
+                background-color: #fff5f5;}
+
+        .info h2 {font-size: 60px;
+                text-align: center;
+                letter-spacing: 10px;
+                position: relative;
+                padding: 20px 0 0 0;
+                font-family: "gaegu", serif;
+                color: #6A2F0B;}
+
+        .info p {text-align: center;
+                font-size: 20px;
+                padding: 30px 0 60px 0;
+                color: #6A2F0B;}
+
+        .info .list {}
+
+        .info .list ul {display: flex;
+                        justify-content: center;}
+
+        .info .list li {margin: 0 10px;
+                                position: relative;
+                                cursor: pointer;}
+        
+        .info .list img {width: 100%;
+                        height: auto;
+                        position: relative;
+                        z-index: 2;}
+        
+        .info .list .line img {position: absolute;
+                                top: 0;
+                                left: 0;
+                                opacity: 0;}
+
+        .info .list .text {width: 100%;
+                        text-align: center;
+                        transition: all 0.7s;
+                        transform: translateY(-200px);
+                        position: relative;
+                        opacity: 0;}
+
+        .info .list .text .sub {font-size: 20px;
+                                padding: 5px 0;}     
+
+
+
+        .info .list li:hover .text {transform: translateY(0);
+                                        opacity: 1;}
+
+        .info .list li:hover .line img {opacity: 1;}
+
+
+
+
+
+        .info .list .name {font-size: 25px;
+                                padding: 0;}
+
+        .info .list .txt {font-size: 18px;
+                                padding-top: 10px;}
+
+
+/* 베스트 상품 설정 */
+
+/* 기본 레이아웃 설정 */
+
+.pro {background-image: url(img/best_bg.png);
+        height: 1300px;}
+
+.pro h2 {font-size: 60px;
+        text-align: center;
+        letter-spacing: 10px;
+        position: relative;
+        padding-top: 80px;
+        padding-bottom: 40px;
+        font-family: "gaegu", serif;
+        color: #6A2F0B;}
+
+
+.pro .pro_list {position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;}
+
+.pro_list .left {position: absolute;
+                top: 50%;
+                left: 0;
+                margin-left: 200px;
+                margin-top: 20px;
+                cursor: pointer;}
+
+.pro_list .left i {font-size: 60px;
+                color: #FBD3A3;}
+.pro_list .left:hover i {opacity: 0.6;}
+
+.pro_list .right {position: absolute;
+                top: 50%;
+                right: 0;
+                margin-right: 200px;
+                margin-top: 20px;
+                cursor: pointer;}
+
+.pro_list .right i {font-size: 60px;
+                color: #FBD3A3;}
+.pro_list .right:hover i {opacity: 0.6;}
+
+.pro .pro_list .container ul li .buy {display: flex;
+                                        justify-content: center;
+                                        padding: 40px 0;}
+
+.pro .pro_list .container ul li .buy .txt {color: #fff;
+                        font-size: 30px;
+                        width: 200px;
+                        height: 60px;
+                        border: #E3BF94 1px solid;
+                        border-radius: 25px;
+                        background-color: #E3BF94;
+                        display: flex;
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;}
+
+
+.pro .pro_list .buy .txt:hover {opacity: 0.6;}
+
+
+.container ul li .smallimgcon {display: none;
+                                width: 100px;
+                                height: 116px;}
+.container ul li .remov {display: none;}
+
+
+
+.pro .container {display: flex;
+                width: calc(707px * 2);
+                height: 100%;
+                overflow: hidden;
+                justify-content: flex-start;}
+
+.pro .container ul {display: flex;
+                        flex-wrap: nowrap;
+                        width: calc(707px * 6);}
+
+
+.pro .container li {margin: 0 100px;
+                margin-top: 130px;
+                position: relative;}
+
+.pro .container ul li img {width: 507px;
+                        height: 530px;
+                        position: relative;
+                        z-index: 2;
+                        transition: all 0.5s;
+                        align-items: center;}
+                        
+
+.pro .container ul li .img_box img {width: 507px;
+                                height: 530px;
+                                transition: all 0.5s;
+                                transform: rotateY(180deg);
+                                position: absolute;
+                                opacity: 0;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                left: 0;
+                                top: 0;}
+
+.pro .container li .imgcon:hover .img_box img {opacity: 1;
+                                        transform: rotateY(0);}
+.pro .container li .imgcon:hover img {opacity: 0;
+                                transform: rotateY(180deg);}
+
+.container li .text001 {display: none;}
+.container li .pric001 {display: none;}
+.container li .rmeov {display: none;}
+
+
+
+.cart-item {position: relative;
+        width: 580px;
+        height: 120px;
+        border-bottom: 2px dotted #fde1e9;}
+
+.cart-text {width: 200px;
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                top: 50%;
+                margin-top: -40px;}
+
+.cart-img {}
+
+.cart-img img {
+        width: 80px;  /* 지정된 크기 */
+        height: 80px;  /* 지정된 크기 */
+        object-fit: cover;  /* 이미지 비율 유지 */
+        border-radius: 5px;  /* 둥근 모서리 */
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-top: 20px;
+        margin-left: -200px;}
+    
+.cart-price {font-family: "Inter", sans-serif;
+                width: 80px;
+                position: absolute;
+                top: 50%;
+                right: 50%;
+                margin-top: -10px;
+                margin-right: -50px;
+                display: flex;
+                justify-content: center;}
+
+
+
+
+.container li .num002 {display: none;}
+.cart-quantity {display: flex;
+                margin-left: -80px;
+                margin-top: 50px;
+                position: absolute;
+                bottom: 0;
+                right: 50%;
+                margin-bottom: 10px;
+                margin-right: -50px;}
+
+.cart-quantity .plus {display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #ffe0e6;
+                        width: 25px;
+                        height: 20px;
+                        font-size: 16px;
+                        color: #ff5b8a;
+                        border: none;
+                        margin-left: 10px;
+                        cursor: pointer;}
+
+.cart-quantity .plus:hover {background-color: #ff5b8a;
+                                color: #fff;}
+
+.cart-quantity .minus {display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #ffe0e6;
+                        width: 25px;
+                        height: 20px;
+                        font-size: 16px;
+                        color: #ff5b8a;
+                        border: none;
+                        margin-right: 10px;
+                        cursor: pointer;}
+
+.cart-quantity .minus:hover {background-color: #ff5b8a;
+                                color: #fff;}
+                        
+
+.cart-quantity .quantity {font-family: "Inter", sans-serif;}
+    
+
+.cart-remove {color: #FF94B5;
+        font-size: 14px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -15px;
+        margin-right: 25px;}
+
+
+/* 구매하기 버튼 */
+
+.container ul li .buy {display: flex;
+                        justify-content: center;
+                        padding: 40px 0;
+                        cursor: pointer;}
+
+.container ul li .buy .txt {color: #fff;
+                        font-size: 30px;
+                        width: 200px;
+                        height: 60px;
+                        border: #E3BF94 1px solid;
+                        border-radius: 25px;
+                        background-color: #E3BF94;
+                        display: flex;
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;}
+
+
+
+.pro .pro_list .buy .txt:hover {opacity: 0.6;}
+
+
+
+
+/* 리뷰 설정 */
+
+.review {width: 100%;
+        height: 900px;
+        text-align: center;
+        background-color: #fff5f5;}
+                                    
+.review h2 {font-size: 60px;
+        text-align: center;
+        letter-spacing: 10px;
+        position: relative;
+        padding-top: 100px;
+        font-family: "gaegu", serif;
+        color: #6A2F0B;}
+                                    
+.rev {display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding-bottom: 100px;
+        }
+
+.con {display: flex;
+        overflow-x: hidden;
+        width: 85%;
+        padding: 150px 0;
+        position: relative;}
+
+
+.slider-track {position: relative;
+                width: 100%;
+                height: 400px;}
+              
+.slider-track ul {position: absolute;
+                top: 0;
+                display: flex;
+                width: calc(320px * 7);}
+
+.slider-track ul.on {animation-play-state: paused;}
+              
+.slider-track ul:nth-child(1) {left: 0%;
+                        animation: slide1 20s linear infinite;}
+              
+.slider-track ul:nth-child(2) {left: 100%;
+                        animation: slide2 20s linear infinite;}
+              
+@keyframes slide1 {
+                
+        0% {left: 0;}
+
+        50% {left: -2240px;}
+
+        50.000001% {left: 2240px;}
+
+        100% {left: 0;}
+              
+}
+              
+@keyframes slide2 {
+                
+        0% {left: 2240px;}
+                
+        50% {left: 0;}
+                
+        100% {left: -2240px;}
+              
+}
+              
+        
+.con .slider-track li {padding: 10px;
+                text-align: center;
+                position: relative;
+                cursor: pointer;}
+
+.slider-track li .bubble {}
+
+.slider-track li .bubble img {}
+
+.slider-track>ul:nth-of-type(1)>li:nth-child(1) .bubble {position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                margin-top: -90px;}
+
+
+.slider-track>ul:nth-of-type(1)>li:nth-child(2) .bubble {position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                margin-top: -90px;
+                                                margin-left: 50px;}
+
+
+.slider-track>ul:nth-of-type(1)>li:nth-child(3) .bubble {position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                margin-top: -120px;
+                                                margin-left: 50px;}
+
+
+.slider-track>ul:nth-of-type(1)>li:nth-child(4) .bubble {position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                margin-top: -120px;
+                                                margin-left: 20px;}
+
+
+.slider-track>ul:nth-of-type(1)>li:nth-child(5) .bubble {position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                margin-top: -100px;
+                                                margin-left: 70px;}
+
+
+.slider-track>ul:nth-of-type(1)>li:nth-child(6) .bubble {position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                margin-top: -130px;
+                                                margin-left: 20px;}
+
+
+.slider-track>ul:nth-of-type(1)>li:nth-child(7) .bubble {position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                margin-top: -120px;
+                                                margin-left: 60px;}
+
+
+.slider-track>ul:nth-of-type(2)>li:nth-child(1) .bubble {position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                margin-top: -130px;
+                                                margin-left: 70px;}
+
+
+.slider-track>ul:nth-of-type(2)>li:nth-child(2) .bubble {position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                margin-top: -90px;
+                                                margin-left: 20px;}
+
+
+.slider-track>ul:nth-of-type(2)>li:nth-child(3) .bubble {position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                margin-top: -150px;
+                                                margin-left: 10px;}
+
+
+.slider-track>ul:nth-of-type(2)>li:nth-child(4) .bubble {position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                margin-top: -120px;
+                                                margin-left: 40px;}
+
+
+.slider-track>ul:nth-of-type(2)>li:nth-child(5) .bubble {position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                margin-top: -120px;
+                                                margin-left: -10px;}
+
+
+.slider-track>ul:nth-of-type(2)>li:nth-child(6) .bubble {position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                margin-top: -80px;
+                                                margin-left: 30px;}
+
+
+.slider-track>ul:nth-of-type(2)>li:nth-child(7) .bubble {position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                margin-top: -100px;
+                                                margin-left: 10px;}
+
+/* 마우스 호버값 */
+
+.con .bubble {display: none;}
+
+
+.slider-track>ul:nth-of-type(1)>li:nth-child(1):hover .bubble {display: block;}
+
+.slider-track>ul:nth-of-type(1)>li:nth-child(2):hover .bubble {display: block;}
+
+.slider-track>ul:nth-of-type(1)>li:nth-child(3):hover .bubble {display: block;}
+
+.slider-track>ul:nth-of-type(1)>li:nth-child(4):hover .bubble {display: block;}
+
+.slider-track>ul:nth-of-type(1)>li:nth-child(5):hover .bubble {display: block;}
+
+.slider-track>ul:nth-of-type(1)>li:nth-child(6):hover .bubble {display: block;}
+
+.slider-track>ul:nth-of-type(1)>li:nth-child(7):hover .bubble {display: block;}
+
+
+
+.slider-track>ul:nth-of-type(2)>li:nth-child(1):hover .bubble {display: block;}
+
+.slider-track>ul:nth-of-type(2)>li:nth-child(2):hover .bubble {display: block;}
+
+.slider-track>ul:nth-of-type(2)>li:nth-child(3):hover .bubble {display: block;}
+
+.slider-track>ul:nth-of-type(2)>li:nth-child(4):hover .bubble {display: block;}
+
+.slider-track>ul:nth-of-type(2)>li:nth-child(5):hover .bubble {display: block;}
+
+.slider-track>ul:nth-of-type(2)>li:nth-child(6):hover .bubble {display: block;}
+
+.slider-track>ul:nth-of-type(2)>li:nth-child(7):hover .bubble {display: block;}
+
+.slider-track:hover ul {animation-play-state: paused;}
+
+                           
+.con img {}
+                          
+.review .rev .con ul li .text {background-color: #FFD5EB;
+                                width: 200px;
+                                height: 45px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 15px;
+                                margin: 20px 50px;
+                                text-align: center;}
+        
+.review .rev .con ul li .text h4 {margin: 0 5px;
+                                font-size: 16px;
+                                font-weight: normal;}
+
+
+
+ 
+/* 브랜드 소개 설정 */
+.brand {background-image: url(img/brand_bg.png);
+        height: 2000px;
+        background-color: #fff5f5;
+        position: relative;}
+
+.brand h2 {font-size: 60px;
+        text-align: center;
+        letter-spacing: 10px;
+        position: relative;
+        padding-top: 100px;
+        padding-bottom: 40px;
+        font-family: "gaegu", serif;
+        color: #6A2F0B;}
+
+.brand .innertxt1 {text-align: center;
+        font-size: 20px;
+        padding-top: 30px;}
+
+.brand .innertxt2 {text-align: center;
+        font-size: 20px;
+        padding: 20px 0 60px 0;}       
+
+.brand ul {display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;}
+
+.brand ul li {position: relative;}
+
+.brand ul li img {}
+
+.brand ul li:nth-child(1) .txt1 {opacity: 0;
+                                color: #373C04;
+                                position: absolute;
+                                top: 50%;
+                                left: -50%;
+                                margin-top: -10px;
+                                margin-left: 90px;}
+                                
+.brand ul li:nth-child(2) .txt1 {opacity: 0;
+                                color: #4B3E5D;
+                                position: absolute;
+                                top: 50%;
+                                left: -50%;
+                                margin-top: 20px;
+                                margin-left: 60px;}
+
+.brand ul li:nth-child(3) .txt1 {opacity: 0;
+                                color: #9F2228;
+                                position: absolute;
+                                top: 50%;
+                                left: -50%;
+                                margin-top: 30px;
+                                margin-left: 70px;}
+
+
+
+.brand ul li:nth-child(1) .txt2 {opacity: 0;
+                                color: #373C04;
+                                position: absolute;
+                                top: 50%;
+                                right: -50%;
+                                margin-top: -10px;
+                                margin-right: 50px;}
+
+.brand ul li:nth-child(2) .txt2 {opacity: 0;
+                                color: #4B3E5D;
+                                position: absolute;
+                                top: 50%;
+                                right: -50%;
+                                margin-top: 30px;
+                                margin-right: 50px;}
+
+.brand ul li:nth-child(3) .txt2 {opacity: 0;
+                                color: #9F2228;
+                                position: absolute;
+                                top: 50%;
+                                right: -50%;
+                                margin-top: 30px;
+                                margin-right: 50px;}
+
+
+
+.brand ul li:nth-child(1) img {margin-top: 50px;}
+
+.brand ul li:nth-child(2) img {margin-top: 150px;}
+
+.brand ul li:nth-child(3) img {margin-top: 150px;}
+
+
+.brand ul li .txt1 {font-size: 60px;
+                font-family: "gaegu", serif;
+                font-weight: bold;}
+
+.brand ul li .txt2 {font-size: 60px;
+                font-family: "gaegu", serif;
+                font-weight: bold;}
+
+.brand ul li:nth-child(1):hover .txt1 {opacity: 1;
+                                        transition: all 0.5s;
+                                        transform: translateX(-50px);}
+.brand ul li:nth-child(1):hover .txt2 {opacity: 1;
+                                        transition: all 0.5s;
+                                        transform: translateX(50px);}
+
+.brand ul li:nth-child(2):hover .txt1 {opacity: 1;
+                                        transition: all 0.5s;
+                                        transform: translateX(-50px);}
+
+.brand ul li:nth-child(2):hover .txt2 {opacity: 1;
+                                        transition: all 0.5s;
+                                        transform: translateX(20px);}
+
+
+.brand ul li:nth-child(3):hover .txt1 {opacity: 1;
+                                        transition: all 0.5s;
+                                        transform: translateX(-30px);}
+
+.brand ul li:nth-child(3):hover .txt2 {opacity: 1;
+                                        transition: all 0.5s;
+                                        transform: translateX(20px);}
+
+
+
+
+
+
+
+
+/* 프로덕트 페이지 설정 */
+
+.product {background-color: #FFF5F5;
+        padding-top: 150px;}
+
+.product .pro001 {display: flex;
+                width: 100%;
+                flex-direction: column;}
+
+
+
+.pro001 .imgBox {width: 90%;
+                display: flex;}
+
+.imgBox .bigImg {width: 70%;
+                margin: 0 auto;
+                margin-top: 20px;
+                margin-left: 200px;
+                height: 727px;
+                position: relative;
+                display: flex;
+                overflow: hidden;
+                justify-content: center;
+                align-items: center;}
+
+.imgBox .bigImg img {position: absolute;
+                        height: 100%;
+                        opacity: 0;
+                        z-index: 1;
+                        margin-left: 80px;}
+
+.imgBox .bigImg img.on {opacity: 1;
+                        z-index: 2;}
+
+.imgBox .thumb {width: 30%;
+                border-left: #FFBBC6 3px solid;
+                margin-right: 70px;
+                display: flex;
+                justify-content: center;}
+
+.imgBox .thumb ul {}
+
+.imgBox .thumb li {margin-bottom: 40px;}
+
+.imgBox .thumb img {width: 100%;}
+
+
+
+.pro001 .cartBox {width: 100%;}
+
+.cartBox .infoBox {}
+
+.cartBox .infoBox h2 {font-size: 30px;
+                        font-weight: bold;
+                        color: #6A2F0B;
+                        text-align: center;
+                        margin-top: 50px;}
+
+
+
+.cartBox .count {}
+
+.count .num001 {display: flex;
+                justify-content: center;
+                align-items: center;}
+
+.count .num001 span {font-family: "Inter", sans-serif;
+                font-size: 20px;
+                display: inline-block;
+                padding: 6px 10px;
+                cursor: pointer;}
+
+
+.count .num001 span i {color: #fff;}
+
+.count .num001 span:nth-child(1) {background-color: #FFD0D9;}
+
+.count .num001 span:nth-child(2) {background-color: #fff;
+                                width: 40px;
+                                text-align: center;}
+
+.count .num001 span:nth-child(3) {background-color: #FFD0D9;}
+
+
+.count .num001 span:nth-child(1):hover {background-color: #FF94A7;}
+
+.count .num001 span:nth-child(3):hover {background-color: #FF94A7;}
+
+.count .won {font-size: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 0;}
+
+.count .won span {font-family: "Inter", sans-serif;}
+
+
+.cartBox .fee {display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 0;
+                position: relative;}
+
+.fee .feetxt1 {font-size: 18px;
+                padding-left: 30px;}
+
+.fee .feetxt1 span {font-family: "Inter", sans-serif;
+                        padding-left: 5px;}
+
+.fee span {}
+
+.fee span img {margin-left: 20px;
+                cursor: pointer;}
+
+.fee .feetxt2 {font-family: "Inter", sans-serif;
+                background-color: #FD9191;
+                padding: 15px 20px;
+                border-radius: 10px;
+                position: absolute;
+                top: 60px;
+                left: 50%;
+                margin-left: 40px;
+                color: #fff;
+                display: none;
+                opacity: 0;
+                transition: all 0.4s;}
+
+.fee .feetxt2::before {content:"";
+                position: absolute;
+                bottom: 100%;
+                left: 0;
+                margin-left: 30px;
+                transform: translateX(-50%);
+                border-width: 7px;
+                border-style: solid;
+                border-color: transparent transparent #FD9191 transparent;}
+
+.fee span:hover + .feetxt2 {
+                        display: block;
+                        opacity: 0.9;}
+
+
+.fee .feetxt2 span {font-size: 14px;}
+
+.cartBox .cart001 {display: flex;
+                width: 100%;
+                justify-content: center;
+                margin-top: 50px;
+                cursor: pointer;}
+
+.cartBox .cart001 p {background-color: #FF94A7;
+                padding: 8px 30px;
+                border-radius: 10px;
+                border: none;
+                font-size: 25px;
+                color: #fff;}
+
+.cartBox .cart001 .cart002 {margin-right: 100px;}
+
+.cart001 p:hover {opacity: 0.7;}
+
+
+
+.cartBox .proinfo1 {display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        margin: 100px 0;}
+
+.cartBox .proinfo2 {border: 3px dashed #FFDCF0;
+                        padding: 20px 50px;}
+
+.cartBox .proinfo2 h2 {color: #FF96D2;
+                        font-weight: normal;
+                        margin-bottom: 5px;
+                        margin-top: 15px;}
+
+.cartBox .proinfo2 p {font-size: 18px;
+                        margin-bottom: 10px;}
+
+.cartBox .proinfo2 h2:nth-child(1) {margin-top: -2px;}
+
+
+
+
+/* 추천상품 설정 */
+
+.recommend {width: 80%;
+        margin: 40px auto;
+        margin-bottom: 0;
+        background-color: #fff5f5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;}
+
+.recommend h2 {width: 100%;
+        text-align: left;
+        padding: 20px 0;
+        font-weight: normal;
+        color: #FF96D2;
+        font-size: 27px;}
+
+.recommend .left002 {position: absolute;
+                        top: 50%;
+                        left: 0;
+                        margin-left: -50px;
+                        cursor: pointer;}
+
+.recommend .right002 {position: absolute;
+                        top: 50%;
+                        right: 0;
+                        margin-right: -50px;
+                        cursor: pointer;}
+
+.recommend .left002 i {font-size: 40px;
+                        color: #FF9DD5;}
+
+.recommend .right002 i {font-size: 40px;
+                        color: #FF9DD5;}
+
+
+.recommend .left002:hover i {opacity: 0.6;}
+
+.recommend .right002:hover i {opacity: 0.6;}
+
+
+
+.recommend .contain {width: calc(420px * 4);
+                overflow: hidden;
+                height: 500px;
+                position: relative;}
+
+.recommend .contain ul {display: flex;
+                width: calc(420px * 8);
+                position: absolute;
+                left: 0;
+                top: 0;}
+
+.recommend .contain li {width: 400px;
+                margin: 0 10px;
+                height: 500px;
+                overflow: hidden;}
+
+.recommend .contain img {width: 400px;
+                        height: 392.5px;}
+
+.recommend .contain p {text-align: center;
+                        padding-left: 80px;
+                        padding-top: 10px;
+                        font-size: 18px;}
+
+
+
+/* 로그인페이지 설정 */
+
+.contents.loginBig {z-index: 999999;
+                        height: 100vh;
+                        width: 100%;
+                        position: fixed;
+                        background-color: rgba(0, 0, 0, 0.397);
+                        top: 0;
+                        left: 0;}
+
+.loginOverlay {display: none; /* 처음엔 숨김 */
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.4); /* 회색 반투명 */
+                z-index: 9999;}
+                              
+.loginOverlay.on {display: block;}
+
+.login {width: 500px;
+        height: 500px;
+        position: fixed;
+        background-color: #FFF9F9;
+        top: 50%;
+        left: 50%;
+        margin-top: -300px;
+        margin-left: -250px;
+        border: 5px dashed #FF94B5;
+        border-radius: 20px;
+        z-index: 9999999;}
+
+.login .close {position: relative;}
+
+.login .close i {position: absolute;
+                top: 20px;
+                right: 20px;
+                color: #FF94B5;
+                font-size: 20px;
+                cursor: pointer;}
+
+.login h2 {text-align: center;
+        padding-top: 40px;
+        padding-bottom: 50px;
+        font-family: "gaegu", serif;
+        font-size: 30px;
+        color: #2D1C15;
+        cursor: pointer;}
+
+.login .loginBox {display: flex;
+                justify-content: center;}
+
+.loginBox .id {width: 250px;
+                background-color: #fff;
+                padding: 10px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border: 2px solid #FF94B5;}
+
+.loginBox .id i {color: #FF94B5;}
+
+.loginBox .id input {margin-left: 5px;
+                        font-size: 18px;
+                        border: none;
+                        caret-color: #FF6C87;}
+
+.loginBox .id input::placeholder {color: #ddd;
+                                font-family: "Orbit", serif;}
+
+.loginBox .id input:focus {outline: none;}
+
+.loginBox .pass {width: 250px;
+                background-color: #fff;
+                padding: 10px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border: 2px solid #FF94B5;
+                border-top: none;}
+
+.loginBox .pass i {color: #FF94B5;}
+
+
+.loginBox .pass input {margin-left: 5px;
+                        font-size: 18px;
+                        border: none;
+                        caret-color: #FF6C87;}
+
+.loginBox .pass input::placeholder {color: #ddd;
+                                font-family: "Orbit", serif;}
+
+.loginBox .pass input:focus {outline: none;}
+
+.loginBox .loginBtn {width: 200px;
+                        background-color: #FF6C87;
+                        padding: 10px;
+                        border-radius: 5px;
+                        margin-top: 30px;
+                        text-align: center;
+                        cursor: pointer;
+                        margin-left: 30px;}
+
+.loginBox .loginBtn input {color: #FFF;
+                                background-color: transparent;
+                                border: none;
+                                letter-spacing: 2px;
+                                font-family: "Orbit", serif;
+                                font-size: 20px;
+                                cursor: pointer;}
+
+.loginBox .loginBtn:hover {opacity: 0.8;}
+
+
+.loginBox .navertxt {padding-left: 80px;
+                        margin-top: 25px;
+                        border-bottom: 1px solid #FFC7D8;
+                        padding-bottom: 15px;}
+
+
+.loginBox .naver {margin-top: 15px;
+                margin-left: 31px;}
+
+/* 장바구니 설정 */
+
+.cart {width: 800px;
+        height: 810px;
+        background-color: #fff5f5;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        position: fixed;
+        top: 120px;
+        right: 0;
+        display: none;
+        z-index: 99999;}
+
+.cartOverlay {display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.4);
+                z-index: 9999;
+                pointer-events: none;}
+
+.cart h2 {text-align: center;
+        display: block;
+        padding: 50px 0;
+        font-weight: normal;
+        font-size: 22px;}
+
+.cart.on {display: block;}
+
+.cartOverlay.on {display: block;}
+
+/* 상품 리스트 설정 */
+
+.cartList {border: 4px #FFBCD1 solid;
+                width: 600px;
+                height: 400px;
+                margin-left: 100px;
+                background-color: #fff;
+                border-radius: 10px;
+                overflow-y: scroll;}
+
+.cartList ul {}
+
+.cartList li {display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 10px 0;}
+
+.cartList .cart-img img {width: 80px;
+                        height: 80px;
+                        object-fit: cover;
+                        border-radius: 5px;}
+                    
+.cartList .cart-text {font-size: 16px;
+                        text-align: left;
+                        margin-left: 15px;}
+
+.cart-item {position: relative;}
+                    
+.cartList .cart-remove {cursor: pointer;
+                        color: #FF94B5;
+                        font-size: 20px;
+                        border: none;}
+.remov {display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -10px;
+        margin-right: 25px;}
+
+.remove {cursor: pointer;
+        color: #FF94B5; /* 기본 색 (회색) */
+        font-size: 20px; /* 아이콘 크기 */
+        transition: color 0.3s;}
+
+
+                    
+/* 텍스트와 버튼이 안보인다면, 텍스트가 길어서 줄바꿈이 되는지 확인 */
+.cartList .cart-text {white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;}
+
+
+
+.cartList img {width: 100%;
+        height: auto;}
+
+.cartList p {width: 280px;
+        text-align: center;}
+
+/* .cartList span {display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #FF94B5;
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 14px;
+        padding-bottom: 4px;
+        cursor: pointer;
+        color: #FF94B5;} */
+
+
+/* 상품 금액 */
+
+.cart .prod001 {display: flex;
+                justify-content: center;
+                position: relative;}
+
+.prod001 .pri {border: 4px #FF94B5 solid;
+                width: 140px;
+                padding: 5px;
+                margin-top: 50px;
+                margin-right: 15px;
+                background-color: #fff;}
+
+.prod001 .pri .pri001 {text-align: center;}
+
+.prod001 .pri .pri001 span {font-family: "Inter", sans-serif;}
+
+.prod001 .pri .pri003 {text-align: center;
+                padding-top: 5px;}
+
+.prod001 .pri .pri003 span {font-family: "Inter", sans-serif;}
+
+
+.prod001 .minu {position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: 5px;
+        margin-left: -187px;}
+.prod001 .minus img {}
+
+
+
+
+
+.prod001 .sale {border: 4px #FF94B5 solid;
+                width: 140px;
+                padding: 5px;
+                margin-top: 50px;
+                margin-right: 15px;
+                background-color: #fff;}
+
+.prod001 .sale .sale001 {text-align: center;}
+
+.prod001 .sale .sale001 span {font-family: "Inter", sans-serif;}
+
+.prod001 .sale .sale002 {text-align: center;
+                        padding-top: 5px;}
+
+.prod001 .sale .sale002 span {font-family: "Inter", sans-serif;}
+
+
+.prod001 .plus {position: absolute;
+        top: 50%;
+        right: 50%;
+        margin-right: -16px;
+        margin-top: 10px;}
+
+.prod001 .plus img {}
+
+
+
+
+
+.prod001 .del {border: 4px #FF94B5 solid;
+                width: 140px;
+                padding: 5px;
+                margin-top: 50px;
+                margin-right: 15px;
+                background-color: #fff;}
+
+.prod001 .del .del001 {text-align: center;}
+
+.prod001 .del .del001 span {font-family: "Inter", sans-serif;}
+
+.prod001 .del .del002 {text-align: center;
+                        padding-top: 5px;}
+
+.prod001 .del .del002 span {font-family: "Inter", sans-serif;}
+
+
+.prod001 .equal {position: absolute;
+                top: 50%;
+                right: 50%;
+                margin-top: 10px;
+                margin-right: -188px;}
+
+.prod001 .equal img {}
+
+
+
+
+
+
+.prod001 .total {border: 4px #FF94B5 solid;
+                width: 140px;
+                padding: 5px;
+                margin-top: 50px;
+                background-color: #fff;}
+
+.prod001 .total .total001 {text-align: center;}
+
+.prod001 .total .total001 span {font-family: "Inter", sans-serif;}
+
+.prod001 .total .total002 {text-align: center;
+                        padding-top: 5px;}
+
+.prod001 .total .total002 span {font-family: "Inter", sans-serif;}
+
+
+
+
+.cart .sum001 {background-color: #FF94B5;
+                width: 150px;
+                margin-top: 50px;
+                margin-left: 320px;
+                cursor: pointer;}
+
+.cart .sum001 .sum {font-size: 20px;
+                text-align: center;
+                padding: 10px 15px;
+                color: #fff;}
+
+.cart .sum001:hover {border: 1px solid #FF94B5;
+                        box-sizing: border-box;
+                        background-color: transparent;}
+
+.cart .sum001:hover .sum {color: #2D1C15;}
+
+
+
+
+
+/* 푸터 설정 */
+.copyright {width: 100%;
+                height: 200px;
+                /* height: 403px; */
+                background-color: #F8D3FF;
+                position: relative;}
+
+.copyright .txt_box1 {font-size: 18px;
+                        /* display: block; */
+                        padding-top: 100px;}
+
+.copyright .txt_box2 {font-size: 18px;
+                        padding-top: 20px;}
+
+.copyright img {position: absolute;
+                bottom: 20px;
+                right: 10px;
+                width: 194px;
+                height: auto;}
+
+
+
+
+
+
+
+
+
+
+
+
+
